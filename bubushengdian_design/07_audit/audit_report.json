@@ -1,6 +1,6 @@
 {
   "project": "步步生典——邯郸双节漫游章匣",
-  "generated_at_utc": "2026-10-01T09:29:22.069803+00:00",
+  "generated_at_utc": "2026-10-01T09:30:08.037241+00:00",
   "technical_status": "pass",
   "submission_status": "candidate_pending_human_route_review",
   "checks": [
@@ -71,8 +71,8 @@
           ],
           "mode": "RGB",
           "dpi": 300,
-          "bytes": 683708,
-          "sha256": "3576e9b75933938428f7b00fe9a4940869b640007b2343217567b6de92ce8ed6"
+          "bytes": 683693,
+          "sha256": "2ee94fccc3742056de63d3a0065ffe9320c74bea08840f4345a098aeab65e148"
         },
         {
           "path": "board_07.jpg",
@@ -136,7 +136,7 @@
           "path": "board_06.pdf",
           "pages": 1,
           "page_size": "594.96 x 841.92 pts (A4)",
-          "bytes": 685468
+          "bytes": 685453
         },
         {
           "path": "board_07.pdf",

@@ -128,8 +128,8 @@
     }
   },
   "exchange_files": {
-    "fcstd_sha256": "bba923905924e40df034ba512147dbe2c01d97a94d112d9b450776a9e3ec953f",
-    "step_sha256": "2c03ad5b8adb036e0bcbab0c4828e6a5fe0a299a59c5ea93362e6b8726d07bda"
+    "fcstd_sha256": "afd99ea24d330ecffb9053fcabb56b6cde63556e38ab177c9af3d186c8445623",
+    "step_sha256": "4bf0f5272081675291806646b50dcf566801992f85154d9073a9f56db80980ff"
   },
   "boundary": "Digital fit model; friction, ink contamination, child safety and durability remain unverified."
 }
