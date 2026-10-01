@@ -1,4 +1,5 @@
 __pycache__/
 *.py[cod]
 .DS_Store
-
+suijian_design/04_renders/proof*.png
+suijian_design/04_renders/proof*.jpg
