@@ -1,0 +1,208 @@
+{
+  "project": "遂见——毛遂自荐青年名片匣",
+  "generated_at_utc": "2026-10-01T01:37:13.699298+00:00",
+  "status": "pass",
+  "checks": [
+    {
+      "name": "submission_jpgs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 477802,
+          "sha256": "0eb4a83bf30cb002babd9d60d908211a979156581b7b94ea91c905f53a496e3a"
+        },
+        {
+          "path": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 529216,
+          "sha256": "ee52a42580cf1de4284d8f3d053830522f3b81229e0047e21c7b921ece077c0d"
+        },
+        {
+          "path": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 534160,
+          "sha256": "7e2e120a2f6120ebdba983aaf444a76c2b2cd621c5aba307b22db187224b7d59"
+        },
+        {
+          "path": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 407313,
+          "sha256": "c9096c24160a8cb4be6d6b0e9b51ec27cf8ef62b0e047dab4851db40fcb9d167"
+        },
+        {
+          "path": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 551990,
+          "sha256": "46bc9d20348d950b9c3caa5d6080d56874d3160de20639de21f9b0eefa696e4f"
+        },
+        {
+          "path": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 555764,
+          "sha256": "bbe813613d5a927ce7428db9aa781c77d33bbda61bb2aa7d2b04a21fdc4a6005"
+        },
+        {
+          "path": "board_07.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 570877,
+          "sha256": "773205afd3d75f8a17f35ae6d267e4c4db8607d4609354fe71898f3506ed4da0"
+        }
+      ]
+    },
+    {
+      "name": "a4_pdfs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 479559
+        },
+        {
+          "path": "board_02.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 530977
+        },
+        {
+          "path": "board_03.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 535917
+        },
+        {
+          "path": "board_04.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 409074
+        },
+        {
+          "path": "board_05.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 553751
+        },
+        {
+          "path": "board_06.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 557525
+        },
+        {
+          "path": "board_07.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 572638
+        }
+      ]
+    },
+    {
+      "name": "editable_sources",
+      "passed": true,
+      "detail": [
+        "03_cad/suijian_card_case.FCStd",
+        "03_cad/suijian_card_case.step",
+        "03_cad/meshes/card_proxy.stl",
+        "03_cad/meshes/gold_accent.stl",
+        "03_cad/meshes/inner_tray.stl",
+        "03_cad/meshes/lifter.stl",
+        "03_cad/meshes/outer_shell.stl",
+        "02_identity/identity_card.svg",
+        "02_identity/packaging_dieline.svg",
+        "02_identity/portfolio_cards.svg",
+        "02_identity/wordmark.svg",
+        "05_boards/src/board_01.svg",
+        "05_boards/src/board_02.svg",
+        "05_boards/src/board_03.svg",
+        "05_boards/src/board_04.svg",
+        "05_boards/src/board_05.svg",
+        "05_boards/src/board_06.svg",
+        "05_boards/src/board_07.svg"
+      ]
+    },
+    {
+      "name": "cad_geometry",
+      "passed": true,
+      "detail": {
+        "bbox_mm": [
+          98.0,
+          65.0,
+          14.0
+        ],
+        "parts": [
+          "outer_shell",
+          "inner_tray",
+          "lifter",
+          "gold_accent",
+          "card_proxy"
+        ]
+      }
+    },
+    {
+      "name": "privacy_tokens",
+      "passed": true,
+      "detail": "no prohibited identity placeholders"
+    },
+    {
+      "name": "source_manifest",
+      "passed": true,
+      "detail": {
+        "rows": 59,
+        "types": [
+          "board_jpg",
+          "board_pdf",
+          "board_source",
+          "cad",
+          "external_reference",
+          "font",
+          "identity",
+          "render",
+          "submission_text"
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "No physical prototype has been fabricated or tested.",
+    "Pricing is an estimate, not a supplier quotation.",
+    "Final entrant identity and organiser rules require human confirmation before submission."
+  ]
+}
