@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="206mm" height="140mm" viewBox="0 0 206 140">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NSans; src: url('../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NSerif; src: url('../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: Inter; src: url('../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NSans, sans-serif; } .serif { font-family: NSerif, serif; } .latin { font-family: Inter, sans-serif; }
+  ]]></style>
+</defs>
+<rect width="206" height="140" fill="#F7F2E8"/>
+<g id="proxy-01" transform="translate(8 8)">
+  <rect width="60" height="60" rx="4" fill="#EEE4D0" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 01</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+<g id="proxy-02" transform="translate(74 8)">
+  <rect width="60" height="60" rx="4" fill="#E6DDCA" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 02</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+<g id="proxy-03" transform="translate(140 8)">
+  <rect width="60" height="60" rx="4" fill="#D9CFBA" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 03</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+<g id="proxy-04" transform="translate(8 74)">
+  <rect width="60" height="60" rx="4" fill="#EEE4D0" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 04</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+<g id="proxy-05" transform="translate(74 74)">
+  <rect width="60" height="60" rx="4" fill="#E6DDCA" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 05</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+<g id="proxy-06" transform="translate(140 74)">
+  <rect width="60" height="60" rx="4" fill="#D9CFBA" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="#A83B32" stroke-width="1.4"/>
+  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="#202F32">中性样品 06</text>
+  <text x="8" y="42" class="latin" font-size="4" fill="#858B86">60 × 60 × 35 mm</text>
+  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="#202F32"/>
+  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="#EEE4D0">规格代理件，非实际商品包装</text>
+</g>
+</svg>

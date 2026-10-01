@@ -1,0 +1,29 @@
+{
+  "project": "解围",
+  "palette": {
+    "wall_ink": "#202F32",
+    "moon_gold": "#C19A55",
+    "route_red": "#A83B32",
+    "mountain_green": "#586F66",
+    "paper_white": "#EEE4D0",
+    "soft_gray": "#858B86"
+  },
+  "fonts": [
+    "NotoSansSC[wght].ttf",
+    "NotoSerifSC[wght].ttf",
+    "InterVariable.ttf"
+  ],
+  "brand_asset_status": "not_provided",
+  "product_asset_status": "neutral_size_proxy",
+  "proxy_label": "规格代理件，非实际商品包装",
+  "reserved_zones": [
+    "brand-zone",
+    "legal-copy-zone"
+  ],
+  "assets": [
+    "wordmark.svg",
+    "mid_autumn_sleeve.svg",
+    "national_day_sleeve.svg",
+    "proxy_product_labels.svg"
+  ]
+}

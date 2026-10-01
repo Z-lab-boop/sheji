@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240mm" height="95mm" viewBox="0 0 240 95">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NSans; src: url('../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NSerif; src: url('../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: Inter; src: url('../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NSans, sans-serif; } .serif { font-family: NSerif, serif; } .latin { font-family: Inter, sans-serif; }
+  ]]></style>
+</defs>
+
+<rect width="240" height="95" rx="7" fill="#EEE4D0"/>
+<g id="route-symbol" transform="translate(12 12)" fill="none" stroke="#202F32" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter">
+  <path d="M8 52 V8 H58 V30 H36"/>
+  <path d="M36 30 H78 V8 H96 V58 H58 V46" stroke="#A83B32"/>
+  <circle cx="96" cy="58" r="5" fill="#C19A55" stroke="none"/>
+</g>
+<text x="120" y="55" class="serif" font-size="38" font-weight="760" fill="#202F32" letter-spacing="6">解围</text>
+<text x="121" y="76" class="latin" font-size="7" font-weight="650" fill="#C19A55" letter-spacing="2">RELIEVE THE SIEGE</text>
+
+</svg>
