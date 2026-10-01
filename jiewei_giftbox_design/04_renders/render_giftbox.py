@@ -49,7 +49,6 @@ def rgba(value: str, alpha: float = 1.0):
 
 def mat(name: str, color: str, metallic: float = 0.0, roughness: float = 0.58):
     material = bpy.data.materials.new(name)
-    material.use_nodes = True
     material.diffuse_color = rgba(color)
     node = material.node_tree.nodes.get("Principled BSDF")
     node.inputs["Base Color"].default_value = rgba(color)

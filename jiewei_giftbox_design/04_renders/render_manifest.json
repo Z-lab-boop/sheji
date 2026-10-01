@@ -34,7 +34,7 @@
         -0.4,
         0.29
       ],
-      "sha256": "c3e0e4e9833b167e197f7ad840d5bdea45539d614e1524dc0aafd1c7e569ae7c"
+      "sha256": "5f62d49510d973a0027c06d77a9754576be28078da693405100f9e9f6ae32807"
     },
     "hero_unlocked.png": {
       "size": [
@@ -46,7 +46,7 @@
         -0.42,
         0.29
       ],
-      "sha256": "0f472bb1c466a60b78574effcce6344d179e96ae07eb9709f3a5569499958c2b"
+      "sha256": "c1b2bc2da268c7de0c39af9ec259e0d39d848715fa6dbab3a25d0adca1c77f8b"
     },
     "hero_open.png": {
       "size": [
@@ -58,7 +58,7 @@
         -0.52,
         0.34
       ],
-      "sha256": "f44685ec8333bd712430df1888e85d090eebe00d0fa69243349de254d74f5534"
+      "sha256": "20eb791cdb7276bf3ab4e3d2dd1eb10c214dc9fc7a97aefec9e13839f8cd8707"
     },
     "sequence_01.png": {
       "size": [
@@ -70,7 +70,7 @@
         -0.47,
         0.31
       ],
-      "sha256": "a2dd5fb450aa055c0200ca4853ff6af369a29e10c4d051588c01863e7b623c1e"
+      "sha256": "a19aab1d40a549ceec3b095673e79d1eba31ea3f6660ba8f5428e28d488c5193"
     },
     "sequence_02.png": {
       "size": [
@@ -82,7 +82,7 @@
         -0.47,
         0.31
       ],
-      "sha256": "05ddd22c9beba23c1a1692776419016011f5f922da58669bdd73e3e1be186420"
+      "sha256": "2474b33ee0eae17d15b3534697c45f88d3e81f7f5e261ebfd0048cb2dfed0db4"
     },
     "sequence_03.png": {
       "size": [
@@ -94,7 +94,7 @@
         -0.47,
         0.31
       ],
-      "sha256": "14e1756cbcea6e257a1226fa0dc5a203786f9b0f2e44717b164c4c2bf8ad63c3"
+      "sha256": "e2fbd2195e6a5585f1afc756a831938f6a0455f9f1f8d7c66d864b6e33977c80"
     },
     "sequence_04.png": {
       "size": [
@@ -106,7 +106,7 @@
         -0.47,
         0.31
       ],
-      "sha256": "3eb8d25916a5cab64aa35bbca7ec683889b0503787c748fa3b9943e5e41321af"
+      "sha256": "1350691adc0a3ff5c3ca1528947338b3c30c89d99e80227fbf18544aa43e9562"
     },
     "exploded.png": {
       "size": [
@@ -118,7 +118,7 @@
         -0.58,
         0.48
       ],
-      "sha256": "6aab00f15834abc1e7e34375af4fde33ac8e5b8e413fe041ac4956afff4e1355"
+      "sha256": "71a7a81267a821b5ca948679346412d219abdc3b7499c322fd46dfca827e1c42"
     },
     "dieline_preview.png": {
       "size": [
@@ -130,7 +130,7 @@
         0.0,
         0.72
       ],
-      "sha256": "8ef9db9e0397cfac206cb34ca6e053de0fb2f9b71a5806283b02c6849271fa9d"
+      "sha256": "7956343edbc04cc494a8af5321c981a68e7718c103c925ebee2da8e84132cbca"
     },
     "mid_autumn_variant.png": {
       "size": [
@@ -142,7 +142,7 @@
         -0.4,
         0.29
       ],
-      "sha256": "ed5624bd6c348e01501af2cb08ba94633aa80d4b54d51f7c723c717b9513ad6a"
+      "sha256": "fcd37ebedb96a66f411b1e0f38d49c45fbc3a6990b54c6bb5c30373604d72af2"
     },
     "national_day_variant.png": {
       "size": [
@@ -154,7 +154,7 @@
         -0.4,
         0.29
       ],
-      "sha256": "e62727874d870cfcb67b67fd59af10143b166efc8b1e12e2895a775796dbd9dd"
+      "sha256": "c2e17b56ea3051f36d8336f712bea4ba30e406e6d560d8bb3c8fdadd08b3b3c6"
     },
     "ortho_top.png": {
       "size": [
@@ -166,7 +166,7 @@
         -0.04,
         0.65
       ],
-      "sha256": "f6f83d78a6b7e3c51986440c380010dcaeb7168ec66ee95ee0f31b12a5d0490f"
+      "sha256": "8c49ae0ed881a0b213dc75ef11bdf062a68d419b55caa7e49aea4353d3b00d7c"
     }
   },
   "boundary": "Digital paperboard and neutral-size-proxy render; no real brand asset, food product or physical validation is implied."

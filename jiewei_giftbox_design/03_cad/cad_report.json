@@ -177,7 +177,7 @@
   "states": {
     "closed": {
       "path": "jiewei_giftbox_closed.step",
-      "sha256": "8019ba9064a87ac5f4d4e62b7020ebccd814fe5d5de175ede15ba2c537dc478c",
+      "sha256": "b237872f28667f5dd9767f109df777f135f0f3fa54a9d8ba4e2406dd6e7a5007",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -248,7 +248,7 @@
     },
     "unlocked": {
       "path": "jiewei_giftbox_unlocked.step",
-      "sha256": "e70bc9b2256721c6e99870c3150b5a8b3f972a2d3693149d5d39d21f6d3d71f9",
+      "sha256": "9f04040b0c7a0978f8d731500b7be473f1d383a63ab87b2cf631ecbd4d5d5e25",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -319,7 +319,7 @@
     },
     "open": {
       "path": "jiewei_giftbox_open.step",
-      "sha256": "542d864715dc9c56c6a5f6aedf5b198ba02390e09537ff514753cade3218c641",
+      "sha256": "1d7b53952ef31d9c32ebae2cba1ab2547f85d69dd4723e4efaf2f17a56149409",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -389,7 +389,7 @@
       }
     }
   },
-  "fcstd_sha256": "b5c6affd4224370f39eac3bc414c6bd82232abe3f17f0c9495f927bb7a63bdd4",
+  "fcstd_sha256": "a9c285d49d8ee285c7a905465b35170a0a9605bc2f2a3a6994930910be44f267",
   "product_asset_status": "neutral_size_proxy",
   "proxy_label": "规格代理件，非实际商品包装",
   "boundary": "Paperboard fit model only; load, friction, tear, drop and transport behavior remain unverified."
