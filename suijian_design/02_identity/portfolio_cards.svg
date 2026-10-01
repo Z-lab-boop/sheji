@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2940 680" role="img" aria-labelledby="title desc">
+  <title id="title">遂见作品展示卡系列</title>
+  <desc id="desc">Editable vector artwork for the Suijian cultural product system.</desc>
+  <style>@font-face { font-family: 'Noto Sans SC'; src: url('../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+@font-face { font-family: 'Noto Serif SC'; src: url('../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+@font-face { font-family: 'Inter'; src: url('../01_research/fonts/InterVariable.ttf'); }
+.sans { font-family: 'Noto Sans SC', sans-serif; }
+.serif { font-family: 'Noto Serif SC', serif; }
+.latin { font-family: 'Inter', sans-serif; letter-spacing: .12em; }</style>
+  
+<rect width="2940" height="680" fill="#F4F0E7"/>
+
+<g id="portfolio-card-01" transform="translate(60 70)">
+  <rect width="880" height="528" rx="38" fill="#0D2F32" stroke="#B68B48" stroke-width="3"/>
+  <path d="M64 394 C215 160 425 118 780 92" fill="none" stroke="#B68B48" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <circle cx="760" cy="106" r="16" fill="#A64032"/>
+  <text class="latin" x="58" y="86" fill="#B68B48" font-size="20" font-weight="700">01</text>
+  <text class="serif" x="58" y="430" fill="#E8DFCC" font-size="58" font-weight="680">视觉叙事</text>
+  <text class="latin" x="60" y="476" fill="#E8DFCC" font-size="15" opacity=".62">VISUAL STORY</text>
+</g>
+
+<g id="portfolio-card-02" transform="translate(1000 70)">
+  <rect width="880" height="528" rx="38" fill="#E8DFCC" stroke="#B68B48" stroke-width="3"/>
+  <path d="M62 120 H800 M62 238 H660 M62 356 H520" fill="none" stroke="#B68B48" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <circle cx="695" cy="210" r="16" fill="#A64032"/>
+  <text class="latin" x="58" y="86" fill="#B68B48" font-size="20" font-weight="700">02</text>
+  <text class="serif" x="58" y="430" fill="#0D2F32" font-size="58" font-weight="680">产品系统</text>
+  <text class="latin" x="60" y="476" fill="#0D2F32" font-size="15" opacity=".62">PRODUCT SYSTEM</text>
+</g>
+
+<g id="portfolio-card-03" transform="translate(1940 70)">
+  <rect width="880" height="528" rx="38" fill="#0D2F32" stroke="#B68B48" stroke-width="3"/>
+  <path d="M78 420 C160 80 620 54 795 340" fill="none" stroke="#B68B48" stroke-width="18" stroke-linecap="round" opacity=".82"/>
+  <circle cx="630" cy="314" r="16" fill="#A64032"/>
+  <text class="latin" x="58" y="86" fill="#B68B48" font-size="20" font-weight="700">03</text>
+  <text class="serif" x="58" y="430" fill="#E8DFCC" font-size="58" font-weight="680">数字体验</text>
+  <text class="latin" x="60" y="476" fill="#E8DFCC" font-size="15" opacity=".62">DIGITAL EXPERIENCE</text>
+</g>
+
+<text class="latin" x="60" y="646" fill="#16191A" font-size="15" opacity=".50">REPLACEABLE PORTFOLIO CARDS · 90 × 54 mm · EDITABLE VECTOR</text>
+
+</svg>

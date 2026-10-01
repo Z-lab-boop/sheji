@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+<title>结构不是效果图</title>
+
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+    <feOffset dy="34" result="offset"/>
+    <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.12 0 0 0 0 0.13 0 0 0 .28 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="goldLine" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8D672F"/><stop offset=".55" stop-color="#B68B48"/><stop offset="1" stop-color="#E0BD79"/>
+  </linearGradient>
+  <radialGradient id="deepGlow" cx="78%" cy="18%" r="84%">
+    <stop offset="0" stop-color="#1C5557"/><stop offset=".56" stop-color="#0D2F32"/><stop offset="1" stop-color="#071E20"/>
+  </radialGradient>
+  <style>
+    @font-face { font-family:'Noto Sans SC'; src:url('../../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Noto Serif SC'; src:url('../../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Inter'; src:url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family:'Noto Sans SC',sans-serif; }
+    .serif { font-family:'Noto Serif SC',serif; }
+    .latin { font-family:'Inter',sans-serif; }
+  </style>
+</defs>
+
+<rect width="2480" height="3508" fill="#F3EEE2"/>
+
+<path d="M-180 3060 L2680 2210" stroke="#B68B48" stroke-width="4" opacity=".13"/>
+<circle cx="2290" cy="170" r="12" fill="#A64032"/>
+
+
+<g id="header">
+  <text class="latin" x="160" y="188" fill="#B68B48" font-size="22" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="4">04 / 07</text>
+  <text class="serif" x="160" y="318" fill="#0D2F32" font-size="92" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">结构不是效果图</text>
+  <text class="sans" x="162" y="380" fill="#16191A" font-size="27" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="2">PARAMETRIC ENGINEERING · 尺寸、零件与导出文件可重新生成</text>
+  <path d="M160 442 H2320" stroke="#B68B48" stroke-width="4" opacity=".65"/>
+</g>
+
+
+<g id="exploded-engineering">
+  <ellipse cx="1230" cy="1700" rx="760" ry="220" fill="#0D2F32" opacity=".10"/>
+  <image href="../../04_renders/exploded.png" x="320" y="470" width="1840" height="1840" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  
+<g transform="translate(190 1700)">
+  <circle cx="0" cy="0" r="34" fill="#A64032"/>
+  <text class="latin" x="0" y="8" fill="#FFFFFF" font-size="15" font-weight="720" text-anchor="middle" opacity="1.0" letter-spacing="0">01</text>
+  <text class="serif" x="58" y="-2" fill="#0D2F32" font-size="28" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">外匣</text>
+  <text class="sans" x="58" y="36" fill="#16191A" font-size="19" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">PC+ABS 量产设想</text>
+</g>
+
+<g transform="translate(1620 1510)">
+  <circle cx="0" cy="0" r="34" fill="#A64032"/>
+  <text class="latin" x="0" y="8" fill="#FFFFFF" font-size="15" font-weight="720" text-anchor="middle" opacity="1.0" letter-spacing="0">02</text>
+  <text class="serif" x="58" y="-2" fill="#0D2F32" font-size="28" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">内托</text>
+  <text class="sans" x="58" y="36" fill="#16191A" font-size="19" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">单一导轨 / 0.35 mm 间隙</text>
+</g>
+
+<g transform="translate(1650 2040)">
+  <circle cx="0" cy="0" r="34" fill="#A64032"/>
+  <text class="latin" x="0" y="8" fill="#FFFFFF" font-size="15" font-weight="720" text-anchor="middle" opacity="1.0" letter-spacing="0">03</text>
+  <text class="serif" x="58" y="-2" fill="#0D2F32" font-size="28" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">抬升片</text>
+  <text class="sans" x="58" y="36" fill="#16191A" font-size="19" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">POM 低摩擦楔形结构</text>
+</g>
+
+<g transform="translate(170 2220)">
+  <circle cx="0" cy="0" r="34" fill="#A64032"/>
+  <text class="latin" x="0" y="8" fill="#FFFFFF" font-size="15" font-weight="720" text-anchor="middle" opacity="1.0" letter-spacing="0">04</text>
+  <text class="serif" x="58" y="-2" fill="#0D2F32" font-size="28" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">金属饰条</text>
+  <text class="sans" x="58" y="36" fill="#16191A" font-size="19" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">17°斜向视觉识别</text>
+</g>
+
+<g transform="translate(1560 2550)">
+  <circle cx="0" cy="0" r="34" fill="#A64032"/>
+  <text class="latin" x="0" y="8" fill="#FFFFFF" font-size="15" font-weight="720" text-anchor="middle" opacity="1.0" letter-spacing="0">05</text>
+  <text class="serif" x="58" y="-2" fill="#0D2F32" font-size="28" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">卡片</text>
+  <text class="sans" x="58" y="36" fill="#16191A" font-size="19" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">纸卡与 NFC 独立卡位</text>
+</g>
+
+</g>
+<g id="engineering-strip">
+  <rect x="160" y="2760" width="2160" height="360" rx="36" fill="#0D2F32"/>
+  <text class="latin" x="220" y="2845" fill="#B68B48" font-size="18" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">ENGINEERING CREDIBILITY</text>
+  <text class="latin" x="220" y="2940" fill="#E8DFCC" font-size="58" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">1.8 mm</text>
+  <text class="sans" x="220" y="2990" fill="#E8DFCC" font-size="20" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">基准壁厚</text>
+  <text class="latin" x="650" y="2940" fill="#E8DFCC" font-size="58" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">0.35 mm</text>
+  <text class="sans" x="650" y="2990" fill="#E8DFCC" font-size="20" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">滑动面基准间隙</text>
+  <text class="latin" x="1180" y="2940" fill="#E8DFCC" font-size="58" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">5 SOLIDS</text>
+  <text class="sans" x="1180" y="2990" fill="#E8DFCC" font-size="20" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">STEP 重新打开验证</text>
+  <text class="latin" x="1760" y="2940" fill="#E8DFCC" font-size="30" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">FCStd / STEP / STL</text>
+  <text class="sans" x="1760" y="2990" fill="#E8DFCC" font-size="20" font-weight="350" text-anchor="start" opacity="0.64" letter-spacing="0">可编辑与可打样源文件</text>
+</g>
+
+
+<g id="footer" opacity=".56">
+  <path d="M160 3294 H2320" stroke="#16191A" stroke-width="2" opacity=".34"/>
+  <text class="latin" x="160" y="3352" fill="#16191A" font-size="16" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">SUIJIAN · HANDAN IDIOM CULTURAL PRODUCT</text>
+  <text class="latin" x="2320" y="3352" fill="#B68B48" font-size="18" font-weight="720" text-anchor="end" opacity="1.0" letter-spacing="2">04</text>
+</g>
+
+</svg>

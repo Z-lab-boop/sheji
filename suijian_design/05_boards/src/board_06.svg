@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+<title>从“自荐”到“被看见”</title>
+
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+    <feOffset dy="34" result="offset"/>
+    <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.12 0 0 0 0 0.13 0 0 0 .28 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="goldLine" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8D672F"/><stop offset=".55" stop-color="#B68B48"/><stop offset="1" stop-color="#E0BD79"/>
+  </linearGradient>
+  <radialGradient id="deepGlow" cx="78%" cy="18%" r="84%">
+    <stop offset="0" stop-color="#1C5557"/><stop offset=".56" stop-color="#0D2F32"/><stop offset="1" stop-color="#071E20"/>
+  </radialGradient>
+  <style>
+    @font-face { font-family:'Noto Sans SC'; src:url('../../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Noto Serif SC'; src:url('../../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Inter'; src:url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family:'Noto Sans SC',sans-serif; }
+    .serif { font-family:'Noto Serif SC',serif; }
+    .latin { font-family:'Inter',sans-serif; }
+  </style>
+</defs>
+
+<rect width="2480" height="3508" fill="#F3EEE2"/>
+
+<path d="M-180 3060 L2680 2210" stroke="#B68B48" stroke-width="4" opacity=".13"/>
+<circle cx="2290" cy="170" r="12" fill="#A64032"/>
+
+
+<g id="header">
+  <text class="latin" x="160" y="188" fill="#B68B48" font-size="22" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="4">06 / 07</text>
+  <text class="serif" x="160" y="318" fill="#0D2F32" font-size="92" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">从“自荐”到“被看见”</text>
+  <text class="sans" x="162" y="380" fill="#16191A" font-size="27" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="2">SCENARIO SYSTEM · 用真实动作连接校园、展会与作品交流</text>
+  <path d="M160 442 H2320" stroke="#B68B48" stroke-width="4" opacity=".65"/>
+</g>
+
+
+
+<g transform="translate(120 650)">
+  <rect width="740" height="1850" rx="52" fill="#0D2F32" stroke="#B68B48" stroke-width="3"/>
+  <circle cx="370" cy="250" r="94" fill="#B68B48" opacity=".22"/><path d="M190 570 C230 350 510 350 550 570" fill="none" stroke="#B68B48" stroke-width="20" opacity=".34"/>
+  <image href="../../04_renders/hero_open.png" x="20" y="330" width="700" height="760" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <path d="M62 1145 H678" stroke="#B68B48" stroke-width="5"/>
+  <text class="serif" x="62" y="1260" fill="#E8DFCC" font-size="54" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="0">校园招聘</text>
+  <text class="latin" x="64" y="1312" fill="#B68B48" font-size="16" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="3">CAMPUS RECRUITMENT</text>
+  <text class="sans" x="62" y="1400" fill="#E8DFCC" font-size="24" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="0">作品与身份一次呈现</text>
+  <text class="sans" x="62" y="1580" fill="#B68B48" font-size="22" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">初次见面</text>
+  <text class="sans" x="62" y="1640" fill="#E8DFCC" font-size="23" font-weight="400" opacity="0.62"><tspan x="62" dy="0">取出—推出—递交</tspan><tspan x="62" dy="46">动作明确，不需要额外教学</tspan></text>
+</g>
+
+<g transform="translate(910 650)">
+  <rect width="740" height="1850" rx="52" fill="#FFFFFF" stroke="#B68B48" stroke-width="3"/>
+  <path d="M95 230 H645 V570 H95 Z M170 310 H570 M170 385 H480" fill="none" stroke="#B68B48" stroke-width="18" opacity=".26"/>
+  <image href="../../04_renders/scale_view.png" x="20" y="330" width="700" height="760" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <path d="M62 1145 H678" stroke="#B68B48" stroke-width="5"/>
+  <text class="serif" x="62" y="1260" fill="#0D2F32" font-size="54" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="0">创意展会</text>
+  <text class="latin" x="64" y="1312" fill="#B68B48" font-size="16" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="3">CREATIVE EXHIBITION</text>
+  <text class="sans" x="62" y="1400" fill="#0D2F32" font-size="24" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="0">三秒建立面对面连接</text>
+  <text class="sans" x="62" y="1580" fill="#B68B48" font-size="22" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">展台交流</text>
+  <text class="sans" x="62" y="1640" fill="#0D2F32" font-size="23" font-weight="400" opacity="0.62"><tspan x="62" dy="0">实体名片保留仪式感</tspan><tspan x="62" dy="46">NFC/二维码承载更多内容</tspan></text>
+</g>
+
+<g transform="translate(1700 650)">
+  <rect width="740" height="1850" rx="52" fill="#0D2F32" stroke="#B68B48" stroke-width="3"/>
+  <rect x="110" y="230" width="520" height="310" rx="24" fill="none" stroke="#B68B48" stroke-width="18" opacity=".28"/><path d="M220 610 H520" stroke="#B68B48" stroke-width="20" opacity=".28"/>
+  <image href="../../04_renders/hero_closed.png" x="20" y="330" width="700" height="760" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <path d="M62 1145 H678" stroke="#B68B48" stroke-width="5"/>
+  <text class="serif" x="62" y="1260" fill="#E8DFCC" font-size="54" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="0">作品交流</text>
+  <text class="latin" x="64" y="1312" fill="#B68B48" font-size="16" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="3">PORTFOLIO REVIEW</text>
+  <text class="sans" x="62" y="1400" fill="#E8DFCC" font-size="24" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="0">纸卡与数字主页并行</text>
+  <text class="sans" x="62" y="1580" fill="#B68B48" font-size="22" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">作品讨论</text>
+  <text class="sans" x="62" y="1640" fill="#E8DFCC" font-size="23" font-weight="400" opacity="0.62"><tspan x="62" dy="0">产品保持安静</tspan><tspan x="62" dy="46">让作品与对话成为主角</tspan></text>
+</g>
+
+<g id="audience">
+  <text class="serif" x="160" y="2695" fill="#0D2F32" font-size="58" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="0">为主动表达的人设计</text>
+  <text class="sans" x="160" y="2760" fill="#16191A" font-size="26" font-weight="360" text-anchor="start" opacity="0.64" letter-spacing="3">设计学生 · 青年创作者 · 独立从业者 · 城市文化礼赠</text>
+  <path d="M160 2842 H2320" stroke="#B68B48" stroke-width="4"/>
+  <text class="serif" x="160" y="2945" fill="#0D2F32" font-size="34" font-weight="620" text-anchor="start" opacity="1.0" letter-spacing="0">产品不代替表达</text>
+  <text class="serif" x="160" y="3000" fill="#B68B48" font-size="34" font-weight="620" text-anchor="start" opacity="1.0" letter-spacing="0">它只让第一步更自然。</text>
+</g>
+
+
+<g id="footer" opacity=".56">
+  <path d="M160 3294 H2320" stroke="#16191A" stroke-width="2" opacity=".34"/>
+  <text class="latin" x="160" y="3352" fill="#16191A" font-size="16" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">SUIJIAN · HANDAN IDIOM CULTURAL PRODUCT</text>
+  <text class="latin" x="2320" y="3352" fill="#B68B48" font-size="18" font-weight="720" text-anchor="end" opacity="1.0" letter-spacing="2">06</text>
+</g>
+
+</svg>

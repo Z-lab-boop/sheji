@@ -1,0 +1,168 @@
+{
+  "blender_version": "5.2.0 LTS",
+  "engine": "BLENDER_EEVEE",
+  "mesh_sha256": {
+    "outer_shell": "a0769442cdb12928fad7dbec0de94c7b080b369ad24ca686abde22fc60cfc76e",
+    "inner_tray": "947102a8e0c465883c15cdcabd911328e189cfcbb8cb6f0a950a0e8a0fd7c24d",
+    "lifter": "d3cb02dbc7ba1e462ad362a122c523984d5f4697aa2dfe7c5a803021be6589d5",
+    "gold_accent": "966603451bdcf01baa917fcddf70789a9542779d683bbad3d712061c4470384c",
+    "card_proxy": "58be9cbf2d4643fe0d01da3640b97a78d465d95f405644df629e5032c562b799"
+  },
+  "views": {
+    "hero_closed.png": {
+      "camera_location": [
+        178,
+        -128,
+        116
+      ],
+      "target": [
+        49,
+        32.5,
+        5.8
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "hero_open.png": {
+      "camera_location": [
+        198,
+        -140,
+        120
+      ],
+      "target": [
+        62,
+        32.5,
+        7.2
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "interaction_01.png": {
+      "camera_location": [
+        190,
+        -152,
+        100
+      ],
+      "target": [
+        49,
+        32.5,
+        5.5
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "interaction_02.png": {
+      "camera_location": [
+        190,
+        -152,
+        100
+      ],
+      "target": [
+        56,
+        32.5,
+        6.0
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "interaction_03.png": {
+      "camera_location": [
+        190,
+        -152,
+        100
+      ],
+      "target": [
+        62,
+        32.5,
+        7.0
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "exploded.png": {
+      "camera_location": [
+        205,
+        -175,
+        145
+      ],
+      "target": [
+        50,
+        32.5,
+        23
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "detail_accent.png": {
+      "camera_location": [
+        91,
+        -45,
+        62
+      ],
+      "target": [
+        48,
+        31,
+        12.8
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    },
+    "scale_view.png": {
+      "camera_location": [
+        226,
+        -187,
+        112
+      ],
+      "target": [
+        58,
+        32.5,
+        6.5
+      ],
+      "size": [
+        2400,
+        1800
+      ],
+      "lens_mm": 62.0
+    },
+    "packaging_hero.png": {
+      "camera_location": [
+        235,
+        -195,
+        170
+      ],
+      "target": [
+        50,
+        70,
+        16
+      ],
+      "size": [
+        2400,
+        2400
+      ],
+      "lens_mm": 62.0
+    }
+  },
+  "geometry_rule": "All product parts are imported from the audited CAD STL set.",
+  "packaging_rule": "Packaging is a clearly labelled concept primitive, not production tooling."
+}

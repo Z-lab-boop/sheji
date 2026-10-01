@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+<title>遂见</title>
+
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+    <feOffset dy="34" result="offset"/>
+    <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.12 0 0 0 0 0.13 0 0 0 .28 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="goldLine" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8D672F"/><stop offset=".55" stop-color="#B68B48"/><stop offset="1" stop-color="#E0BD79"/>
+  </linearGradient>
+  <radialGradient id="deepGlow" cx="78%" cy="18%" r="84%">
+    <stop offset="0" stop-color="#1C5557"/><stop offset=".56" stop-color="#0D2F32"/><stop offset="1" stop-color="#071E20"/>
+  </radialGradient>
+  <style>
+    @font-face { font-family:'Noto Sans SC'; src:url('../../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Noto Serif SC'; src:url('../../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Inter'; src:url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family:'Noto Sans SC',sans-serif; }
+    .serif { font-family:'Noto Serif SC',serif; }
+    .latin { font-family:'Inter',sans-serif; }
+  </style>
+</defs>
+
+<rect width="2480" height="3508" fill="url(#deepGlow)"/>
+
+<path d="M-180 3060 L2680 2210" stroke="#B68B48" stroke-width="4" opacity=".13"/>
+<circle cx="2290" cy="170" r="12" fill="#A64032"/>
+
+
+<g id="header">
+  <text class="latin" x="160" y="188" fill="#B68B48" font-size="22" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="4">01 / 07</text>
+  <text class="serif" x="160" y="318" fill="#E8DFCC" font-size="92" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">遂见</text>
+  <text class="sans" x="162" y="380" fill="#E8DFCC" font-size="27" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="2">毛遂自荐青年名片匣 · SUIJIAN</text>
+  <path d="M160 442 H2320" stroke="#B68B48" stroke-width="4" opacity=".65"/>
+</g>
+
+
+<g id="hero">
+  <ellipse cx="1320" cy="2320" rx="920" ry="235" fill="#041617" opacity=".36"/>
+  <image href="../../04_renders/hero_closed.png" x="160" y="610" width="2160" height="2160" opacity="1.0" preserveAspectRatio="xMidYMid meet" filter="url(#shadow)"/>
+  <path d="M160 2660 H760" stroke="url(#goldLine)" stroke-width="12"/>
+  <text class="serif" x="160" y="2778" fill="#E8DFCC" font-size="78" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="5">让才能，被看见</text>
+  <text class="serif" x="162" y="2844" fill="#B68B48" font-size="27" font-weight="450" text-anchor="start" opacity="1.0" letter-spacing="5">锥处囊中，颖自见</text>
+  <text class="sans" x="1540" y="2735" fill="#E8DFCC" font-size="26" font-weight="400" opacity="0.72"><tspan x="1540" dy="0">以“囊—锥—颖—言”的动作链</tspan><tspan x="1540" dy="44">把毛遂自荐转译为现代青年社交产品</tspan></text>
+  <g><rect x="160" y="3015" width="278" height="62" rx="31" fill="#B68B48"/><text class="latin" x="299" y="3056" fill="#0D2F32" font-size="22" font-weight="700" text-anchor="middle" opacity="1.0" letter-spacing="3">CULTURAL PRODUCT</text></g>
+  <g><rect x="466" y="3015" width="238" height="62" rx="31" fill="#B68B48"/><text class="latin" x="585" y="3056" fill="#0D2F32" font-size="22" font-weight="700" text-anchor="middle" opacity="1.0" letter-spacing="3">CAD VERIFIED</text></g>
+  <g><rect x="732" y="3015" width="252" height="62" rx="31" fill="#B68B48"/><text class="latin" x="858" y="3056" fill="#0D2F32" font-size="22" font-weight="700" text-anchor="middle" opacity="1.0" letter-spacing="3">MODEL READY</text></g>
+</g>
+
+
+<g id="footer" opacity=".56">
+  <path d="M160 3294 H2320" stroke="#E8DFCC" stroke-width="2" opacity=".34"/>
+  <text class="latin" x="160" y="3352" fill="#E8DFCC" font-size="16" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">SUIJIAN · HANDAN IDIOM CULTURAL PRODUCT</text>
+  <text class="latin" x="2320" y="3352" fill="#B68B48" font-size="18" font-weight="720" text-anchor="end" opacity="1.0" letter-spacing="2">01</text>
+</g>
+
+</svg>

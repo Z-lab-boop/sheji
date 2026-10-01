@@ -1,0 +1,85 @@
+{
+  "document": "SuijianCardCase",
+  "units": "mm",
+  "design_baseline": {
+    "width": 98.0,
+    "height": 65.0,
+    "depth": 14.0,
+    "wall": 1.8,
+    "clearance": 0.35,
+    "travel": 28.0,
+    "lift": 7.0
+  },
+  "assembly_bbox_mm": [
+    98.0,
+    65.0,
+    14.0
+  ],
+  "parts": {
+    "outer_shell": {
+      "bbox_mm": [
+        98.0,
+        65.0,
+        14.0
+      ],
+      "volume_mm3": 27095.724,
+      "solid_count": 1,
+      "valid": true,
+      "manifold_expected": true,
+      "sha256": "a0769442cdb12928fad7dbec0de94c7b080b369ad24ca686abde22fc60cfc76e"
+    },
+    "inner_tray": {
+      "bbox_mm": [
+        95.5,
+        60.7,
+        2.8
+      ],
+      "volume_mm3": 7168.546,
+      "solid_count": 1,
+      "valid": true,
+      "manifold_expected": true,
+      "sha256": "947102a8e0c465883c15cdcabd911328e189cfcbb8cb6f0a950a0e8a0fd7c24d"
+    },
+    "lifter": {
+      "bbox_mm": [
+        18.0,
+        50.0,
+        7.0
+      ],
+      "volume_mm3": 3150.0,
+      "solid_count": 1,
+      "valid": true,
+      "manifold_expected": true,
+      "sha256": "d3cb02dbc7ba1e462ad362a122c523984d5f4697aa2dfe7c5a803021be6589d5"
+    },
+    "gold_accent": {
+      "bbox_mm": [
+        73.264,
+        24.133,
+        0.55
+      ],
+      "volume_mm3": 83.6,
+      "solid_count": 1,
+      "valid": true,
+      "manifold_expected": true,
+      "sha256": "966603451bdcf01baa917fcddf70789a9542779d683bbad3d712061c4470384c"
+    },
+    "card_proxy": {
+      "bbox_mm": [
+        90.0,
+        54.0,
+        0.3
+      ],
+      "volume_mm3": 1458.0,
+      "solid_count": 1,
+      "valid": true,
+      "manifold_expected": true,
+      "sha256": "58be9cbf2d4643fe0d01da3640b97a78d465d95f405644df629e5032c562b799"
+    }
+  },
+  "exchange_files": {
+    "fcstd_sha256": "1649db7b724266375cbff21b1027772198bd5b6db052ba64e3c7baca3d35e0bd",
+    "step_sha256": "4acb78f647ed030c9228995c283115b027cedc44a7219c87f993be4923b91128"
+  },
+  "boundary": "Prototype geometry; not a production tolerance or supplier-validated design."
+}

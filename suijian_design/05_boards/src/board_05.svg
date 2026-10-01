@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+<title>克制的当代赵文化</title>
+
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+    <feOffset dy="34" result="offset"/>
+    <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.12 0 0 0 0 0.13 0 0 0 .28 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="goldLine" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8D672F"/><stop offset=".55" stop-color="#B68B48"/><stop offset="1" stop-color="#E0BD79"/>
+  </linearGradient>
+  <radialGradient id="deepGlow" cx="78%" cy="18%" r="84%">
+    <stop offset="0" stop-color="#1C5557"/><stop offset=".56" stop-color="#0D2F32"/><stop offset="1" stop-color="#071E20"/>
+  </radialGradient>
+  <style>
+    @font-face { font-family:'Noto Sans SC'; src:url('../../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Noto Serif SC'; src:url('../../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Inter'; src:url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family:'Noto Sans SC',sans-serif; }
+    .serif { font-family:'Noto Serif SC',serif; }
+    .latin { font-family:'Inter',sans-serif; }
+  </style>
+</defs>
+
+<rect width="2480" height="3508" fill="url(#deepGlow)"/>
+
+<path d="M-180 3060 L2680 2210" stroke="#B68B48" stroke-width="4" opacity=".13"/>
+<circle cx="2290" cy="170" r="12" fill="#A64032"/>
+
+
+<g id="header">
+  <text class="latin" x="160" y="188" fill="#B68B48" font-size="22" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="4">05 / 07</text>
+  <text class="serif" x="160" y="318" fill="#E8DFCC" font-size="92" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">克制的当代赵文化</text>
+  <text class="sans" x="162" y="380" fill="#E8DFCC" font-size="27" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="2">FORM &amp; CMF · 深青、鼎金、誓朱构成可延展的产品语言</text>
+  <path d="M160 442 H2320" stroke="#B68B48" stroke-width="4" opacity=".65"/>
+</g>
+
+
+<g id="cmf-hero">
+  <image href="../../04_renders/detail_accent.png" x="80" y="500" width="1440" height="1440" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <rect x="1390" y="610" width="930" height="780" rx="44" fill="#F3EEE2"/>
+  <image href="../../02_identity/wordmark.svg" x="1440" y="680" width="830" height="300" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <text class="serif" x="1450" y="1080" fill="#0D2F32" font-size="38" font-weight="680" text-anchor="start" opacity="1.0" letter-spacing="0">视觉识别不依赖泛国潮纹样</text>
+  <text class="sans" x="1450" y="1150" fill="#16191A" font-size="24" font-weight="400" opacity="0.68"><tspan x="1450" dy="0">圆角长方体控制整体秩序</tspan><tspan x="1450" dy="48">17°金线承担锥锋与行动方向</tspan><tspan x="1450" dy="48">九枚侧边压纹回应“一言九鼎”</tspan></text>
+</g>
+<g id="detail-system">
+  <rect x="160" y="1740" width="2160" height="690" rx="46" fill="#071E20"/>
+  <text class="latin" x="220" y="1832" fill="#B68B48" font-size="18" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">CMF / DETAIL SYSTEM</text>
+  <image href="../../04_renders/hero_closed.png" x="150" y="1790" width="870" height="610" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <text class="latin" x="1040" y="1945" fill="#E8DFCC" font-size="74" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">65%</text>
+  <text class="sans" x="1040" y="2002" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">赵漆青主体</text>
+  <text class="latin" x="1390" y="1945" fill="#E8DFCC" font-size="74" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">25%</text>
+  <text class="sans" x="1390" y="2002" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">帛白信息层</text>
+  <text class="latin" x="1740" y="1945" fill="#E8DFCC" font-size="74" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">8%</text>
+  <text class="sans" x="1740" y="2002" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">鼎金结构点</text>
+  <text class="latin" x="2040" y="1945" fill="#E8DFCC" font-size="74" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">≤2%</text>
+  <text class="sans" x="2040" y="2002" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">誓朱提示</text>
+  <path d="M1040 2085 H2180" stroke="#B68B48" stroke-width="4" opacity=".56"/>
+  <text class="latin" x="1040" y="2170" fill="#E8DFCC" font-size="23" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">MATTE PC+ABS</text>
+  <text class="latin" x="1450" y="2170" fill="#E8DFCC" font-size="23" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">ANODISED ALUMINIUM</text>
+  <text class="latin" x="1990" y="2170" fill="#E8DFCC" font-size="23" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">PAPER</text>
+</g>
+
+<g transform="translate(160 2640)">
+  <rect width="350" height="170" rx="26" fill="#0D2F32" stroke="#B68B48" stroke-width="2"/>
+  <text class="sans" x="0" y="224" fill="#E8DFCC" font-size="25" font-weight="520" text-anchor="start" opacity="1.0" letter-spacing="0">赵漆青</text>
+  <text class="latin" x="350" y="224" fill="#B68B48" font-size="16" font-weight="560" text-anchor="end" opacity="1.0" letter-spacing="2">#0D2F32</text>
+</g>
+
+<g transform="translate(570 2640)">
+  <rect width="350" height="170" rx="26" fill="#B68B48" stroke="#B68B48" stroke-width="2"/>
+  <text class="sans" x="0" y="224" fill="#E8DFCC" font-size="25" font-weight="520" text-anchor="start" opacity="1.0" letter-spacing="0">鼎金</text>
+  <text class="latin" x="350" y="224" fill="#B68B48" font-size="16" font-weight="560" text-anchor="end" opacity="1.0" letter-spacing="2">#B68B48</text>
+</g>
+
+<g transform="translate(980 2640)">
+  <rect width="350" height="170" rx="26" fill="#A64032" stroke="#B68B48" stroke-width="2"/>
+  <text class="sans" x="0" y="224" fill="#E8DFCC" font-size="25" font-weight="520" text-anchor="start" opacity="1.0" letter-spacing="0">誓朱</text>
+  <text class="latin" x="350" y="224" fill="#B68B48" font-size="16" font-weight="560" text-anchor="end" opacity="1.0" letter-spacing="2">#A64032</text>
+</g>
+
+<g transform="translate(1390 2640)">
+  <rect width="350" height="170" rx="26" fill="#E8DFCC" stroke="#B68B48" stroke-width="2"/>
+  <text class="sans" x="0" y="224" fill="#E8DFCC" font-size="25" font-weight="520" text-anchor="start" opacity="1.0" letter-spacing="0">帛白</text>
+  <text class="latin" x="350" y="224" fill="#B68B48" font-size="16" font-weight="560" text-anchor="end" opacity="1.0" letter-spacing="2">#E8DFCC</text>
+</g>
+
+
+
+<g id="footer" opacity=".56">
+  <path d="M160 3294 H2320" stroke="#E8DFCC" stroke-width="2" opacity=".34"/>
+  <text class="latin" x="160" y="3352" fill="#E8DFCC" font-size="16" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">SUIJIAN · HANDAN IDIOM CULTURAL PRODUCT</text>
+  <text class="latin" x="2320" y="3352" fill="#B68B48" font-size="18" font-weight="720" text-anchor="end" opacity="1.0" letter-spacing="2">05</text>
+</g>
+
+</svg>

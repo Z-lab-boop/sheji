@@ -322,7 +322,7 @@ def export_part(name: str, shape, mesh_dir: Path) -> dict:
 Run:
 
 ```bash
-/Applications/FreeCAD.app/Contents/Resources/bin/FreeCADCmd suijian_design/03_cad/build_product.py
+printf '%s\n' "p='suijian_design/03_cad/build_product.py'; exec(compile(open(p,'rb').read(),p,'exec'),{'__file__':p,'__name__':'__main__'})" | /Applications/FreeCAD.app/Contents/Resources/bin/FreeCADCmd -c
 /Users/zzz/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/bin/python3 -m unittest suijian_design/tests/test_cad_report.py -v
 ```
 
