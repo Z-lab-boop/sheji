@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NotoSansLocal; src: url('../../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NotoSerifLocal; src: url('../../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: InterLocal; src: url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NotoSansLocal, sans-serif; }
+    .serif { font-family: NotoSerifLocal, serif; }
+    .latin { font-family: InterLocal, sans-serif; }
+  ]]></style>
+  <linearGradient id="softGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8D29B"/><stop offset="1" stop-color="#C29A55"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#071B20" flood-opacity=".22"/></filter>
+</defs>
+<rect width="2480" height="3508" fill="#F0E7D4"/>
+<path d="M-160 3020 C540 2600 760 3420 1450 3140 S2260 2700 2700 3020" fill="none" stroke="#C29A55" stroke-width="3" opacity=".18"/>
+
+<g id="header">
+  <text x="160" y="178" class="latin" font-size="22" font-weight="750" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">07 / 08</text>
+  <text x="160" y="308" class="serif" font-size="90" font-weight="780" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="2">把城市带回去，也把理解留下</text>
+  <text x="162" y="372" class="latin" font-size="25" font-weight="480" text-anchor="start" fill="#787C78" opacity="0.72" letter-spacing="2">SCENARIOS · 漫游、研学与城市礼赠</text>
+  <path d="M160 438 H2320" stroke="#C29A55" stroke-width="4" opacity=".68"/>
+</g>
+
+
+<g id="scenarios">
+  
+<g transform="translate(130 650)">
+  <rect width="690" height="1260" rx="50" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <rect width="690" height="410" rx="50" fill="#173B46"/>
+  <text x="60" y="90" class="latin" font-size="19" font-weight="760" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="3">01</text>
+  <text x="60" y="185" class="serif" font-size="44" font-weight="720" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">青年漫游</text>
+  <path d="M60 260 H560" stroke="#C29A55" stroke-width="5"/>
+  <text x="60" y="510" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">不按模板打卡，按兴趣选择节点</text><text x="60" y="562" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">。</text>
+  <text x="60" y="720" class="latin" font-size="18" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">SELECT</text>
+  <text x="60" y="805" class="sans" font-size="30" font-weight="650" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">选择一条路</text>
+  <text x="60" y="900" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">轻量、离线、可独立完成。</text><text x="60" y="948" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">路线不是任务清单。</text>
+</g>
+<g transform="translate(880 650)">
+  <rect width="690" height="1260" rx="50" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <rect width="690" height="410" rx="50" fill="#A83B32"/>
+  <text x="60" y="90" class="latin" font-size="19" font-weight="760" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="3">02</text>
+  <text x="60" y="185" class="serif" font-size="44" font-weight="720" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">亲子研学</text>
+  <path d="M60 260 H560" stroke="#C29A55" stroke-width="5"/>
+  <text x="60" y="510" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">把典故理解变成一次可完成的任</text><text x="60" y="562" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">务。</text>
+  <text x="60" y="720" class="latin" font-size="18" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">LEARN</text>
+  <text x="60" y="805" class="sans" font-size="30" font-weight="650" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">理解一则典故</text>
+  <text x="60" y="900" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">操作动作帮助记忆，</text><text x="60" y="948" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">不把学习做成说教。</text>
+</g>
+<g transform="translate(1630 650)">
+  <rect width="690" height="1260" rx="50" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <rect width="690" height="410" rx="50" fill="#586F66"/>
+  <text x="60" y="90" class="latin" font-size="19" font-weight="760" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="3">03</text>
+  <text x="60" y="185" class="serif" font-size="44" font-weight="720" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">城市礼赠</text>
+  <path d="M60 260 H560" stroke="#C29A55" stroke-width="5"/>
+  <text x="60" y="510" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">章、地图和记录共同构成可持续</text><text x="60" y="562" class="sans" font-size="26" font-weight="400" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">纪念。</text>
+  <text x="60" y="720" class="latin" font-size="18" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">KEEP</text>
+  <text x="60" y="805" class="sans" font-size="30" font-weight="650" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">留下个人记录</text>
+  <text x="60" y="900" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">扩展章可持续购买，</text><text x="60" y="948" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">盒体不因节日废弃。</text>
+</g>
+  <rect x="130" y="2040" width="2190" height="900" rx="54" fill="#173B46"/>
+  <image href="../../04_renders/hero_open.png" x="1080" y="2010" width="1180" height="860" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+  <text x="210" y="2190" class="serif" font-size="44" font-weight="720" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">不是纪念章的终点，</text>
+  <text x="210" y="2260" class="serif" font-size="44" font-weight="720" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">而是理解城市的起点。</text>
+  <text x="210" y="2410" class="latin" font-size="18" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">TARGET</text>
+  <text x="210" y="2485" class="sans" font-size="25" font-weight="380" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">18–35 岁城市游客</text><text x="210" y="2537" class="sans" font-size="25" font-weight="380" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">亲子研学家庭</text><text x="210" y="2589" class="sans" font-size="25" font-weight="380" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">高校社团与博物馆教育</text>
+</g>
+
+
+<g id="footer" opacity=".55">
+  <path d="M160 3350 H2320" stroke="#173B46" stroke-width="2"/>
+  <text x="160" y="3408" class="latin" font-size="16" font-weight="540" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="4">BUBUSHENGDIAN · HANDAN CULTURAL WALK</text>
+  <text x="2320" y="3408" class="latin" font-size="16" font-weight="700" text-anchor="end" fill="#C29A55" opacity="1.0" letter-spacing="2">07</text>
+</g>
+
+</svg>
