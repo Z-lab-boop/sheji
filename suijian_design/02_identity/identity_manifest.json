@@ -1,0 +1,54 @@
+{
+  "colors": {
+    "zhao_lacquer": "#0D2F32",
+    "ding_gold": "#B68B48",
+    "oath_vermilion": "#A64032",
+    "silk_white": "#E8DFCC",
+    "ink_black": "#16191A"
+  },
+  "fonts": {
+    "Noto Sans SC": {
+      "path": "01_research/fonts/NotoSansSC[wght].ttf",
+      "sha256": "a3041811a78c361b1de50f953c805e0244951c21c5bd412f7232ef0d899af0da",
+      "license": "SIL OFL 1.1"
+    },
+    "Noto Serif SC": {
+      "path": "01_research/fonts/NotoSerifSC[wght].ttf",
+      "sha256": "050080d9255a86808f2945bffac582b31ef32bc36411ce29563b4961670c66f9",
+      "license": "SIL OFL 1.1"
+    },
+    "Inter": {
+      "path": "01_research/fonts/InterVariable.ttf",
+      "sha256": "29160a80ff49ddcab2c97711247e08b1fab27a484a329ce8b813d820dc559031",
+      "license": "SIL OFL 1.1"
+    }
+  },
+  "assets": {
+    "wordmark.svg": {
+      "sha256": "829af7930b03ac25a53f35598d1cd9216c4a1a6f43ced20972bd5f6592f6319e",
+      "viewBox": "0 0 1200 420",
+      "editable": true
+    },
+    "identity_card.svg": {
+      "sha256": "f0f0b1365650fd188a9a512994d1d7b674657ee1c0f71a3c89dab05e17bf7d1f",
+      "viewBox": "0 0 2000 700",
+      "editable": true
+    },
+    "portfolio_cards.svg": {
+      "sha256": "e1e89933fac4147daa13056aac70dfb17a9ea149e1b02b40503ba9ee130c778d",
+      "viewBox": "0 0 2940 680",
+      "editable": true
+    },
+    "packaging_dieline.svg": {
+      "sha256": "fad93820db90b86229f48cf3d238ec62ffaba1941525040b4d74ec684b9f75b2",
+      "viewBox": "0 0 2400 1600",
+      "editable": true
+    }
+  },
+  "product_baseline_mm": [
+    98.0,
+    65.0,
+    14.0
+  ],
+  "privacy": "All displayed identity information is fictional and the demo matrix is intentionally non-scannable."
+}
