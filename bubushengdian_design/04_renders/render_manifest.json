@@ -1,0 +1,164 @@
+{
+  "geometry_basis": "audited STL",
+  "supplementary_artwork": "02_identity/folding_map.svg",
+  "cad_mesh_sha256": {
+    "outer_case": "abb052b0a91c57294d0c49c167d57419a6fceb72ab8fac69fe432256ab572e80",
+    "stamp_tray": "8ff36a08b3aae38e1d0d5862ed6e8864157dc90051372a4f245b3e2c5acabdad",
+    "stamp_01": "4fc273226751bfd75d5fdf223d9a897531d23d1f430d36ceb9704d4ad7f2028d",
+    "stamp_02": "4721dde29f0d939c98f07bd2cd5cc01c7cfd4916319dcecae4469e35f436cd3e",
+    "stamp_03": "f053adb56adb6e74870b8e9c02e6d467f4c96c4734c0ba15234b61edc73a2180",
+    "stamp_04": "8ab3c23b01408cab756005b1279393067a3047f4ba43e3b24a51fe34c3344fcb",
+    "stamp_05": "1eaee6a76d4533d71cb2787470ba448231deb2d5597c68fba7db13a69fb5e223",
+    "stamp_06": "fa2bbe308dda4217301d020bf63ce8a7af55f895eb836d2859595a3c1e50eb5e",
+    "inkpad_case": "9d19138514028613a7d20f2981aff4ce7a5f89f3921997c7c8acccedd6263da3",
+    "map_proxy": "eccdd72f8e10441288f386c8295cf480d05012bb4491f6b08af61c95e0b93777"
+  },
+  "engine": "BLENDER_EEVEE",
+  "views": {
+    "hero_closed.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.235,
+        -0.265,
+        0.205
+      ],
+      "sha256": "786c90c2387e866db17c726d0bd4450c1821672f79c103aadedc3c5ebd1b7e13"
+    },
+    "hero_open.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.32,
+        -0.29,
+        0.225
+      ],
+      "sha256": "e3f24be6b7b19b3fdb3063727a500996b51e597adbff2ba3388fa2dedd5b366d"
+    },
+    "map_unfolded.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.0,
+        0.0,
+        0.62
+      ],
+      "sha256": "ae23e327165de3ae7f90999d4b683238f8752d0068007ebefcadd8af859e9bee"
+    },
+    "stamp_grid.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.0,
+        -0.28,
+        0.22
+      ],
+      "sha256": "8f78919b080c429346a54fc8e9c95212809d71ff7443edfbabf24e062e9ba7dc"
+    },
+    "exploded.png": {
+      "size": [
+        1800,
+        1600
+      ],
+      "camera_location_m": [
+        0.29,
+        -0.34,
+        0.3
+      ],
+      "sha256": "ada18d3fd51a8aeaba4d686821076b813c7eda70bfa9e0fa8254ab2a70ac1817"
+    },
+    "ortho_top.png": {
+      "size": [
+        1800,
+        1200
+      ],
+      "camera_location_m": [
+        0.0,
+        0.0,
+        0.46
+      ],
+      "sha256": "fc003b4a0328b524039de94289e397d38777a926c2bc2ebec6d647f3057a82e1"
+    },
+    "ortho_front.png": {
+      "size": [
+        1800,
+        1200
+      ],
+      "camera_location_m": [
+        0.0,
+        -0.42,
+        0.015
+      ],
+      "sha256": "99c8a0ef5849cd4cb89dc7d16e61e665c2ebbfc4c93ff51ab45e458ad592b637"
+    },
+    "scale_view.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.26,
+        -0.31,
+        0.17
+      ],
+      "sha256": "2d167bb44ead9cfaaf962cddd6a30548f4ef3e135d34c7f615b857b710cfae92"
+    },
+    "interaction_01.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.26,
+        -0.3,
+        0.19
+      ],
+      "sha256": "37ec36f2c5993821809f22774928f4b1c7155c3775793aa1b9681fe2880848b7"
+    },
+    "interaction_02.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.26,
+        -0.3,
+        0.19
+      ],
+      "sha256": "2503e2017053e363d98e7d7a4c166311d1926fcdf355e7a7ee067437dc89ddf9"
+    },
+    "interaction_03.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.26,
+        -0.3,
+        0.19
+      ],
+      "sha256": "574db8473c67fb89ab2b0e4159eac8234653705612bde02967bb01517f1826f2"
+    },
+    "interaction_04.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.26,
+        -0.3,
+        0.19
+      ],
+      "sha256": "de903e89e085801b756920fce59b258592d8d37bfceb32c8c75a0f36def90cb4"
+    }
+  },
+  "boundary": "Concept motion only; no physical friction, wear or child-safety validation is claimed."
+}
