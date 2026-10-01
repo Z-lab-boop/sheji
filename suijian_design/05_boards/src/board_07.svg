@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2480 3508" width="2480" height="3508">
+<title>可落地，也诚实</title>
+
+<defs>
+  <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%">
+    <feGaussianBlur in="SourceAlpha" stdDeviation="24" result="blur"/>
+    <feOffset dy="34" result="offset"/>
+    <feColorMatrix in="offset" type="matrix" values="0 0 0 0 0.02 0 0 0 0 0.12 0 0 0 0 0.13 0 0 0 .28 0"/>
+    <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+  </filter>
+  <linearGradient id="goldLine" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#8D672F"/><stop offset=".55" stop-color="#B68B48"/><stop offset="1" stop-color="#E0BD79"/>
+  </linearGradient>
+  <radialGradient id="deepGlow" cx="78%" cy="18%" r="84%">
+    <stop offset="0" stop-color="#1C5557"/><stop offset=".56" stop-color="#0D2F32"/><stop offset="1" stop-color="#071E20"/>
+  </radialGradient>
+  <style>
+    @font-face { font-family:'Noto Sans SC'; src:url('../../01_research/fonts/NotoSansSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Noto Serif SC'; src:url('../../01_research/fonts/NotoSerifSC%5Bwght%5D.ttf'); }
+    @font-face { font-family:'Inter'; src:url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family:'Noto Sans SC',sans-serif; }
+    .serif { font-family:'Noto Serif SC',serif; }
+    .latin { font-family:'Inter',sans-serif; }
+  </style>
+</defs>
+
+<rect width="2480" height="3508" fill="url(#deepGlow)"/>
+
+<path d="M-180 3060 L2680 2210" stroke="#B68B48" stroke-width="4" opacity=".13"/>
+<circle cx="2290" cy="170" r="12" fill="#A64032"/>
+
+
+<g id="header">
+  <text class="latin" x="160" y="188" fill="#B68B48" font-size="22" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="4">07 / 07</text>
+  <text class="serif" x="160" y="318" fill="#E8DFCC" font-size="92" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">可落地，也诚实</text>
+  <text class="sans" x="162" y="380" fill="#E8DFCC" font-size="27" font-weight="350" text-anchor="start" opacity="0.68" letter-spacing="2">PRODUCTISATION · 清楚区分模型、量产设想与市场估算</text>
+  <path d="M160 442 H2320" stroke="#B68B48" stroke-width="4" opacity=".65"/>
+</g>
+
+
+<g id="package-and-market">
+  <image href="../../04_renders/packaging_hero.png" x="70" y="500" width="1450" height="1450" opacity="1.0" preserveAspectRatio="xMidYMid meet" />
+  <rect x="1390" y="650" width="930" height="910" rx="50" fill="#F3EEE2"/>
+  <text class="serif" x="1450" y="750" fill="#0D2F32" font-size="58" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="0">从模型到产品</text>
+  <text class="latin" x="1450" y="812" fill="#B68B48" font-size="16" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="3">PROTOTYPE → PRODUCTION</text>
+  <path d="M1450 870 H2260" stroke="#B68B48" stroke-width="4"/>
+  <text class="serif" x="1450" y="958" fill="#0D2F32" font-size="30" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">打样模型</text>
+  <text class="sans" x="1450" y="1015" fill="#16191A" font-size="22" font-weight="400" opacity="0.68"><tspan x="1450" dy="0">树脂/FDM 3D打印</tspan><tspan x="1450" dy="44">喷涂与薄铝片饰件</tspan><tspan x="1450" dy="44">现成 NTAG213 演示卡</tspan></text>
+  <text class="serif" x="1880" y="958" fill="#0D2F32" font-size="30" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">量产设想</text>
+  <text class="sans" x="1880" y="1015" fill="#16191A" font-size="22" font-weight="400" opacity="0.68"><tspan x="1880" dy="0">PC+ABS 注塑外壳</tspan><tspan x="1880" dy="44">POM低摩擦抬升片</tspan><tspan x="1880" dy="44">纸浆模塑包装内托</tspan></text>
+  <rect x="1450" y="1260" width="750" height="180" rx="28" fill="#0D2F32"/>
+  <text class="sans" x="1495" y="1320" fill="#B68B48" font-size="20" font-weight="520" text-anchor="start" opacity="1.0" letter-spacing="3">建议零售价估算</text>
+  <text class="latin" x="1495" y="1402" fill="#E8DFCC" font-size="40" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">¥99–129 / ¥149–199</text>
+</g>
+<g id="market-system">
+  <rect x="160" y="1850" width="2160" height="1120" rx="52" fill="#071E20" stroke="#B68B48" stroke-width="3"/>
+  <text class="latin" x="220" y="1940" fill="#B68B48" font-size="18" font-weight="720" text-anchor="start" opacity="1.0" letter-spacing="4">MARKET &amp; DELIVERY</text>
+  <text class="serif" x="220" y="2068" fill="#E8DFCC" font-size="52" font-weight="700" text-anchor="start" opacity="1.0" letter-spacing="0">一件产品，三种进入市场的方式</text>
+  <path d="M220 2140 H2260" stroke="#B68B48" stroke-width="3" opacity=".46"/>
+  <g transform="translate(220 2240)">
+    <circle cx="66" cy="66" r="66" fill="#B68B48"/><text class="latin" x="66" y="76" text-anchor="middle" fill="#0D2F32" font-size="25" font-weight="800">01</text>
+    <text class="serif" x="170" y="40" fill="#E8DFCC" font-size="33" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">城市礼物</text>
+    <text class="sans" x="170" y="92" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">邯郸道、文创旗舰店、博物馆商店</text>
+  </g>
+  <g transform="translate(220 2480)">
+    <circle cx="66" cy="66" r="66" fill="#B68B48"/><text class="latin" x="66" y="76" text-anchor="middle" fill="#0D2F32" font-size="25" font-weight="800">02</text>
+    <text class="serif" x="170" y="40" fill="#E8DFCC" font-size="33" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">青年职业礼赠</text>
+    <text class="sans" x="170" y="92" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">毕业季、招聘活动、创意展会</text>
+  </g>
+  <g transform="translate(1240 2240)">
+    <circle cx="66" cy="66" r="66" fill="#B68B48"/><text class="latin" x="66" y="76" text-anchor="middle" fill="#0D2F32" font-size="25" font-weight="800">03</text>
+    <text class="serif" x="170" y="40" fill="#E8DFCC" font-size="33" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">机构定制</text>
+    <text class="sans" x="170" y="92" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">院校、文化机构、设计团队</text>
+  </g>
+  <g transform="translate(1240 2480)">
+    <circle cx="66" cy="66" r="66" fill="#A64032"/><text class="latin" x="66" y="76" text-anchor="middle" fill="#FFFFFF" font-size="25" font-weight="800">!</text>
+    <text class="serif" x="170" y="40" fill="#E8DFCC" font-size="33" font-weight="650" text-anchor="start" opacity="1.0" letter-spacing="0">事实边界</text>
+    <text class="sans" x="170" y="92" fill="#E8DFCC" font-size="22" font-weight="350" text-anchor="start" opacity="0.62" letter-spacing="0">尚未供应商询价、量产或市场销售</text>
+  </g>
+  <text class="sans" x="220" y="2835" fill="#E8DFCC" font-size="20" font-weight="350" text-anchor="start" opacity="0.54" letter-spacing="0">所有价格均为建议零售价估算；最终结构、公差与成本需通过实体打样及供应商评估确认。</text>
+</g>
+
+
+<g id="footer" opacity=".56">
+  <path d="M160 3294 H2320" stroke="#E8DFCC" stroke-width="2" opacity=".34"/>
+  <text class="latin" x="160" y="3352" fill="#E8DFCC" font-size="16" font-weight="560" text-anchor="start" opacity="1.0" letter-spacing="3">SUIJIAN · HANDAN IDIOM CULTURAL PRODUCT</text>
+  <text class="latin" x="2320" y="3352" fill="#B68B48" font-size="18" font-weight="720" text-anchor="end" opacity="1.0" letter-spacing="2">07</text>
+</g>
+
+</svg>
