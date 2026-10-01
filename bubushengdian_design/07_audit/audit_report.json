@@ -1,0 +1,258 @@
+{
+  "project": "步步生典——邯郸双节漫游章匣",
+  "generated_at_utc": "2026-10-01T09:29:22.069803+00:00",
+  "technical_status": "pass",
+  "submission_status": "candidate_pending_human_route_review",
+  "checks": [
+    {
+      "name": "submission_jpgs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 505796,
+          "sha256": "edab7471a6e5a06003e54b43f0d8e585e5b0c6f70e3ab912f1cee9c16b4715a2"
+        },
+        {
+          "path": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 476107,
+          "sha256": "9e47e48912e8fc875735ce8029579a5b039f7da484a1021701b7bdd42aa4d330"
+        },
+        {
+          "path": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 530270,
+          "sha256": "29ad35e37f885082ec49cb65212cdd75d3d8211891bb4159b79859c37edd8ca7"
+        },
+        {
+          "path": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 493586,
+          "sha256": "4da99b194367f6d30c5fad2676d1501c843ef8d49f210680d9830fcd6b06403a"
+        },
+        {
+          "path": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 550186,
+          "sha256": "f86dc724b208c33647e57503840fb7b684475b611a23757f48f4a8c645572bb9"
+        },
+        {
+          "path": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 683708,
+          "sha256": "3576e9b75933938428f7b00fe9a4940869b640007b2343217567b6de92ce8ed6"
+        },
+        {
+          "path": "board_07.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 536559,
+          "sha256": "a1a26d34575f17041c709c51a22e828255fba21d431f1fedd5d6f7d7804f6d7d"
+        },
+        {
+          "path": "board_08.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 576807,
+          "sha256": "fbdc1ec429da6c5e89b06215bba2b4af12bee6ce00c236949295b2c220451760"
+        }
+      ]
+    },
+    {
+      "name": "a4_pdfs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 507556
+        },
+        {
+          "path": "board_02.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 477867
+        },
+        {
+          "path": "board_03.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 532030
+        },
+        {
+          "path": "board_04.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 495346
+        },
+        {
+          "path": "board_05.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 551946
+        },
+        {
+          "path": "board_06.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 685468
+        },
+        {
+          "path": "board_07.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 538319
+        },
+        {
+          "path": "board_08.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 578567
+        }
+      ]
+    },
+    {
+      "name": "editable_sources",
+      "passed": true,
+      "detail": [
+        "03_cad/bubushengdian_stamp_kit.FCStd",
+        "03_cad/bubushengdian_stamp_kit.step",
+        "03_cad/meshes/inkpad_case.stl",
+        "03_cad/meshes/map_proxy.stl",
+        "03_cad/meshes/outer_case.stl",
+        "03_cad/meshes/stamp_01.stl",
+        "03_cad/meshes/stamp_02.stl",
+        "03_cad/meshes/stamp_03.stl",
+        "03_cad/meshes/stamp_04.stl",
+        "03_cad/meshes/stamp_05.stl",
+        "03_cad/meshes/stamp_06.stl",
+        "03_cad/meshes/stamp_tray.stl",
+        "02_identity/folding_map.svg",
+        "02_identity/stamp_faces.svg",
+        "02_identity/wordmark.svg",
+        "05_boards/src/board_01.svg",
+        "05_boards/src/board_02.svg",
+        "05_boards/src/board_03.svg",
+        "05_boards/src/board_04.svg",
+        "05_boards/src/board_05.svg",
+        "05_boards/src/board_06.svg",
+        "05_boards/src/board_07.svg",
+        "05_boards/src/board_08.svg"
+      ]
+    },
+    {
+      "name": "exchange_file_signatures",
+      "passed": true,
+      "detail": {
+        "fcstd": "ZIP/OpenDocument",
+        "step": "ISO-10303-21"
+      }
+    },
+    {
+      "name": "cad_geometry",
+      "passed": true,
+      "detail": {
+        "bbox_mm": [
+          165.0,
+          120.0,
+          30.0
+        ],
+        "parts": [
+          "outer_case",
+          "stamp_tray",
+          "stamp_01",
+          "stamp_02",
+          "stamp_03",
+          "stamp_04",
+          "stamp_05",
+          "stamp_06",
+          "inkpad_case",
+          "map_proxy"
+        ]
+      }
+    },
+    {
+      "name": "render_geometry_traceability",
+      "passed": true,
+      "detail": {
+        "geometry_basis": "audited STL",
+        "mesh_count": 10
+      }
+    },
+    {
+      "name": "privacy_tokens",
+      "passed": true,
+      "detail": "no prohibited identity placeholders"
+    },
+    {
+      "name": "route_disclaimer",
+      "passed": true,
+      "detail": "present in map and disclosure boards"
+    },
+    {
+      "name": "source_manifest",
+      "passed": true,
+      "detail": {
+        "rows": 68,
+        "types": [
+          "board_jpg",
+          "board_pdf",
+          "board_source",
+          "cad",
+          "external_reference",
+          "font",
+          "identity",
+          "render",
+          "submission_text"
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "文化路线为示意，动态景点信息和准确游线须由真人复核。",
+    "尚未制作或测试实物，数字几何不等同量产验证。",
+    "价格为设计估算，并非供应商报价或真实销售数据。",
+    "参赛者身份与主办方最终规则须在投稿前人工确认。"
+  ]
+}

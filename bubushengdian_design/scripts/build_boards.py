@@ -170,7 +170,7 @@ def board_02() -> str:
   {text(850, 2740, '完成印记', 26, COLORS['moon_paper'], 'sans', 620)}
   {text(1450, 2740, '写下理解', 26, COLORS['moon_paper'], 'sans', 620)}
   {text(2180, 2740, '形成自己的路线', 26, COLORS['moon_paper'], 'sans', 620, 'end')}
-  {text(160, 3010, '典故说明依据河北省文化和旅游厅公开资料；路线为文化示意，不代表实时导航。', 21, COLORS['stone_gray'], 'sans', 380)}
+  {text(160, 3010, '典故说明依据河北省文化和旅游厅公开资料；文化路线示意，不代表实时导航。', 21, COLORS['stone_gray'], 'sans', 380)}
 </g>
 '''
     return wrap(2, "从学步，到走出自己的路", "IDIOM TO INTERACTION · 准确保留典故本义", body)
@@ -340,7 +340,7 @@ def board_08() -> str:
     {card(0,0,700,700)}{text(60, 95, 'CMF', 18, COLORS['route_gold'], 'latin', 720, spacing=3)}{text(60, 175, '材料与工艺', 38, COLORS['city_blue'], 'serif', 700)}{wrapped_lines(60, 280, ['小批量：3D 打印外匣', '硅胶 / 光敏章面', 'FSC 折页地图', '标准水性印台'], 24, COLORS['stone_gray'], 55)}
   </g>
   <g transform="translate(890 1550)">
-    {card(0,0,700,700)}{text(60, 95, 'PRICE', 18, COLORS['route_gold'], 'latin', 720, spacing=3)}{text(60, 175, '定位估算', 38, COLORS['city_blue'], 'serif', 700)}{text(60, 310, '¥129–169', 52, COLORS['city_blue'], 'latin', 760)}{text(60, 365, '基础四章版', 22, COLORS['stone_gray'], 'sans', 500)}{text(60, 490, '¥179–229', 52, COLORS['seal_red'], 'latin', 760)}{text(60, 545, '双节六章版', 22, COLORS['stone_gray'], 'sans', 500)}
+    {card(0,0,700,700)}{text(60, 95, 'PRICE', 18, COLORS['route_gold'], 'latin', 720, spacing=3)}{text(60, 175, '定位估算', 38, COLORS['city_blue'], 'serif', 700)}{text(60, 310, '¥159–199', 52, COLORS['city_blue'], 'latin', 760)}{text(60, 365, '完整六章套装', 22, COLORS['stone_gray'], 'sans', 500)}{text(60, 490, '¥39–59', 52, COLORS['seal_red'], 'latin', 760)}{text(60, 545, '双章主题补充组', 22, COLORS['stone_gray'], 'sans', 500)}
   </g>
   <g transform="translate(1660 1550)">
     {card(0,0,700,700)}{text(60, 95, 'FILES', 18, COLORS['route_gold'], 'latin', 720, spacing=3)}{text(60, 175, '可编辑交付', 38, COLORS['city_blue'], 'serif', 700)}{wrapped_lines(60, 280, ['FreeCAD / STEP / STL', 'SVG / PDF / JPG', '字体与来源清单', '生成哈希与审计报告'], 24, COLORS['stone_gray'], 55)}
@@ -348,7 +348,7 @@ def board_08() -> str:
   <rect x="120" y="2370" width="2240" height="590" rx="50" fill="#102F38"/>
   {text(200, 2490, 'VALIDATION BOUNDARY', 18, COLORS['route_gold'], 'latin', 760, spacing=4)}
   {text(200, 2580, '技术文件可复现，不等于实体性能已验证', 40, COLORS['moon_paper'], 'serif', 700)}
-  {wrapped_lines(200, 2690, ['未完成：100 次抽拉、耐折、印泥污染、儿童安全与 1 m 跌落。', '动态景点信息仍须真人核对，因此当前状态为投稿候选稿。'], 25, COLORS['moon_paper'], 56, 'sans', 360)}
+  {wrapped_lines(200, 2690, ['未完成：100 次抽拉、耐折、印泥污染、儿童安全与 1 m 跌落。', '文化路线示意；动态景点信息仍须真人核对，当前状态为投稿候选稿。'], 25, COLORS['moon_paper'], 56, 'sans', 360)}
   <circle cx="2150" cy="2660" r="110" fill="none" stroke="{COLORS['seal_red']}" stroke-width="8"/>
   {text(2150, 2648, '诚实', 34, COLORS['moon_paper'], 'serif', 760, 'middle')}{text(2150, 2695, '可继续验证', 18, COLORS['route_gold'], 'sans', 520, 'middle')}
 </g>
