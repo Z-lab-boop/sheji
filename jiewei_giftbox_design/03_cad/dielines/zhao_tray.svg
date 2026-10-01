@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="340.0mm" height="300.0mm" viewBox="0 0 340.0 300.0">
+<style>
+.cut{stroke:#FF0000;stroke-width:.25;fill:none;vector-effect:non-scaling-stroke} .crease{stroke:#0000FF;stroke-width:.2;stroke-dasharray:3 2;fill:none;vector-effect:non-scaling-stroke} .glue{stroke:#808080;stroke-width:.18;fill:#808080;fill-opacity:.16;vector-effect:non-scaling-stroke} .label{font:3.8px sans-serif;fill:#202F32}
+</style>
+<rect width="340.0" height="300.0" fill="#FFFDF8"/>
+<g id="glue-zones"><polygon points="22,50 33,50 33,275 22,275" class="glue"/></g><g id="cut-lines"><line x1="20" y1="45" x2="320" y2="45" class="cut"/><line x1="320" y1="45" x2="320" y2="280" class="cut"/><line x1="320" y1="280" x2="20" y2="280" class="cut"/><line x1="20" y1="280" x2="20" y2="45" class="cut"/><line x1="35" y1="45" x2="35" y2="280" class="crease"/><line x1="305" y1="45" x2="305" y2="280" class="crease"/><line x1="35" y1="80" x2="305" y2="80" class="crease"/><line x1="35" y1="245" x2="305" y2="245" class="crease"/></g>
+<g id="calibration-square"><line x1="312.0" y1="8" x2="322.0" y2="8" class="cut"/><line x1="322.0" y1="8" x2="322.0" y2="18" class="cut"/><line x1="322.0" y1="18" x2="312.0" y2="18" class="cut"/><line x1="312.0" y1="18" x2="312.0" y2="8" class="cut"/><text x="312.0" y="23" class="label">10 mm</text></g>
+<g id="grain-direction"><path d="M20 18 H70" stroke="#202F32" stroke-width=".5"/><path d="M70 18 l-6 -3 v6 z" fill="#202F32"/><text x="20" y="14" class="label">纹向 GRAIN</text></g>
+<text x="20" y="30" class="label">zhao_tray · 单位 mm · 灰板 2.0 / 包纸代理 0.18</text>
+<text x="20" y="282.0" class="label">中央托盘展示行程 145 mm；内衬按真实 SKU 到位后重算。</text>
+</svg>
