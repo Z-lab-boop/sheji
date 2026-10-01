@@ -1,0 +1,253 @@
+{
+  "project": "解围——邯宝坊双节机关礼盒",
+  "generated_at_utc": "2026-10-01T09:49:02.256317+00:00",
+  "technical_status": "pass",
+  "submission_status": "blocked_pending_real_sku_and_brand_assets",
+  "missing_inputs": [
+    "actual_sku_dimensions",
+    "brand_assets_and_permission",
+    "legal_food_copy",
+    "entrant_identity"
+  ],
+  "checks": [
+    {
+      "name": "submission_jpgs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 611674,
+          "sha256": "e283f0d1547e15affab190a7307b8ca61bceca0f19828dff2bab065eed8c234b"
+        },
+        {
+          "path": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 459446,
+          "sha256": "346b01cb0b71543fb883ab49030488f0719310431f889188a3c871b90d0ddad6"
+        },
+        {
+          "path": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 552065,
+          "sha256": "d817e43740a810bd02d9cce1b7eeaf094ba237a8392894a803b7393d3972ce73"
+        },
+        {
+          "path": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 572807,
+          "sha256": "bc2def20bd0431a4ac74097f523781e84cee2a28dc3ad16be92497cea273146e"
+        },
+        {
+          "path": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 566318,
+          "sha256": "1c4020612103d5b4867d56903b7e8adfcbe5655d617ca06b97f1b5eb140d7e0d"
+        },
+        {
+          "path": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 544487,
+          "sha256": "a7b89a88173eeeaa1b0257b153a902173523ecbfe904841853495680df61ca85"
+        }
+      ]
+    },
+    {
+      "name": "a4_pdfs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 613396
+        },
+        {
+          "path": "board_02.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 461168
+        },
+        {
+          "path": "board_03.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 553787
+        },
+        {
+          "path": "board_04.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 574529
+        },
+        {
+          "path": "board_05.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 568040
+        },
+        {
+          "path": "board_06.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 546209
+        }
+      ]
+    },
+    {
+      "name": "editable_board_sources",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.svg",
+          "elements": 32,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_02.svg",
+          "elements": 66,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_03.svg",
+          "elements": 44,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_04.svg",
+          "elements": 46,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_05.svg",
+          "elements": 40,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_06.svg",
+          "elements": 57,
+          "has_text": true,
+          "has_visual_content": true
+        }
+      ]
+    },
+    {
+      "name": "cad_exchange_files",
+      "passed": true,
+      "detail": {
+        "step": [
+          "jiewei_giftbox_closed.step",
+          "jiewei_giftbox_open.step",
+          "jiewei_giftbox_unlocked.step"
+        ],
+        "stl_count": 13
+      }
+    },
+    {
+      "name": "cad_geometry",
+      "passed": true,
+      "detail": {
+        "bbox": [
+          290.0,
+          230.0,
+          75.0
+        ],
+        "parts": 13,
+        "release_margin_mm": 1.2
+      }
+    },
+    {
+      "name": "dielines",
+      "passed": true,
+      "detail": [
+        "outer_sleeve.svg",
+        "outer_sleeve.dxf",
+        "wei_drawer.svg",
+        "wei_drawer.dxf",
+        "zhao_tray.svg",
+        "zhao_tray.dxf",
+        "lock_keys.svg",
+        "lock_keys.dxf"
+      ]
+    },
+    {
+      "name": "proxy_and_brand_disclosure",
+      "passed": true,
+      "detail": "proxy label on identity and boards 3-6; brand assets not provided"
+    },
+    {
+      "name": "font_licences",
+      "passed": true,
+      "detail": [
+        "OFL-Inter.txt",
+        "OFL-NotoSansSC.txt",
+        "OFL-NotoSerifSC.txt"
+      ]
+    },
+    {
+      "name": "prohibited_claims_and_placeholders",
+      "passed": true,
+      "detail": "no prohibited public claim or identity placeholder"
+    },
+    {
+      "name": "source_manifest",
+      "passed": true,
+      "detail": {
+        "rows": 78,
+        "types": [
+          "board_jpg",
+          "board_pdf",
+          "board_source",
+          "cad",
+          "dieline_source",
+          "external_reference",
+          "font",
+          "identity",
+          "render",
+          "submission_text"
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "All six visible products are neutral size proxies.",
+    "No official Hanbaofang brand asset or permission is present.",
+    "No legal food copy or real SKU data is present.",
+    "Physical paperboard performance remains untested."
+  ]
+}
