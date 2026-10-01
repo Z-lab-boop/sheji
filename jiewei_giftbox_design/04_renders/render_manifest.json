@@ -1,0 +1,173 @@
+{
+  "geometry_basis": "audited STL",
+  "cad_mesh_sha256": {
+    "outer_sleeve": "877cb962bfe222b9dc69584a84779e646405aad729015dd80fecf5e505dfebd6",
+    "wei_drawer": "430f0ae99fd7ffd6fdbed740a87f148c4181bf8b97607857fd5617fd998b3b97",
+    "lock_key_left": "8dd1a9003bf04bd0f1bff0d88b6ba6a3933d272fec88b87b8b4008e0d6849062",
+    "lock_key_right": "1c711c0f9f812be70706a93534dc5877b26aae7e082ae258fe22eb6875de164c",
+    "zhao_tray": "977dd6332409a6b8deba8c27cbb452521fd92a030c59fdb3921682f5fa40a5d5",
+    "inner_liner": "79b10db8f839c67aa4d9a1fdb10bc47ced6c5be2d5228257a1d1ceacc00e707c",
+    "moon_disc": "d46aac61cf919f6e1e8037974aaa66ab7d8fe3fc46c279881edd652a2b8ecd4d",
+    "sku_proxy_01": "d8a17bce0a506733379e8283a69e7d584edb7038e146e9b1214408ef56252936",
+    "sku_proxy_02": "cc2571fca289eee71a38e1facf06e5d90ffd9898d43e5f023e22de08aa279968",
+    "sku_proxy_03": "4c6dd2e82d1e4cfe0bffe44ae870dab86dbace78778fa5a26eec7c93f90a60c0",
+    "sku_proxy_04": "d5cf50a87fb806182ce83753dd9ed40e0206390847c563e56acf9142002f9c42",
+    "sku_proxy_05": "4b15fede7639f4b39bbcad00af6a2bb4e6bbdc5a045e0e31161f0fd7d822dd13",
+    "sku_proxy_06": "962a0f54c557514f73b5058747e819356baf5b9eed257ee70260e215359d4c3e"
+  },
+  "identity_assets": [
+    "02_identity/mid_autumn_sleeve.svg",
+    "02_identity/national_day_sleeve.svg",
+    "02_identity/proxy_product_labels.svg"
+  ],
+  "product_asset_status": "neutral_size_proxy",
+  "proxy_label": "规格代理件，非实际商品包装",
+  "engine": "BLENDER_EEVEE",
+  "views": {
+    "hero_closed.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.38,
+        -0.4,
+        0.29
+      ],
+      "sha256": "c3e0e4e9833b167e197f7ad840d5bdea45539d614e1524dc0aafd1c7e569ae7c"
+    },
+    "hero_unlocked.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.43,
+        -0.42,
+        0.29
+      ],
+      "sha256": "0f472bb1c466a60b78574effcce6344d179e96ae07eb9709f3a5569499958c2b"
+    },
+    "hero_open.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.44,
+        -0.52,
+        0.34
+      ],
+      "sha256": "f44685ec8333bd712430df1888e85d090eebe00d0fa69243349de254d74f5534"
+    },
+    "sequence_01.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.43,
+        -0.47,
+        0.31
+      ],
+      "sha256": "a2dd5fb450aa055c0200ca4853ff6af369a29e10c4d051588c01863e7b623c1e"
+    },
+    "sequence_02.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.43,
+        -0.47,
+        0.31
+      ],
+      "sha256": "05ddd22c9beba23c1a1692776419016011f5f922da58669bdd73e3e1be186420"
+    },
+    "sequence_03.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.43,
+        -0.47,
+        0.31
+      ],
+      "sha256": "14e1756cbcea6e257a1226fa0dc5a203786f9b0f2e44717b164c4c2bf8ad63c3"
+    },
+    "sequence_04.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.43,
+        -0.47,
+        0.31
+      ],
+      "sha256": "3eb8d25916a5cab64aa35bbca7ec683889b0503787c748fa3b9943e5e41321af"
+    },
+    "exploded.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.48,
+        -0.58,
+        0.48
+      ],
+      "sha256": "6aab00f15834abc1e7e34375af4fde33ac8e5b8e413fe041ac4956afff4e1355"
+    },
+    "dieline_preview.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.0,
+        0.0,
+        0.72
+      ],
+      "sha256": "8ef9db9e0397cfac206cb34ca6e053de0fb2f9b71a5806283b02c6849271fa9d"
+    },
+    "mid_autumn_variant.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.38,
+        -0.4,
+        0.29
+      ],
+      "sha256": "ed5624bd6c348e01501af2cb08ba94633aa80d4b54d51f7c723c717b9513ad6a"
+    },
+    "national_day_variant.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.38,
+        -0.4,
+        0.29
+      ],
+      "sha256": "e62727874d870cfcb67b67fd59af10143b166efc8b1e12e2895a775796dbd9dd"
+    },
+    "ortho_top.png": {
+      "size": [
+        1800,
+        1400
+      ],
+      "camera_location_m": [
+        0.0,
+        -0.04,
+        0.65
+      ],
+      "sha256": "f6f83d78a6b7e3c51986440c380010dcaeb7168ec66ee95ee0f31b12a5d0490f"
+    }
+  },
+  "boundary": "Digital paperboard and neutral-size-proxy render; no real brand asset, food product or physical validation is implied."
+}
