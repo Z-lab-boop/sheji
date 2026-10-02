@@ -54,7 +54,8 @@ PROJECTS = (
         description=ROOT / "jiewei_giftbox_design" / "06_submission" / "work_description.md",
         notice=(
             "禁止直接投稿：当前六件内装均为中性尺寸代理。须先取得邯宝坊真实SKU、"
-            "品牌书面许可、法定食品文案，重建结构与版式并完成复核。\n"
+            "品牌书面许可、法定食品文案，重建结构与版式并完成复核。包内已附公开证据档案、"
+            "商品证据表和待回填签章的申请书；空白申请书不等于已授权。\n"
         ),
     ),
 )
@@ -145,6 +146,20 @@ def build_project(project: Project) -> tuple[dict, Path]:
         shutil.copy2(
             ROOT / "competition_submission" / "route_verification_2026-10-02.md",
             target_dir / "步步生典_文化节点复核.md",
+        )
+    if project.title == "解围":
+        coordination_dir = ROOT / "jiewei_giftbox_design" / "06_submission"
+        shutil.copy2(
+            coordination_dir / "hanbaofang_public_product_dossier.md",
+            target_dir / "邯宝坊商品公开证据档案.md",
+        )
+        shutil.copy2(
+            coordination_dir / "hanbaofang_product_evidence.csv",
+            target_dir / "邯宝坊商品证据表.csv",
+        )
+        shutil.copy2(
+            coordination_dir / "邯宝坊产品资料与参赛授权申请书.docx",
+            target_dir / "邯宝坊产品资料与参赛授权申请书_待回填签章.docx",
         )
     shutil.copy2(FORM, target_dir / "官方报名表_空白_须填写签字并另存PDF.doc")
     (target_dir / "提交状态_请先阅读.txt").write_text(project.notice, encoding="utf-8")

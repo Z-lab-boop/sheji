@@ -11,5 +11,5 @@
 - `03_cad/`：FreeCAD、STEP、STL 与刀模
 - `04_renders/`：三状态、爆炸图和双节 CMF 渲染
 - `05_boards/`：6 张 A4 展板的 SVG/JPG/PDF
-- `06_submission/`：作品说明、估价、真实 SKU 输入清单与来源清单
+- `06_submission/`：作品说明、估价、真实 SKU 输入清单、公开商品证据档案、证据 CSV、可签章的产品资料与参赛授权申请书、来源清单
 - `07_audit/`：技术审计与人工视觉复核

@@ -10,10 +10,10 @@ asset_008,02_identity/national_day_sleeve.svg,identity,Jiewei project,project or
 asset_009,02_identity/proxy_product_labels.svg,identity,Jiewei project,project original,ac73bf5fb65c8afbcc81bf869fc2dfcff1e76753bfd1b677ae5b676fda4a60df,technical candidate package
 asset_010,02_identity/wordmark.svg,identity,Jiewei project,project original,2755c54b5a4cf0db42de0f6f90171130edfa694198db811beb8df57f93999ec4,technical candidate package
 asset_011,02_identity/identity_manifest.json,identity,Jiewei project,project original,50b0a283f319bb0e2fcf2abeec70dec18871f93b575dda5342ef4e9ff37ca851,technical candidate package
-asset_012,03_cad/jiewei_giftbox.FCStd,cad,Jiewei project,project original,a9c285d49d8ee285c7a905465b35170a0a9605bc2f2a3a6994930910be44f267,technical candidate package
-asset_013,03_cad/jiewei_giftbox_closed.step,cad,Jiewei project,project original,b237872f28667f5dd9767f109df777f135f0f3fa54a9d8ba4e2406dd6e7a5007,technical candidate package
-asset_014,03_cad/jiewei_giftbox_open.step,cad,Jiewei project,project original,1d7b53952ef31d9c32ebae2cba1ab2547f85d69dd4723e4efaf2f17a56149409,technical candidate package
-asset_015,03_cad/jiewei_giftbox_unlocked.step,cad,Jiewei project,project original,9f04040b0c7a0978f8d731500b7be473f1d383a63ab87b2cf631ecbd4d5d5e25,technical candidate package
+asset_012,03_cad/jiewei_giftbox.FCStd,cad,Jiewei project,project original,0b1f8c185347c2d03dace9b9bbd7b12bca08d7f65b5a21b673571e1334c8c096,technical candidate package
+asset_013,03_cad/jiewei_giftbox_closed.step,cad,Jiewei project,project original,b89760f4f90217220a225352c35e8ac148c279136a2e0a0b4041be24d9f8b6f9,technical candidate package
+asset_014,03_cad/jiewei_giftbox_open.step,cad,Jiewei project,project original,7d0556478e21704fdcfe6a491269dbaaaecf123777a1f37d3d0b1c1a135840a7,technical candidate package
+asset_015,03_cad/jiewei_giftbox_unlocked.step,cad,Jiewei project,project original,84d31928d6f54f27d6946f7dd0a75fe3936ceefb9f081814825ba1445b6a97a1,technical candidate package
 asset_016,03_cad/meshes/inner_liner.stl,cad,Jiewei project,project original,79b10db8f839c67aa4d9a1fdb10bc47ced6c5be2d5228257a1d1ceacc00e707c,technical candidate package
 asset_017,03_cad/meshes/lock_key_left.stl,cad,Jiewei project,project original,8dd1a9003bf04bd0f1bff0d88b6ba6a3933d272fec88b87b8b4008e0d6849062,technical candidate package
 asset_018,03_cad/meshes/lock_key_right.stl,cad,Jiewei project,project original,1c711c0f9f812be70706a93534dc5877b26aae7e082ae258fe22eb6875de164c,technical candidate package
@@ -27,7 +27,7 @@ asset_025,03_cad/meshes/sku_proxy_05.stl,cad,Jiewei project,project original,4b1
 asset_026,03_cad/meshes/sku_proxy_06.stl,cad,Jiewei project,project original,962a0f54c557514f73b5058747e819356baf5b9eed257ee70260e215359d4c3e,technical candidate package
 asset_027,03_cad/meshes/wei_drawer.stl,cad,Jiewei project,project original,430f0ae99fd7ffd6fdbed740a87f148c4181bf8b97607857fd5617fd998b3b97,technical candidate package
 asset_028,03_cad/meshes/zhao_tray.stl,cad,Jiewei project,project original,977dd6332409a6b8deba8c27cbb452521fd92a030c59fdb3921682f5fa40a5d5,technical candidate package
-asset_029,03_cad/cad_report.json,cad,Jiewei project,project original,b79cef41fc20724d13580c7aec019b1780961f4e05b963fbd2175c596f487485,technical candidate package
+asset_029,03_cad/cad_report.json,cad,Jiewei project,project original,f407160e06a73987d39f0ea8b33d9e597ed94c0815c21534e309922542129ba2,technical candidate package
 asset_030,03_cad/dielines/lock_keys.svg,dieline_source,Jiewei project,project original,71dfed7fb9a7f52b59c4e8e0848d904c13b0c89c8164fbafc002f0a1369c9f02,technical candidate package
 asset_031,03_cad/dielines/outer_sleeve.svg,dieline_source,Jiewei project,project original,f6e7e98091526f18b9352ada9d7c16c33b3cebd7ba18eb49318ae6cfe3c93c94,technical candidate package
 asset_032,03_cad/dielines/wei_drawer.svg,dieline_source,Jiewei project,project original,a2e0cf3a6f6de196a2b8e9ebce977e58af5f449baf61e03f21e7b6045dad7cd1,technical candidate package
@@ -70,10 +70,21 @@ asset_068,05_boards/pdf/board_03.pdf,board_pdf,Jiewei project,project original,a
 asset_069,05_boards/pdf/board_04.pdf,board_pdf,Jiewei project,project original,b11b8f2f709b9cdbbce5bae0c392539e220290ecca8eed0971195c57e6cad5de,technical candidate package
 asset_070,05_boards/pdf/board_05.pdf,board_pdf,Jiewei project,project original,30d9ada87020725dab89174c8bb7466afb7a63cb5f4176a8e1e2dbe5d8c0c9af,technical candidate package
 asset_071,05_boards/pdf/board_06.pdf,board_pdf,Jiewei project,project original,4272a480a26cf1fa8ef9ecf6252f06b5b6fbe2c5527750f45559ff72bf27ca1a,technical candidate package
-asset_072,06_submission/materials_and_pricing.md,submission_text,Jiewei project,project original,f48d320ec2109c702abeaa354e2c9c8a83714e5eececeb4d6fd27abf364ff5c9,technical candidate package
-asset_073,06_submission/real_sku_input_checklist.md,submission_text,Jiewei project,project original,2970519097ae8d8fe2fe1e5166216057043028f9f63571a5f9d688ae2b21c84a,technical candidate package
-asset_074,06_submission/work_description.md,submission_text,Jiewei project,project original,aa1df477531115231dd11143341552360bb7677fbb3dc30cec59587e28713714,technical candidate package
+asset_072,06_submission/hanbaofang_public_product_dossier.md,submission_text,Jiewei project,project original,51652c70b5227cd8a27d22408ecfb13edac00685d057ef624fd7022c5948e917,technical candidate package
+asset_073,06_submission/materials_and_pricing.md,submission_text,Jiewei project,project original,f48d320ec2109c702abeaa354e2c9c8a83714e5eececeb4d6fd27abf364ff5c9,technical candidate package
+asset_074,06_submission/real_sku_input_checklist.md,submission_text,Jiewei project,project original,92ba46f59de4e33d857a025eb9ab7dcab10983d273cfc4482470798bab11cc26,technical candidate package
+asset_075,06_submission/work_description.md,submission_text,Jiewei project,project original,aa1df477531115231dd11143341552360bb7677fbb3dc30cec59587e28713714,technical candidate package
+asset_076,06_submission/hanbaofang_product_evidence.csv,submission_data,Jiewei project,project original,769374a9effda3c8827693bced7e42172be80d30d1800778d3bdf1e8cef8a65a,technical candidate package
+asset_077,06_submission/source_manifest.csv,submission_data,Jiewei project,project original,b37f1df95cbd907894372d8119a0f2e95d27ebd135b5463c5c4bea3b6ee8c5e7,technical candidate package
+asset_078,06_submission/邯宝坊产品资料与参赛授权申请书.docx,editable_request_form,Jiewei project,project original,09d640c71fad8963a923d7df5367af1c3115c0320cf4d01c7c8aff0561b1a7f9,technical candidate package
 ref_competition,https://www.zjideas.com/zjds/gycp/wcsj/32680.html,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,competition requirements
 ref_idiom_hebei,https://whly.hebei.gov.cn/c/2012-12-21/558082.html,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Handan idiom context
 ref_idiom_dictionary,https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=17170&la=0&webMd=2,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,idiom meaning
 ref_hanbaofang_context,https://whly.hebei.gov.cn/c/2025-07-31/581835.html,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,local-products retail context
+ref_hanbaofang_flagship,https://www.hdcyjt.com/xinwenzhongxin/105.html,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Hanbaofang flagship and public brand context
+ref_hanbaofang_products,https://hdsswj.hd.gov.cn/gongzuodongtai/?a=view&p=84&r=5047,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Hanbaofang product categories
+ref_hanbaofang_channels,https://hdsswj.hd.gov.cn/gongzuodongtai/n4885.html,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Hanbaofang online sales channels
+ref_xuebukiao_240ml,https://m.cqn.com.cn/ms/content/2025-06/12/content_9109642.htm,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Xuebukiao sesame oil public sampling specification
+ref_huangliangmeng_gi,https://www.moa.gov.cn/nybgb/2014/shier/201712/P020180104778141801165.pdf,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Huangliangmeng millet geographical indication
+ref_jize_store,https://www.sohu.com/a/851866799_102258,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Hanbaofang Jize store chili sauce categories
+ref_pear_beverage,https://www.sohu.com/a/900938373_120333600,external_reference,public webpage,factual reference only; no embedded media,not-applicable-url-reference,Wei County NFC pear beverage Hanbaofang relation

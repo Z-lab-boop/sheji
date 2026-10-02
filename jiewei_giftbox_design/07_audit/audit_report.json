@@ -1,6 +1,6 @@
 {
   "project": "解围——邯宝坊双节机关礼盒",
-  "generated_at_utc": "2026-10-01T09:50:48.191679+00:00",
+  "generated_at_utc": "2026-10-02T16:41:59.973938+00:00",
   "technical_status": "pass",
   "submission_status": "blocked_pending_real_sku_and_brand_assets",
   "missing_inputs": [
@@ -228,17 +228,19 @@
       "name": "source_manifest",
       "passed": true,
       "detail": {
-        "rows": 78,
+        "rows": 89,
         "types": [
           "board_jpg",
           "board_pdf",
           "board_source",
           "cad",
           "dieline_source",
+          "editable_request_form",
           "external_reference",
           "font",
           "identity",
           "render",
+          "submission_data",
           "submission_text"
         ]
       }
@@ -246,8 +248,8 @@
   ],
   "boundaries": [
     "All six visible products are neutral size proxies.",
-    "No official Hanbaofang brand asset or permission is present.",
-    "No legal food copy or real SKU data is present.",
+    "A public product shortlist and unsigned request packet exist, but no brand-confirmed SKU dimensions or signed permission is present.",
+    "No brand-approved legal food copy is present.",
     "Physical paperboard performance remains untested."
   ]
 }

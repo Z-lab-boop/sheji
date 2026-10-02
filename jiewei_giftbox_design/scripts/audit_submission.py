@@ -26,6 +26,13 @@ EXTERNAL_REFERENCES = [
     ("ref_idiom_hebei", "https://whly.hebei.gov.cn/c/2012-12-21/558082.html", "Handan idiom context"),
     ("ref_idiom_dictionary", "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=17170&la=0&webMd=2", "idiom meaning"),
     ("ref_hanbaofang_context", "https://whly.hebei.gov.cn/c/2025-07-31/581835.html", "local-products retail context"),
+    ("ref_hanbaofang_flagship", "https://www.hdcyjt.com/xinwenzhongxin/105.html", "Hanbaofang flagship and public brand context"),
+    ("ref_hanbaofang_products", "https://hdsswj.hd.gov.cn/gongzuodongtai/?a=view&p=84&r=5047", "Hanbaofang product categories"),
+    ("ref_hanbaofang_channels", "https://hdsswj.hd.gov.cn/gongzuodongtai/n4885.html", "Hanbaofang online sales channels"),
+    ("ref_xuebukiao_240ml", "https://m.cqn.com.cn/ms/content/2025-06/12/content_9109642.htm", "Xuebukiao sesame oil public sampling specification"),
+    ("ref_huangliangmeng_gi", "https://www.moa.gov.cn/nybgb/2014/shier/201712/P020180104778141801165.pdf", "Huangliangmeng millet geographical indication"),
+    ("ref_jize_store", "https://www.sohu.com/a/851866799_102258", "Hanbaofang Jize store chili sauce categories"),
+    ("ref_pear_beverage", "https://www.sohu.com/a/900938373_120333600", "Wei County NFC pear beverage Hanbaofang relation"),
 ]
 
 
@@ -48,6 +55,8 @@ def local_rows() -> list[dict[str, str]]:
         "board_jpg": ["05_boards/jpg/*.jpg", "05_boards/contact_sheet.jpg"],
         "board_pdf": ["05_boards/pdf/*.pdf"],
         "submission_text": ["06_submission/*.md"],
+        "submission_data": ["06_submission/*.csv"],
+        "editable_request_form": ["06_submission/*.docx"],
     }
     rows = []
     seen = set()
@@ -144,7 +153,7 @@ def audit() -> dict[str, object]:
 
     rows = local_rows(); write_manifest(rows)
     types = {row["asset_type"] for row in rows}
-    needed = {"cad", "dieline_source", "render", "board_source", "board_jpg", "board_pdf", "external_reference"}
+    needed = {"cad", "dieline_source", "render", "board_source", "board_jpg", "board_pdf", "submission_data", "editable_request_form", "external_reference"}
     add("source_manifest", needed <= types and len(rows) >= 70, {"rows": len(rows), "types": sorted(types)})
 
     technical_status = "pass" if all(check["passed"] for check in checks) else "fail"
@@ -155,7 +164,7 @@ def audit() -> dict[str, object]:
         "submission_status": "blocked_pending_real_sku_and_brand_assets",
         "missing_inputs": MISSING_INPUTS,
         "checks": checks,
-        "boundaries": ["All six visible products are neutral size proxies.", "No official Hanbaofang brand asset or permission is present.", "No legal food copy or real SKU data is present.", "Physical paperboard performance remains untested."],
+        "boundaries": ["All six visible products are neutral size proxies.", "A public product shortlist and unsigned request packet exist, but no brand-confirmed SKU dimensions or signed permission is present.", "No brand-approved legal food copy is present.", "Physical paperboard performance remains untested."],
     }
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

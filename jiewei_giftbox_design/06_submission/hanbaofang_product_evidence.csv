@@ -1,0 +1,7 @@
+record_id,category,candidate_product,publicly_verified_spec,dimension_mm,gross_weight_g,image_status,hanbaofang_relation,evidence_level,source_url,required_brand_action
+HBF-01,香油,学步桥小磨芝麻香油,240mL/瓶,未公开,未公开,公开活动图可核验但未获参赛复用授权,邯郸产品且见官方展销活动,verified_product_spec_not_dimensions,https://m.cqn.com.cn/ms/content/2025-06/12/content_9109642.htm,指定在售条码并提供三件实测最大外廓毛重六面图与授权
+HBF-02,粮食,黄粱梦小米,公开商品索引存在500g与2.5kg等规格,未公开,未公开,公开活动图可核验但未获参赛复用授权,官方活动照片可见产品陈列,verified_product_family_candidate_sku,https://www.moa.gov.cn/nybgb/2014/shier/201712/P020180104778141801165.pdf,确认邯宝坊本次指定SKU并提供实测尺寸毛重与图片
+HBF-03,调味品,鸡泽辣椒酱,公开索引存在180g至200g瓶装规格但非邯宝坊官方SKU清单,未公开,未公开,未获授权商品图,邯宝坊鸡泽店公开报道列有辣椒酱品牌,verified_category_not_sku,https://www.sohu.com/a/851866799_102258,指定品牌口味条码材质外廓毛重易碎等级商品图
+HBF-04,饮品,魏县NFC鸭梨饮品,净含量未公开,未公开,未公开,未获授权商品图,公开报道明确为邯宝坊线上线下热销商品,verified_product_relation_not_spec,https://www.sohu.com/a/900938373_120333600,提供净含量容器外廓毛重储存条件标签全文与图片
+HBF-05,坚果,涉县核桃或核桃制品,邯宝坊公开报道确认品类但未指定SKU,未公开,未公开,未获授权商品图,邯宝坊产品报道列出涉县核桃,verified_category_not_sku,https://finance.sina.com.cn/jjxw/2025-01-26/doc-inehfyap2608787.shtml,指定商品净含量包装形式尺寸毛重防压要求与图片
+HBF-06,肉制品,大名五百居香肠,公开索引存在500g袋及1.2kg和1.6kg盒等规格,未公开,未公开,未获授权商品图,邯宝坊产品报道列出五百居香肠,verified_category_not_sku,https://www.jd.com/xinghao/1620cc6f83742b01a5d6.html,指定邯宝坊在售SKU并提供冷链条件实测外廓毛重标签全文与图片
