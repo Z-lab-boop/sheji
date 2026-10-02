@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import argparse
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -54,6 +55,33 @@ SPECS = (
     PosterSpec(
         source="jiewei_keyvisual.png",
         output="02_解围_产品海报.png",
+        title="解围",
+        subtitle="邯宝坊双节机关礼盒",
+        tagline="以月为钥 · 抽启一城好礼",
+        descriptor="侧抽解锁 × 中央展示 × 六礼同呈",
+        chips=("290 × 230 × 75 mm", "三状态机关", "参数化 CAD"),
+        accent="#E6C17B",
+        seal="解围",
+        text_top=250,
+    ),
+)
+
+V2_SPECS = (
+    PosterSpec(
+        source="bubushengdian_keyvisual_v2.png",
+        output="01_步步生典_产品海报_写实增强版.png",
+        title="步步生典",
+        subtitle="邯郸双节漫游章匣",
+        tagline="一匣收城意 · 六章印旅程",
+        descriptor="折叠地图 × 城市印章 × 抽拉收纳",
+        chips=("165 × 120 × 30 mm", "6 枚主题印章", "参数化 CAD"),
+        accent="#E4BD75",
+        seal="邯郸",
+        text_top=250,
+    ),
+    PosterSpec(
+        source="jiewei_keyvisual_v2.png",
+        output="02_解围_产品海报_写实增强版.png",
         title="解围",
         subtitle="邯宝坊双节机关礼盒",
         tagline="以月为钥 · 抽启一城好礼",
@@ -230,34 +258,42 @@ def build(spec: PosterSpec) -> Image.Image:
     return canvas.convert("RGB")
 
 
-def main() -> None:
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    PDF_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+def render_set(
+    specs: tuple[PosterSpec, ...],
+    pdf_name: str,
+    preview_name: str,
+) -> list[Path]:
+    generated: list[Path] = []
     posters: list[Image.Image] = []
-    for spec in SPECS:
+    for spec in specs:
         poster = build(spec)
+        png_path = OUTPUT_DIR / spec.output
+        jpg_path = OUTPUT_DIR / spec.output.replace(".png", ".jpg")
         poster.save(
-            OUTPUT_DIR / spec.output,
+            png_path,
             optimize=True,
             compress_level=9,
             dpi=(150, 150),
         )
         poster.save(
-            OUTPUT_DIR / spec.output.replace(".png", ".jpg"),
+            jpg_path,
             quality=94,
             subsampling=0,
             optimize=True,
             dpi=(150, 150),
         )
+        generated.extend((png_path, jpg_path))
         posters.append(poster)
 
+    pdf_path = PDF_OUTPUT_DIR / pdf_name
     posters[0].save(
-        PDF_OUTPUT_DIR / "和氏璧杯_双节产品海报_打印版.pdf",
+        pdf_path,
         save_all=True,
         append_images=posters[1:],
         resolution=150,
         quality=94,
     )
+    generated.append(pdf_path)
 
     preview_w = 720
     preview_h = round(HEIGHT * preview_w / WIDTH)
@@ -266,9 +302,42 @@ def main() -> None:
     for index, poster in enumerate(posters):
         thumb = poster.resize((preview_w, preview_h), Image.Resampling.LANCZOS)
         sheet.paste(thumb, (index * (preview_w + gap), 0))
-    sheet.save(OUTPUT_DIR / "双海报预览.jpg", quality=92, optimize=True)
+    preview_path = OUTPUT_DIR / preview_name
+    sheet.save(preview_path, quality=92, optimize=True)
+    generated.append(preview_path)
+    return generated
 
-    for path in [*sorted(OUTPUT_DIR.iterdir()), PDF_OUTPUT_DIR / "和氏璧杯_双节产品海报_打印版.pdf"]:
+
+def main() -> None:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--variant",
+        choices=("original", "v2", "all"),
+        default="v2",
+        help="poster set to rebuild (default: v2)",
+    )
+    args = parser.parse_args()
+    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    PDF_OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
+    generated: list[Path] = []
+    if args.variant in ("original", "all"):
+        generated.extend(
+            render_set(
+                SPECS,
+                "和氏璧杯_双节产品海报_打印版.pdf",
+                "双海报预览.jpg",
+            )
+        )
+    if args.variant in ("v2", "all"):
+        generated.extend(
+            render_set(
+            V2_SPECS,
+            "和氏璧杯_双节产品海报_写实增强版.pdf",
+            "双海报预览_写实增强版.jpg",
+            )
+        )
+
+    for path in generated:
         print(path)
 
 
