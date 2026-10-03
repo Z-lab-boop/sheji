@@ -11,7 +11,7 @@ CAD_DIR = Path(__file__).resolve().parent
 OUT = CAD_DIR / "dielines"
 sys.path.insert(0, str(CAD_DIR.parent / "scripts"))
 
-from design_config import BOX  # noqa: E402
+from design_config import BOX, PRODUCT_MODULE  # noqa: E402
 
 
 LAYERS = {"cut": "#FF0000", "crease": "#0000FF", "glue": "#808080"}
@@ -92,7 +92,14 @@ def main() -> None:
     cut = rect_segments(20, 45, 300, 235)
     crease = [(35, 45, 35, 280), (305, 45, 305, 280), (35, 80, 305, 80), (35, 245, 305, 245)]
     glue = [[(22, 50), (33, 50), (33, 275), (22, 275)]]
-    defs["zhao_tray"] = (width, height, cut, crease, glue, ["中央托盘展示行程 145 mm；内衬按真实 SKU 到位后重算。"])
+    defs["zhao_tray"] = (
+        width,
+        height,
+        cut,
+        crease,
+        glue,
+        ["中央托盘展示行程 145 mm；3 × 2 概念模块阵列，投产前按实际商品复核。"],
+    )
 
     width, height = 190.0, 120.0
     cut = rect_segments(20, 40, 55, 26) + rect_segments(95, 40, 55, 26)
@@ -117,6 +124,7 @@ def main() -> None:
         "glue_tab_mm": 15,
         "board_thickness_mm": BOX.board_thickness,
         "wrap_proxy_mm": BOX.wrap_thickness,
+        "module_outer_mm": [PRODUCT_MODULE.width, PRODUCT_MODULE.depth, PRODUCT_MODULE.height],
         "files": manifest_files,
         "boundary": "Concept dielines; physical grain, wrap buildup and production tolerances require converter proofing.",
     }

@@ -18,7 +18,7 @@ PROJECT_DIR = CAD_DIR.parent
 MESH_DIR = CAD_DIR / "meshes"
 sys.path.insert(0, str(PROJECT_DIR / "scripts"))
 
-from design_config import BOX, COLORS, SKU, state_offsets  # noqa: E402
+from design_config import BOX, COLORS, CONCEPT_DISCLOSURE, PRODUCT_MODULE, PRODUCTS, state_offsets  # noqa: E402
 
 
 def hex_rgb(value: str) -> tuple[float, float, float]:
@@ -69,11 +69,11 @@ def make_zhao_tray():
 
 
 def make_inner_liner():
-    base = Part.makeBox(208.0, 138.0, 3.0, App.Vector(18.0, 44.0, 9.2))
+    base = Part.makeBox(210.0, 130.0, 3.0, App.Vector(18.0, 44.0, 9.2))
     parts = [base]
-    for x in (81.0, 143.0):
-        parts.append(Part.makeBox(2.0, 138.0, 8.0, App.Vector(x, 44.0, 9.2)))
-    parts.append(Part.makeBox(208.0, 2.0, 8.0, App.Vector(18.0, 112.0, 9.2)))
+    for x in (87.0, 157.0):
+        parts.append(Part.makeBox(2.0, 130.0, 8.0, App.Vector(x, 44.0, 9.2)))
+    parts.append(Part.makeBox(210.0, 2.0, 8.0, App.Vector(18.0, 110.0, 9.2)))
     liner = parts[0]
     for part in parts[1:]:
         liner = liner.fuse(part)
@@ -86,12 +86,17 @@ def make_moon_disc():
     return outer.cut(inner).removeSplitter()
 
 
-def make_proxy(index: int):
-    x = 20.0 + (index % 3) * 63.0
+def make_concept_module(index: int):
+    x = 19.0 + (index % 3) * 70.0
     y = 48.0 + (index // 3) * 64.0
     z = 13.0
-    body = Part.makeBox(SKU.width, SKU.depth, SKU.height, App.Vector(x, y, z))
-    bevel = Part.makeBox(SKU.width - 8.0, 1.2, 0.8, App.Vector(x + 4.0, y + SKU.depth - 1.2, z + SKU.height))
+    body = Part.makeBox(PRODUCT_MODULE.width, PRODUCT_MODULE.depth, PRODUCT_MODULE.height, App.Vector(x, y, z))
+    bevel = Part.makeBox(
+        PRODUCT_MODULE.width - 8.0,
+        1.2,
+        0.8,
+        App.Vector(x + 4.0, y + PRODUCT_MODULE.depth - 1.2, z + PRODUCT_MODULE.height),
+    )
     return body.fuse(bevel).removeSplitter()
 
 
@@ -104,7 +109,7 @@ def build_shapes() -> dict[str, object]:
         "zhao_tray": make_zhao_tray(),
         "inner_liner": make_inner_liner(),
         "moon_disc": make_moon_disc(),
-        **{f"sku_proxy_{i + 1:02d}": make_proxy(i) for i in range(SKU.count)},
+        **{f"concept_module_{product.code}": make_concept_module(i) for i, product in enumerate(PRODUCTS)},
     }
 
 
@@ -114,8 +119,10 @@ def add_feature(doc, name: str, shape, color: tuple[float, float, float]):
     obj.Shape = shape
     obj.addProperty("App::PropertyString", "MaterialIntent", "Design")
     obj.addProperty("App::PropertyString", "EvidenceStatus", "Design")
-    obj.MaterialIntent = "2.0 mm paperboard proxy" if not name.startswith("sku_proxy") else "Neutral 60 × 60 × 35 mm SKU proxy"
-    obj.EvidenceStatus = SKU.label if name.startswith("sku_proxy") else "Digital fit model only"
+    obj.MaterialIntent = (
+        "Original concept secondary carton" if name.startswith("concept_module") else "2.0 mm paperboard digital model"
+    )
+    obj.EvidenceStatus = CONCEPT_DISCLOSURE if name.startswith("concept_module") else "Digital fit model only"
     if obj.ViewObject is not None:
         obj.ViewObject.ShapeColor = color
     return obj
@@ -123,7 +130,7 @@ def add_feature(doc, name: str, shape, color: tuple[float, float, float]):
 
 def position_for(name: str, state: str) -> tuple[float, float, float]:
     offsets = state_offsets(state)
-    if name.startswith("sku_proxy"):
+    if name.startswith("concept_module"):
         return offsets["zhao_tray"]
     return offsets.get(name, (0.0, 0.0, 0.0))
 
@@ -172,7 +179,7 @@ def main() -> None:
         "zhao_tray": hex_rgb(COLORS["mountain_green"]),
         "inner_liner": hex_rgb(COLORS["paper_white"]),
         "moon_disc": hex_rgb(COLORS["moon_gold"]),
-        **{f"sku_proxy_{i + 1:02d}": hex_rgb("#E6DDCA") for i in range(SKU.count)},
+        **{f"concept_module_{product.code}": hex_rgb(product.color) for product in PRODUCTS},
     }
     objects = {name: add_feature(doc, name, shape, palette[name]) for name, shape in shapes.items()}
     doc.recompute()
@@ -205,8 +212,12 @@ def main() -> None:
         "parts": parts,
         "states": states,
         "fcstd_sha256": sha256(fcstd),
-        "product_asset_status": "neutral_size_proxy",
-        "proxy_label": SKU.label,
+        "product_asset_status": "original_concept_secondary_packaging",
+        "concept_disclosure": CONCEPT_DISCLOSURE,
+        "product_modules": [
+            {"code": item.code, "category": item.category, "display_name": item.display_name}
+            for item in PRODUCTS
+        ],
         "boundary": "Paperboard fit model only; load, friction, tear, drop and transport behavior remain unverified.",
     }
     (CAD_DIR / "cad_report.json").write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

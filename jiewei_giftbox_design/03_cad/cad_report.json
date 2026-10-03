@@ -87,14 +87,14 @@
     },
     "inner_liner": {
       "bbox_mm": [
-        208.0,
-        138.0,
+        210.0,
+        130.0,
         8.0
       ],
-      "volume_mm3": 90912.0,
+      "volume_mm3": 86560.0,
       "solid_count": 1,
       "valid": true,
-      "sha256": "79b10db8f839c67aa4d9a1fdb10bc47ced6c5be2d5228257a1d1ceacc00e707c"
+      "sha256": "6ca25d553ec09a2da04c932e39d44d840f8845703bf066bfca62014241037ae0"
     },
     "moon_disc": {
       "bbox_mm": [
@@ -107,77 +107,77 @@
       "valid": true,
       "sha256": "d46aac61cf919f6e1e8037974aaa66ab7d8fe3fc46c279881edd652a2b8ecd4d"
     },
-    "sku_proxy_01": {
+    "concept_module_A": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "d8a17bce0a506733379e8283a69e7d584edb7038e146e9b1214408ef56252936"
+      "sha256": "80176b643b2cc9421da0c92a7553ea28a38a08b1aa06c7ad1433b3837b5ed426"
     },
-    "sku_proxy_02": {
+    "concept_module_B": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "cc2571fca289eee71a38e1facf06e5d90ffd9898d43e5f023e22de08aa279968"
+      "sha256": "ef2f74561b31c39618396dd16eccf0ec4170a4de5d92240e012787f7a924ed14"
     },
-    "sku_proxy_03": {
+    "concept_module_C": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "4c6dd2e82d1e4cfe0bffe44ae870dab86dbace78778fa5a26eec7c93f90a60c0"
+      "sha256": "a09840b935ebed95a61e6d5ede9d72f53f2f671bf62128715e4b8b63fc3d80c3"
     },
-    "sku_proxy_04": {
+    "concept_module_D": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "d5cf50a87fb806182ce83753dd9ed40e0206390847c563e56acf9142002f9c42"
+      "sha256": "c75aefa7be423879cd47acc3381061fe7cc47e6a6e3bfcf2860502f6f64d021c"
     },
-    "sku_proxy_05": {
+    "concept_module_E": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "4b15fede7639f4b39bbcad00af6a2bb4e6bbdc5a045e0e31161f0fd7d822dd13"
+      "sha256": "902a78da3280c1a0a3d1e277c10a69f4f769a3c3af14529a4faf1f56057c2ff1"
     },
-    "sku_proxy_06": {
+    "concept_module_F": {
       "bbox_mm": [
-        60.0,
-        60.0,
-        35.8
+        68.0,
+        62.0,
+        44.8
       ],
-      "volume_mm3": 126049.92,
+      "volume_mm3": 185561.6,
       "solid_count": 1,
       "valid": true,
-      "sha256": "962a0f54c557514f73b5058747e819356baf5b9eed257ee70260e215359d4c3e"
+      "sha256": "c1e0036e241278dd20e9a6ae2148d6cd603657371c7c3a8d99b836b42e2f963c"
     }
   },
   "states": {
     "closed": {
       "path": "jiewei_giftbox_closed.step",
-      "sha256": "b89760f4f90217220a225352c35e8ac148c279136a2e0a0b4041be24d9f8b6f9",
+      "sha256": "2d54f4f00c098061ab9cfccc6daa9a8eecdda687d9d2721d93e6c07fd5ba75fd",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -214,32 +214,32 @@
           0.0,
           0.0
         ],
-        "sku_proxy_01": [
+        "concept_module_A": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_02": [
+        "concept_module_B": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_03": [
+        "concept_module_C": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_04": [
+        "concept_module_D": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_05": [
+        "concept_module_E": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_06": [
+        "concept_module_F": [
           0.0,
           0.0,
           0.0
@@ -248,7 +248,7 @@
     },
     "unlocked": {
       "path": "jiewei_giftbox_unlocked.step",
-      "sha256": "84d31928d6f54f27d6946f7dd0a75fe3936ceefb9f081814825ba1445b6a97a1",
+      "sha256": "7769823ba5eb8c399a77ef35f3ad96dbfd4ad4bdee41e4f0926dfbf4974997eb",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -285,32 +285,32 @@
           0.0,
           0.0
         ],
-        "sku_proxy_01": [
+        "concept_module_A": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_02": [
+        "concept_module_B": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_03": [
+        "concept_module_C": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_04": [
+        "concept_module_D": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_05": [
+        "concept_module_E": [
           0.0,
           0.0,
           0.0
         ],
-        "sku_proxy_06": [
+        "concept_module_F": [
           0.0,
           0.0,
           0.0
@@ -319,7 +319,7 @@
     },
     "open": {
       "path": "jiewei_giftbox_open.step",
-      "sha256": "7d0556478e21704fdcfe6a491269dbaaaecf123777a1f37d3d0b1c1a135840a7",
+      "sha256": "c97f1d74ede64fde362c250ca0b224a2101491605b2d785aeef603b1dac723c2",
       "positions_mm": {
         "outer_sleeve": [
           0.0,
@@ -356,32 +356,32 @@
           0.0,
           0.0
         ],
-        "sku_proxy_01": [
+        "concept_module_A": [
           0.0,
           -145.0,
           0.0
         ],
-        "sku_proxy_02": [
+        "concept_module_B": [
           0.0,
           -145.0,
           0.0
         ],
-        "sku_proxy_03": [
+        "concept_module_C": [
           0.0,
           -145.0,
           0.0
         ],
-        "sku_proxy_04": [
+        "concept_module_D": [
           0.0,
           -145.0,
           0.0
         ],
-        "sku_proxy_05": [
+        "concept_module_E": [
           0.0,
           -145.0,
           0.0
         ],
-        "sku_proxy_06": [
+        "concept_module_F": [
           0.0,
           -145.0,
           0.0
@@ -389,8 +389,40 @@
       }
     }
   },
-  "fcstd_sha256": "0b1f8c185347c2d03dace9b9bbd7b12bca08d7f65b5a21b673571e1334c8c096",
-  "product_asset_status": "neutral_size_proxy",
-  "proxy_label": "规格代理件，非实际商品包装",
+  "fcstd_sha256": "d0480d6bfb2c61f3fbb514e061462b24aca6b74d74a8dfcc301df79ea314cafa",
+  "product_asset_status": "original_concept_secondary_packaging",
+  "concept_disclosure": "概念包装建议规格，投产前复核",
+  "product_modules": [
+    {
+      "code": "A",
+      "category": "鸡泽辣椒",
+      "display_name": "椒起鸡泽"
+    },
+    {
+      "code": "B",
+      "category": "魏县鸭梨",
+      "display_name": "梨润魏州"
+    },
+    {
+      "code": "C",
+      "category": "涉县核桃",
+      "display_name": "核藏太行"
+    },
+    {
+      "code": "D",
+      "category": "武安小米",
+      "display_name": "粟映武安"
+    },
+    {
+      "code": "E",
+      "category": "永年大蒜",
+      "display_name": "蒜生永年"
+    },
+    {
+      "code": "F",
+      "category": "大名小磨香油",
+      "display_name": "油香大名"
+    }
+  ],
   "boundary": "Paperboard fit model only; load, friction, tear, drop and transport behavior remain unverified."
 }

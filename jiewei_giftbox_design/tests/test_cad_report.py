@@ -20,6 +20,13 @@ class CadReportTests(unittest.TestCase):
         for state in ("closed", "unlocked", "open"):
             self.assertTrue((ROOT / "03_cad" / f"jiewei_giftbox_{state}.step").is_file())
 
+    def test_six_concept_modules_are_modelled(self):
+        report = json.loads((ROOT / "03_cad" / "cad_report.json").read_text(encoding="utf-8"))
+        modules = [value for key, value in report["parts"].items() if key.startswith("concept_module_")]
+        self.assertEqual(len(modules), 6)
+        self.assertTrue(all(item["bbox_mm"] == [68.0, 62.0, 44.8] for item in modules))
+        self.assertEqual(report["product_asset_status"], "original_concept_secondary_packaging")
+
 
 if __name__ == "__main__":
     unittest.main()

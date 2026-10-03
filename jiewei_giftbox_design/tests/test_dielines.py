@@ -15,6 +15,9 @@ class DielineTests(unittest.TestCase):
         data = json.loads((ROOT / "03_cad" / "dielines" / "dieline_manifest.json").read_text(encoding="utf-8"))
         self.assertEqual(data["units"], "mm")
         self.assertEqual(data["layers"], {"cut": "#FF0000", "crease": "#0000FF", "glue": "#808080"})
+        self.assertEqual(data["module_outer_mm"], [68.0, 62.0, 44.0])
+        tray = (ROOT / "03_cad/dielines/zhao_tray.svg").read_text(encoding="utf-8")
+        self.assertNotIn("真实 SKU 到位后重算", tray)
 
 
 if __name__ == "__main__":

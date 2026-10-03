@@ -8,5 +8,5 @@
 <g id="calibration-square"><line x1="312.0" y1="8" x2="322.0" y2="8" class="cut"/><line x1="322.0" y1="8" x2="322.0" y2="18" class="cut"/><line x1="322.0" y1="18" x2="312.0" y2="18" class="cut"/><line x1="312.0" y1="18" x2="312.0" y2="8" class="cut"/><text x="312.0" y="23" class="label">10 mm</text></g>
 <g id="grain-direction"><path d="M20 18 H70" stroke="#202F32" stroke-width=".5"/><path d="M70 18 l-6 -3 v6 z" fill="#202F32"/><text x="20" y="14" class="label">纹向 GRAIN</text></g>
 <text x="20" y="30" class="label">zhao_tray · 单位 mm · 灰板 2.0 / 包纸代理 0.18</text>
-<text x="20" y="282.0" class="label">中央托盘展示行程 145 mm；内衬按真实 SKU 到位后重算。</text>
+<text x="20" y="282.0" class="label">中央托盘展示行程 145 mm；3 × 2 概念模块阵列，投产前按实际商品复核。</text>
 </svg>
