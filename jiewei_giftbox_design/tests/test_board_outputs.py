@@ -23,6 +23,17 @@ class BoardTests(unittest.TestCase):
             self.assertIn("Pages:           1", info)
             self.assertIn("A4", info)
 
+    def test_board_copy_matches_concept_submission(self):
+        joined = "\n".join(
+            (ROOT / f"05_boards/src/board_{index:02d}.svg").read_text(encoding="utf-8")
+            for index in range(1, 7)
+        )
+        for token in ("六味邯郸", "椒起鸡泽", "梨润魏州", "核藏太行", "粟映武安", "蒜生永年", "油香大名"):
+            self.assertIn(token, joined)
+        self.assertIn("概念包装建议规格，投产前复核", joined)
+        for prohibited in ("目前不能正式投稿", "BLOCKED", "真实 SKU", "待授权资产"):
+            self.assertNotIn(prohibited, joined)
+
 
 if __name__ == "__main__":
     unittest.main()

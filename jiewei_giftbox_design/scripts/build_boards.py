@@ -1,4 +1,4 @@
-"""Compose six editable A4 competition boards for the Jiewei gift box."""
+"""Compose six editable A4 competition boards for the upgraded Jiewei concept."""
 
 from __future__ import annotations
 
@@ -11,7 +11,7 @@ PROJECT_DIR = Path(__file__).resolve().parents[1]
 OUT = PROJECT_DIR / "05_boards" / "src"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from design_config import BOARD, BOX, COLORS, COPY, SKU  # noqa: E402
+from design_config import BOARD, BOX, COLORS, CONCEPT_DISCLOSURE, PRODUCT_MODULE, PRODUCTS  # noqa: E402
 
 
 W, H = BOARD.width_px, BOARD.height_px
@@ -44,8 +44,8 @@ def header(number, title_value, subtitle, dark=False):
     return f'''
 <g id="header">
  {text(160,178,f'{number:02d} / {BOARD.count:02d}',22,COLORS['moon_gold'],'latin',760,spacing=4)}
- {text(160,308,title_value,88,ink,'serif',780,spacing=2)}
- {text(162,374,subtitle,24,ink,'latin',480,opacity=.62,spacing=2)}
+ {text(160,308,title_value,82,ink,'serif',780,spacing=2)}
+ {text(162,374,subtitle,23,ink,'latin',480,opacity=.68,spacing=2)}
  <path d="M160 438 H2320" stroke="{COLORS['moon_gold']}" stroke-width="4" opacity=".72"/>
 </g>'''
 
@@ -53,8 +53,8 @@ def header(number, title_value, subtitle, dark=False):
 def footer(number, dark=False):
     ink = COLORS["paper_white"] if dark else COLORS["wall_ink"]
     return f'''
-<g id="footer" opacity=".54"><path d="M160 3350 H2320" stroke="{ink}" stroke-width="2"/>
-{text(160,3408,'JIEWEI · HANBAOFANG FESTIVAL GIFT-BOX CONCEPT',16,ink,'latin',520,spacing=3)}
+<g id="footer" opacity=".58"><path d="M160 3350 H2320" stroke="{ink}" stroke-width="2"/>
+{text(160,3408,'JIEWEI · HANBAOFANG SIX FLAVOURS OF HANDAN · CONCEPT PROPOSAL',16,ink,'latin',520,spacing=2)}
 {text(2320,3408,f'{number:02d}',16,COLORS['moon_gold'],'latin',720,'end',spacing=2)}</g>'''
 
 
@@ -76,98 +76,130 @@ def wrap(number, title_value, subtitle, body, dark=False):
 def board_01():
     body = f'''
 <g id="cover">
- <circle cx="1940" cy="850" r="360" fill="none" stroke="{COLORS['moon_gold']}" stroke-width="4" opacity=".24"/>
- {image('../../04_renders/hero_open.png',120,430,2240,1700)}
- <rect x="150" y="2100" width="2180" height="760" rx="56" fill="#172529" stroke="{COLORS['moon_gold']}" stroke-width="3"/>
- {text(240,2285,'解围',128,COLORS['paper_white'],'serif',820,spacing=9)}
- {text(246,2375,'RELIEVE THE SIEGE',24,COLORS['moon_gold'],'latin',680,spacing=6)}
- {text(240,2515,COPY['slogan'],49,COLORS['paper_white'],'sans',650)}
- {lines(240,2625,['把“围魏救赵”的行动顺序变成开盒逻辑：','先侧移解除锁定，再让中央礼品显现。'],29,COLORS['paper_white'],54,'sans',380)}
- <g transform="translate(1610 2290)" fill="none" stroke-linejoin="miter"><path d="M0 280 H180 V160 H380" stroke="{COLORS['route_red']}" stroke-width="18"/><path d="M380 160 V40 H590" stroke="{COLORS['moon_gold']}" stroke-width="18"/><circle cx="590" cy="40" r="20" fill="{COLORS['moon_gold']}" stroke="none"/></g>
- {text(160,3030,'290 × 230 × 75 mm',27,COLORS['paper_white'],'latin',700)}
- {text(850,3030,'42 mm 侧移解锁',27,COLORS['paper_white'],'sans',620)}
- {text(1510,3030,'145 mm 中央显现',27,COLORS['paper_white'],'sans',620)}
+ <circle cx="1940" cy="820" r="350" fill="none" stroke="{COLORS['moon_gold']}" stroke-width="4" opacity=".24"/>
+ {image('../../04_renders/hero_open.png',100,420,2280,1650)}
+ <rect x="150" y="2050" width="2180" height="820" rx="56" fill="#172529" stroke="{COLORS['moon_gold']}" stroke-width="3"/>
+ {text(240,2240,'解围',122,COLORS['paper_white'],'serif',820,spacing=9)}
+ {text(246,2325,'RELIEVE THE SIEGE',23,COLORS['moon_gold'],'latin',680,spacing=5)}
+ {text(240,2460,'六味邯郸 · 邯宝坊机关礼盒概念提案',43,COLORS['paper_white'],'serif',650)}
+ {lines(240,2570,['把“围魏救赵”的行动顺序变成开盒逻辑：','先侧移解除锁定，再让六地风物在中央显现。'],28,COLORS['paper_white'],52,'sans',380)}
+ <g transform="translate(1590 2280)" fill="none"><path d="M0 300 H180 V170 H380" stroke="{COLORS['route_red']}" stroke-width="18"/><path d="M380 170 V50 H610" stroke="{COLORS['moon_gold']}" stroke-width="18"/><circle cx="610" cy="50" r="20" fill="{COLORS['moon_gold']}" stroke="none"/></g>
+ {text(180,3020,f'{BOX.width:.0f} × {BOX.depth:.0f} × {BOX.height:.0f} mm',27,COLORS['paper_white'],'latin',700)}
+ {text(850,3020,'42 mm 侧移解锁',27,COLORS['paper_white'],'sans',620)}
+ {text(1510,3020,'145 mm 中央显现',27,COLORS['paper_white'],'sans',620)}
 </g>'''
-    return wrap(1,"解围","TWO-STAGE UNLOCKING · 邯宝坊双节机关礼盒候选方案",body,True)
+    return wrap(1, "解围·六味邯郸", "TWO-STAGE UNLOCKING · ORIGINAL CONCEPT PACKAGING SYSTEM", body, True)
 
 
 def board_02():
     cards = [
-        ("01","围","避开正面强攻","战国故事中，援军不直攻赵都之围，而转向魏国要害。"),
-        ("02","移","先改变侧向状态","包装先拉“魏”侧抽屉 42 mm，使两枚锁钥片离开槽位。"),
-        ("03","解","限制被真正解除","两处限位同时释放，中央托盘才获得运动自由度。"),
-        ("04","见","赵礼中央显现","中央“赵”托盘前行 145 mm，六件礼品形成完整陈列面。"),
+        ("01", "围", "避开正面强攻", "典故中的关键不是战争图像，而是先改变外围条件。"),
+        ("02", "移", "侧向状态先改变", "红色“魏”侧抽屉先移动 42 mm，带动双锁钥片。"),
+        ("03", "解", "两点限制同时释放", "获得 1.2 mm 数字释放余量后，中央托盘可以运动。"),
+        ("04", "见", "六地风物中央显现", "“赵”托盘前行 145 mm，六味模块形成完整陈列面。"),
     ]
-    blocks=[]
-    for i,(n,g,t,d) in enumerate(cards):
-        x=150+(i%2)*1110; y=570+(i//2)*730
-        blocks.append(f'''<g transform="translate({x} {y})">{panel(0,0,1020,620)}<circle cx="118" cy="120" r="64" fill="{COLORS['wall_ink'] if i!=1 else COLORS['route_red']}"/>{text(118,143,g,52,COLORS['paper_white'],'serif',760,'middle')}{text(220,78,n,18,COLORS['moon_gold'],'latin',760,spacing=3)}{text(220,148,t,38,COLORS['wall_ink'],'serif',720)}{lines(80,286,[d[:17],d[17:34],d[34:]],25,COLORS['soft_gray'],47,'sans',390)}<path d="M80 504 H920" stroke="{COLORS['moon_gold']}" stroke-width="4" opacity=".48"/></g>''')
-    body=f'''<g id="culture">{''.join(blocks)}
+    blocks = []
+    for index, (number, glyph, title_value, description) in enumerate(cards):
+        x = 150 + (index % 2) * 1110
+        y = 570 + (index // 2) * 730
+        blocks.append(f'''<g transform="translate({x} {y})">{panel(0,0,1020,620)}<circle cx="118" cy="120" r="64" fill="{COLORS['wall_ink'] if index != 1 else COLORS['route_red']}"/>{text(118,143,glyph,52,COLORS['paper_white'],'serif',760,'middle')}{text(220,78,number,18,COLORS['moon_gold'],'latin',760,spacing=3)}{text(220,148,title_value,37,COLORS['wall_ink'],'serif',720)}{lines(80,286,[description[:17],description[17:34],description[34:]],25,COLORS['soft_gray'],47,'sans',390)}<path d="M80 504 H920" stroke="{COLORS['moon_gold']}" stroke-width="4" opacity=".48"/></g>''')
+    body = f'''<g id="culture">{"".join(blocks)}
 <rect x="150" y="2130" width="2130" height="760" rx="52" fill="{COLORS['wall_ink']}"/>
-{text(230,2280,'不是战争插画，而是顺序与约束的结构转译',43,COLORS['paper_white'],'serif',720)}
+{text(230,2280,'不是贴一幅古画，而是把成语变成动作约束',43,COLORS['paper_white'],'serif',720)}
 <path d="M250 2550 H720 V2440 H1210 V2600 H1710 V2470 H2170" fill="none" stroke="{COLORS['route_red']}" stroke-width="15"/><circle cx="2170" cy="2470" r="22" fill="{COLORS['moon_gold']}"/>
-{text(250,2720,'围合',24,COLORS['paper_white'],'sans',620)}{text(770,2720,'侧移',24,COLORS['paper_white'],'sans',620)}{text(1260,2720,'解锁',24,COLORS['paper_white'],'sans',620)}{text(2170,2720,'中央显现',24,COLORS['paper_white'],'sans',620,'end')}
-{text(160,3030,'典故逻辑依据公开成语资料核对；机构借用行动关系，不复原具体战争场景。',21,COLORS['soft_gray'],'sans',400)}</g>'''
-    return wrap(2,"把典故变成必须遵守的动作","IDIOM TO MECHANISM · 围魏救赵的两阶段结构",body)
+{text(250,2720,'围合',24,COLORS['paper_white'],'sans',620)}{text(770,2720,'侧移',24,COLORS['paper_white'],'sans',620)}{text(1260,2720,'解锁',24,COLORS['paper_white'],'sans',620)}{text(2170,2720,'中央见礼',24,COLORS['paper_white'],'sans',620,'end')}
+{text(160,3030,'机构借用“围魏救赵”的行动关系，不复原具体战争场景。',21,COLORS['soft_gray'],'sans',400)}</g>'''
+    return wrap(2, "把典故变成必须遵守的动作", "IDIOM TO MECHANISM · 围—移—解—见", body)
 
 
 def board_03():
-    states=[('sequence_01.png','01 · 闭锁','两枚锁钥片占据槽位'),('sequence_02.png','02 · 侧移','红色侧抽开始右移'),('sequence_03.png','03 · 释放','42 mm 后获得 1.2 mm 余量'),('sequence_04.png','04 · 显现','中央托盘再前行 145 mm')]
-    blocks=[]
-    for i,(img,t,d) in enumerate(states):
-        x=140+(i%2)*1120; y=560+(i//2)*920
-        blocks.append(f'''<g transform="translate({x} {y})">{panel(0,0,1060,820)}{image('../../04_renders/'+img,25,45,1010,600)}{text(54,690,t,34,COLORS['wall_ink'],'serif',720)}{text(54,748,d,22,COLORS['soft_gray'],'sans',430)}</g>''')
-    body=f'''<g id="sequence">{''.join(blocks)}
-<rect x="140" y="2480" width="2180" height="430" rx="44" fill="{COLORS['wall_ink']}"/>
-{text(220,2605,'动作规则',20,COLORS['moon_gold'],'latin',720,spacing=3)}{text(220,2690,'侧抽不到位，中央托盘不应开启',41,COLORS['paper_white'],'serif',720)}
-{text(220,2780,'所有画面内商品均为：',22,COLORS['paper_white'],'sans',420)}{text(625,2780,SKU.label,25,COLORS['route_red'],'sans',700)}
-{text(2150,2690,'42 → 145',54,COLORS['moon_gold'],'latin',760,'end')}{text(2150,2750,'mm / mm',18,COLORS['paper_white'],'latin',500,'end')}</g>'''
-    return wrap(3,"先解锁，再见礼","OPENING SEQUENCE · 两个方向、两个行程、一个明确顺序",body)
+    states = [
+        ("sequence_01.png", "01 · 闭锁", "双锁钥片占据槽位"),
+        ("sequence_03.png", "02 · 侧移", "42 mm 后限制释放"),
+        ("sequence_04.png", "03 · 显现", "中央托盘前行 145 mm"),
+    ]
+    blocks = []
+    for index, (img, title_value, description) in enumerate(states):
+        x = 120 + index * 755
+        blocks.append(f'''<g transform="translate({x} 1740)">{panel(0,0,700,820)}{image('../../04_renders/'+img,20,30,660,540)}{text(45,650,title_value,31,COLORS['wall_ink'],'serif',720)}{text(45,710,description,21,COLORS['soft_gray'],'sans',430)}</g>''')
+    body = f'''<g id="opening-experience">
+<rect x="120" y="520" width="2240" height="1080" rx="52" fill="{COLORS['wall_ink']}"/>{image('../../04_renders/hand_opening.png',100,500,2280,1100)}
+{text(200,1490,'手部只表达尺度与侧移动作 · DIGITAL VISUALISATION',20,COLORS['paper_white'],'latin',520,spacing=2)}
+{"".join(blocks)}
+<rect x="120" y="2660" width="2240" height="320" rx="42" fill="#172529"/>
+{text(200,2790,'动作规则',19,COLORS['moon_gold'],'latin',720,spacing=3)}{text(200,2880,'侧抽不到位，中央托盘不能开启',38,COLORS['paper_white'],'serif',720)}
+{text(2150,2865,'42 → 145 mm',48,COLORS['moon_gold'],'latin',760,'end')}</g>'''
+    return wrap(3, "先解锁，再见礼", "OPENING EXPERIENCE · 两个方向、一个不可跳步的顺序", body)
 
 
 def board_04():
-    body=f'''<g id="engineering">
-<rect x="120" y="520" width="1420" height="1600" rx="52" fill="{COLORS['wall_ink']}"/>{image('../../04_renders/exploded.png',120,530,1420,1300)}{text(190,1960,'13 个实体 · 3 个 STEP 状态 · 13 份 STL',25,COLORS['paper_white'],'latin',620)}
-<g transform="translate(1600 520)">{panel(0,0,760,760)}{text(55,82,'DIELINE',18,COLORS['moon_gold'],'latin',720,spacing=3)}{image('../../04_renders/dieline_preview.png',30,110,700,500)}{text(55,665,'红：裁切｜蓝：压痕｜灰：裱糊 / 禁胶',20,COLORS['soft_gray'],'sans',450)}</g>
-<g transform="translate(1600 1360)">{panel(0,0,760,760)}{text(55,85,'LOCK LOGIC',18,COLORS['moon_gold'],'latin',720,spacing=3)}{text(55,175,'双锁钥片',42,COLORS['wall_ink'],'serif',720)}{lines(55,270,['闭合：两点同时限位','侧移：42 mm 清除槽位','释放余量：1.2 mm','开启：中央托盘前行 145 mm'],24,COLORS['soft_gray'],62,'sans',430)}</g>
-<rect x="120" y="2240" width="2240" height="680" rx="48" fill="#FAF6EC" stroke="#D6C7A8" stroke-width="3"/>
-{text(190,2360,'关键参数',38,COLORS['wall_ink'],'serif',720)}
-{text(190,2480,'2.0 mm',45,COLORS['wall_ink'],'latin',760)}{text(190,2535,'灰板厚度',20,COLORS['soft_gray'],'sans',450)}
-{text(650,2480,'0.18 mm',45,COLORS['wall_ink'],'latin',760)}{text(650,2535,'包纸厚度代理',20,COLORS['soft_gray'],'sans',450)}
-{text(1160,2480,'0.6 mm / 侧',45,COLORS['wall_ink'],'latin',760)}{text(1160,2535,'滑动基准间隙',20,COLORS['soft_gray'],'sans',450)}
-{text(1760,2480,'Ø108 mm',45,COLORS['wall_ink'],'latin',760)}{text(1760,2535,'月璧窗口',20,COLORS['soft_gray'],'sans',450)}
-{lines(190,2680,['数字模型验证分件、包络、行程与中性格式可读性；纸板膨胀、裱糊累积、','满载摩擦、锁片撕裂、30 次开合、跌落与运输振动仍须实体样机验证。'],23,COLORS['soft_gray'],50,'sans',400)}
-{text(190,2850,SKU.label,23,COLORS['route_red'],'sans',700)}</g>'''
-    return wrap(4,"结构与刀模，同一套证据","ENGINEERING · 从参数化装配到毫米级包装展开",body)
+    cards = []
+    for index, product in enumerate(PRODUCTS):
+        x = 130 + (index % 3) * 745
+        y = 1880 + (index // 3) * 410
+        label_color = COLORS["paper_white"] if product.code == "A" else COLORS["wall_ink"]
+        cards.append(f'''<g transform="translate({x} {y})"><rect width="690" height="350" rx="38" fill="{product.color}" stroke="#D6C7A8" stroke-width="3"/>{text(48,76,product.code,18,COLORS['moon_gold'],'latin',760,spacing=2)}{text(48,150,product.display_name,39,label_color,'serif',760)}{text(48,205,product.category,22,label_color,'sans',500,opacity=.82)}{text(48,290,f'{PRODUCT_MODULE.width:.0f} × {PRODUCT_MODULE.depth:.0f} × {PRODUCT_MODULE.height:.0f} mm',19,label_color,'latin',620)}</g>''')
+    body = f'''<g id="product-family">
+<rect x="120" y="520" width="2240" height="1240" rx="54" fill="#A99C8A"/>{image('../../04_renders/product_family.png',100,500,2280,1280)}
+{text(190,1680,'统一模块，不同地域性格：路线、山形、谷粒、瓣形与旋磨纹在同一网格中变化。',22,COLORS['paper_white'],'sans',500)}
+{"".join(cards)}
+<rect x="130" y="2770" width="2180" height="220" rx="34" fill="{COLORS['wall_ink']}"/>
+{text(200,2860,'ORIGINAL SECONDARY PACKAGING SYSTEM',17,COLORS['moon_gold'],'latin',720,spacing=3)}
+{text(200,2935,CONCEPT_DISCLOSURE,27,COLORS['paper_white'],'sans',650)}</g>'''
+    return wrap(4, "六地六味，一套包装语言", "PRODUCT FAMILY · 六个原创概念模块", body)
 
 
 def board_05():
-    body=f'''<g id="seasonal">
-<g transform="translate(120 540)">{panel(0,0,1080,1780,True)}{image('../../04_renders/mid_autumn_variant.png',20,70,1040,900)}{text(70,1090,'月满中秋',52,COLORS['paper_white'],'serif',740)}{text(72,1140,'MID-AUTUMN EDITION',18,COLORS['moon_gold'],'latin',650,spacing=3)}{lines(70,1260,['月宣白 × 赵月金','以月璧窗口形成节庆焦点','保留相同侧移解锁动作'],25,COLORS['paper_white'],58,'sans',400)}<circle cx="870" cy="1390" r="105" fill="none" stroke="{COLORS['moon_gold']}" stroke-width="5"/></g>
-<g transform="translate(1280 540)">{panel(0,0,1080,1780)}{image('../../04_renders/national_day_variant.png',20,70,1040,900)}{text(70,1090,'山河同庆',52,COLORS['wall_ink'],'serif',740)}{text(72,1140,'NATIONAL DAY EDITION',18,COLORS['route_red'],'latin',650,spacing=3)}{lines(70,1260,['河山青 × 迂回朱','山线与路径强调共同出发','不堆叠旗帜或战争符号'],25,COLORS['soft_gray'],58,'sans',400)}<path d="M760 1480 L850 1380 L930 1460 L1020 1330" fill="none" stroke="{COLORS['route_red']}" stroke-width="6"/></g>
-<rect x="120" y="2420" width="2240" height="500" rx="48" fill="{COLORS['wall_ink']}"/>{text(200,2540,'一个机构，两层节庆表达',42,COLORS['paper_white'],'serif',720)}{lines(200,2640,['共享字标、月璧窗口、路线构图、品牌区与法定信息区；只切换季节图层与 CMF。','品牌区待授权资产｜法定信息区待真实文案｜不得仿制邯宝坊未提供的官方标志。'],23,COLORS['paper_white'],52,'sans',380)}{text(200,2820,SKU.label,23,COLORS['route_red'],'sans',700)}</g>'''
-    return wrap(5,"双节不是两套无关包装","SEASONAL CMF · 中秋与国庆共享同一机关身份",body)
+    body = f'''<g id="engineering">
+<rect x="120" y="520" width="1420" height="1500" rx="52" fill="{COLORS['wall_ink']}"/>{image('../../04_renders/exploded.png',120,540,1420,1200)}{text(190,1900,'13 个实体 · 3 个 STEP 状态 · 13 份 STL',24,COLORS['paper_white'],'latin',620)}
+<g transform="translate(1600 520)">{panel(0,0,760,700)}{text(55,82,'DIELINE',18,COLORS['moon_gold'],'latin',720,spacing=3)}{image('../../04_renders/dieline_preview.png',30,100,700,470)}{text(55,625,'红：裁切｜蓝：压痕｜灰：裱糊',20,COLORS['soft_gray'],'sans',450)}</g>
+<g transform="translate(1600 1290)">{panel(0,0,760,730)}{text(55,85,'LOCK LOGIC',18,COLORS['moon_gold'],'latin',720,spacing=3)}{text(55,175,'双锁钥片',40,COLORS['wall_ink'],'serif',720)}{lines(55,270,['闭合：两点同时限位','侧移：42 mm 清除槽位','释放余量：1.2 mm','开启：中央前行 145 mm'],23,COLORS['soft_gray'],60,'sans',430)}</g>
+<rect x="120" y="2140" width="2240" height="840" rx="48" fill="#FAF6EC" stroke="#D6C7A8" stroke-width="3"/>
+{text(190,2260,'材料与关键参数',38,COLORS['wall_ink'],'serif',720)}
+{text(190,2380,'2.0 mm',43,COLORS['wall_ink'],'latin',760)}{text(190,2435,'灰板',19,COLORS['soft_gray'],'sans',450)}
+{text(620,2380,'0.18 mm',43,COLORS['wall_ink'],'latin',760)}{text(620,2435,'包纸设计基线',19,COLORS['soft_gray'],'sans',450)}
+{text(1120,2380,'1.0 mm / 侧',43,COLORS['wall_ink'],'latin',760)}{text(1120,2435,'概念模块装配间隙',19,COLORS['soft_gray'],'sans',450)}
+{text(1780,2380,'Ø108 mm',43,COLORS['wall_ink'],'latin',760)}{text(1780,2435,'月璧窗口',19,COLORS['soft_gray'],'sans',450)}
+{lines(190,2610,['灰板裱艺术纸，局部烫金或金色油墨；内衬建议纸浆模塑或折叠白卡。','数字模型验证结构、行程和交换格式；纸板耐久与运输性能须在决赛样机阶段验证。'],22,COLORS['soft_gray'],52,'sans',400)}
+{text(190,2850,CONCEPT_DISCLOSURE,23,COLORS['route_red'],'sans',700)}</g>'''
+    return wrap(5, "结构、材料与制造边界", "ENGINEERING · 从参数化装配到毫米级包装展开", body)
 
 
 def board_06():
-    body=f'''<g id="gate">
-<rect x="120" y="520" width="2240" height="760" rx="56" fill="{COLORS['wall_ink']}"/>{image('../../04_renders/hero_open.png',1120,490,1180,760)}{text(210,660,'TECHNICAL CANDIDATE',18,COLORS['moon_gold'],'latin',760,spacing=4)}{text(210,760,'技术候选稿',56,COLORS['paper_white'],'serif',760)}{text(210,850,'目前不能正式投稿',48,COLORS['route_red'],'serif',760)}{lines(210,955,['结构、刀模、渲染与展板已完成；','真实商品和品牌授权尚未进入项目。'],25,COLORS['paper_white'],52,'sans',390)}
-<g transform="translate(120 1400)">{panel(0,0,700,780)}{text(55,90,'MISSING 01',18,COLORS['moon_gold'],'latin',720,spacing=2)}{text(55,170,'真实 SKU',38,COLORS['wall_ink'],'serif',720)}{lines(55,270,['实测长宽高与重量','商品数量与排列优先级','六面包装照片','运输与防护要求'],23,COLORS['soft_gray'],57,'sans',420)}</g>
-<g transform="translate(890 1400)">{panel(0,0,700,780)}{text(55,90,'MISSING 02',18,COLORS['moon_gold'],'latin',720,spacing=2)}{text(55,170,'品牌与法定信息',38,COLORS['wall_ink'],'serif',720)}{lines(55,270,['矢量 Logo 与授权范围','可用品牌色和禁用方式','食品名称 / 净含量 / 配料','生产者与责任边界'],23,COLORS['soft_gray'],57,'sans',420)}</g>
-<g transform="translate(1660 1400)">{panel(0,0,700,780)}{text(55,90,'MISSING 03',18,COLORS['moon_gold'],'latin',720,spacing=2)}{text(55,170,'投稿身份',38,COLORS['wall_ink'],'serif',720)}{lines(55,270,['作者 / 学校 / 指导教师','真实联系方式','最终文件命名规则','主办方最新报名表'],23,COLORS['soft_gray'],57,'sans',420)}</g>
-<rect x="120" y="2320" width="2240" height="620" rx="50" fill="#172529"/>{text(200,2450,'COST POSITION',18,COLORS['moon_gold'],'latin',720,spacing=3)}{text(200,2550,'¥80–160',48,COLORS['paper_white'],'latin',760)}{text(200,2610,'概念样机包装，不含食品',20,COLORS['paper_white'],'sans',420)}{text(720,2550,'¥18–32',48,COLORS['paper_white'],'latin',760)}{text(720,2610,'量产目标区间，需供应商重算',20,COLORS['paper_white'],'sans',420)}{text(200,2760,'醒目标注',20,COLORS['moon_gold'],'sans',700)}{text(200,2840,SKU.label,36,COLORS['route_red'],'sans',760)}{text(2160,2840,'BLOCKED',34,COLORS['moon_gold'],'latin',760,'end')}</g>'''
-    return wrap(6,"把缺失资料写在作品里","DELIVERY GATE · 技术通过，不等于可以绕过真实商品与授权",body,True)
+    body = f'''<g id="market-scene">
+<rect x="120" y="520" width="2240" height="1160" rx="54" fill="#8F8373"/>{image('../../04_renders/retail_scene.png',100,500,2280,1200)}
+<g transform="translate(120 1780)">{panel(0,0,1080,820,True)}{image('../../04_renders/mid_autumn_variant.png',20,35,1040,500)}{text(65,625,'月满中秋',44,COLORS['paper_white'],'serif',740)}{text(65,690,'月宣白 × 赵月金',22,COLORS['moon_gold'],'sans',520)}{text(65,750,'共享结构，只切换外套与局部印刷层',21,COLORS['paper_white'],'sans',420)}</g>
+<g transform="translate(1280 1780)">{panel(0,0,1080,820)}{image('../../04_renders/national_day_variant.png',20,35,1040,500)}{text(65,625,'山河同庆',44,COLORS['wall_ink'],'serif',740)}{text(65,690,'河山青 × 迂回朱',22,COLORS['route_red'],'sans',620)}{text(65,750,'文旅门店、节庆礼赠与城市伴手礼场景',21,COLORS['soft_gray'],'sans',420)}</g>
+<rect x="120" y="2700" width="2240" height="300" rx="42" fill="#172529"/>
+{text(190,2810,'MARKET CONVERSION',17,COLORS['moon_gold'],'latin',720,spacing=3)}
+{text(190,2890,'模块化内装便于按渠道与节令调整；成本与价格均为设计估算，须由生产主体复核。',24,COLORS['paper_white'],'sans',460)}
+{text(190,2960,CONCEPT_DISCLOSURE,22,COLORS['route_red'],'sans',700)}</g>'''
+    return wrap(6, "双节应用与市场场景", "SEASONAL CMF · ONE STRUCTURE, TWO FESTIVAL EXPRESSIONS", body, True)
 
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    boards=[board_01(),board_02(),board_03(),board_04(),board_05(),board_06()]
-    for i,content in enumerate(boards,1):
-        (OUT/f"board_{i:02d}.svg").write_text(content,encoding="utf-8")
-    manifest={"count":6,"size_px":[W,H],"dpi":BOARD.dpi,"proxy_label":SKU.label,"titles":["解围","把典故变成必须遵守的动作","先解锁，再见礼","结构与刀模，同一套证据","双节不是两套无关包装","把缺失资料写在作品里"]}
-    (OUT/"board_manifest.json").write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+"\n",encoding="utf-8")
-    print(json.dumps({"status":"ok","boards":6},ensure_ascii=False))
+    boards = [board_01(), board_02(), board_03(), board_04(), board_05(), board_06()]
+    for index, content in enumerate(boards, 1):
+        (OUT / f"board_{index:02d}.svg").write_text(content, encoding="utf-8")
+    manifest = {
+        "count": 6,
+        "size_px": [W, H],
+        "dpi": BOARD.dpi,
+        "product_asset_status": "original_concept_secondary_packaging",
+        "concept_disclosure": CONCEPT_DISCLOSURE,
+        "titles": [
+            "解围·六味邯郸",
+            "把典故变成必须遵守的动作",
+            "先解锁，再见礼",
+            "六地六味，一套包装语言",
+            "结构、材料与制造边界",
+            "双节应用与市场场景",
+        ],
+    }
+    (OUT / "board_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    print(json.dumps({"status": "ok", "boards": 6}, ensure_ascii=False))
 
 
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
