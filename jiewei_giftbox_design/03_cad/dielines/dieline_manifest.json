@@ -1,0 +1,67 @@
+{
+  "units": "mm",
+  "layers": {
+    "cut": "#FF0000",
+    "crease": "#0000FF",
+    "glue": "#808080"
+  },
+  "glue_tab_mm": 15,
+  "board_thickness_mm": 2.0,
+  "wrap_proxy_mm": 0.18,
+  "module_outer_mm": [
+    68.0,
+    62.0,
+    44.0
+  ],
+  "files": {
+    "outer_sleeve": {
+      "sheet_mm": [
+        765.0,
+        270.0
+      ],
+      "svg": "outer_sleeve.svg",
+      "dxf": "outer_sleeve.dxf",
+      "calibration_square_mm": [
+        10,
+        10
+      ]
+    },
+    "wei_drawer": {
+      "sheet_mm": [
+        360.0,
+        320.0
+      ],
+      "svg": "wei_drawer.svg",
+      "dxf": "wei_drawer.dxf",
+      "calibration_square_mm": [
+        10,
+        10
+      ]
+    },
+    "zhao_tray": {
+      "sheet_mm": [
+        340.0,
+        300.0
+      ],
+      "svg": "zhao_tray.svg",
+      "dxf": "zhao_tray.dxf",
+      "calibration_square_mm": [
+        10,
+        10
+      ]
+    },
+    "lock_keys": {
+      "sheet_mm": [
+        190.0,
+        120.0
+      ],
+      "svg": "lock_keys.svg",
+      "dxf": "lock_keys.dxf",
+      "calibration_square_mm": [
+        10,
+        10
+      ]
+    }
+  },
+  "boundary": "Concept dielines; physical grain, wrap buildup and production tolerances require converter proofing."
+}

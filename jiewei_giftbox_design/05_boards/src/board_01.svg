@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs><style><![CDATA[
+@font-face{font-family:NSans;src:url('../../01_research/fonts/NotoSansSC[wght].ttf')}
+@font-face{font-family:NSerif;src:url('../../01_research/fonts/NotoSerifSC[wght].ttf')}
+@font-face{font-family:Inter;src:url('../../01_research/fonts/InterVariable.ttf')}
+.sans{font-family:NSans,sans-serif} .serif{font-family:NSerif,serif} .latin{font-family:Inter,sans-serif}
+]]></style><filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#081113" flood-opacity=".25"/></filter></defs>
+<rect width="2480" height="3508" fill="#202F32"/>
+<path d="M-100 3040 C520 2700 900 3400 1480 3080 S2240 2780 2620 3000" fill="none" stroke="#C19A55" stroke-width="3" opacity=".16"/>
+
+<g id="header">
+ <text x="160" y="178" class="latin" font-size="22" font-weight="760" text-anchor="start" fill="#C19A55" opacity="1.0" letter-spacing="4">01 / 06</text>
+ <text x="160" y="308" class="serif" font-size="82" font-weight="780" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="2">解围·六味邯郸</text>
+ <text x="162" y="374" class="latin" font-size="23" font-weight="480" text-anchor="start" fill="#EEE4D0" opacity="0.68" letter-spacing="2">TWO-STAGE UNLOCKING · ORIGINAL CONCEPT PACKAGING SYSTEM</text>
+ <path d="M160 438 H2320" stroke="#C19A55" stroke-width="4" opacity=".72"/>
+</g>
+<g id="cover">
+ <circle cx="1940" cy="820" r="350" fill="none" stroke="#C19A55" stroke-width="4" opacity=".24"/>
+ <image href="../../04_renders/hero_open.png" x="100" y="420" width="2280" height="1650" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+ <rect x="150" y="2050" width="2180" height="820" rx="56" fill="#172529" stroke="#C19A55" stroke-width="3"/>
+ <text x="240" y="2240" class="serif" font-size="122" font-weight="820" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="9">解围</text>
+ <text x="246" y="2325" class="latin" font-size="23" font-weight="680" text-anchor="start" fill="#C19A55" opacity="1.0" letter-spacing="5">RELIEVE THE SIEGE</text>
+ <text x="240" y="2460" class="serif" font-size="43" font-weight="650" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">六味邯郸 · 邯宝坊机关礼盒概念提案</text>
+ <text x="240" y="2570" class="sans" font-size="28" font-weight="380" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">把“围魏救赵”的行动顺序变成开盒逻辑：</text><text x="240" y="2622" class="sans" font-size="28" font-weight="380" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">先侧移解除锁定，再让六地风物在中央显现。</text>
+ <g transform="translate(1590 2280)" fill="none"><path d="M0 300 H180 V170 H380" stroke="#A83B32" stroke-width="18"/><path d="M380 170 V50 H610" stroke="#C19A55" stroke-width="18"/><circle cx="610" cy="50" r="20" fill="#C19A55" stroke="none"/></g>
+ <text x="180" y="3020" class="latin" font-size="27" font-weight="700" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">290 × 230 × 75 mm</text>
+ <text x="850" y="3020" class="sans" font-size="27" font-weight="620" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">42 mm 侧移解锁</text>
+ <text x="1510" y="3020" class="sans" font-size="27" font-weight="620" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">145 mm 中央显现</text>
+</g>
+<g id="footer" opacity=".58"><path d="M160 3350 H2320" stroke="#EEE4D0" stroke-width="2"/>
+<text x="160" y="3408" class="latin" font-size="16" font-weight="520" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="2">JIEWEI · HANBAOFANG SIX FLAVOURS OF HANDAN · CONCEPT PROPOSAL</text>
+<text x="2320" y="3408" class="latin" font-size="16" font-weight="720" text-anchor="end" fill="#C19A55" opacity="1.0" letter-spacing="2">01</text></g></svg>

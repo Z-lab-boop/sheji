@@ -1,0 +1,7 @@
+concept_id,category,public_basis_url,evidence_state,allowed_claim,prohibited_claim
+A,鸡泽辣椒,https://ipr.mofcom.gov.cn/article/gnxw/dlbz/202102/1959588.html,verified_category_only,鸡泽辣椒是邯郸地域产品类别,不得声称具体企业或包装已授权
+B,魏县鸭梨,https://std.samr.gov.cn/db/search/stdDBDetailed?id=2F905795AB653FA8E06397BE0A0A91D7,verified_category_only,魏县鸭梨具有现行地方标准资料,不得擅用地理标志图形或现售包装
+C,涉县核桃,https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450,verified_category_only,涉县核桃属于公开列出的邯郸地域产品,不得声称对应具体在售商品
+D,武安小米,https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450,verified_category_only,武安小米属于公开列出的邯郸地域产品,不得虚构净含量或生产商
+E,永年大蒜,https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450,verified_category_only,永年大蒜属于公开列出的邯郸地域产品,不得声称衍生食品已上市
+F,大名小磨香油,https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450,verified_category_only,大名小磨香油属于公开列出的邯郸地域产品,不得使用具体企业商标或标签

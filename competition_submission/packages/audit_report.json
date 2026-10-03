@@ -1,0 +1,528 @@
+{
+  "competition": "2026和氏璧杯成语之都大学生创意奖",
+  "rules_verified_on": "2026-10-02",
+  "requirements": {
+    "page": "A4 portrait",
+    "pixels": [
+      2480,
+      3508
+    ],
+    "dpi": 300,
+    "mode": "RGB",
+    "format": "JPG",
+    "max_bytes_per_image": 5242880
+  },
+  "projects": [
+    {
+      "project": "遂见",
+      "status": "conditionally_ready",
+      "board_count": 7,
+      "boards": [
+        {
+          "file": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 477802,
+          "sha256": "0eb4a83bf30cb002babd9d60d908211a979156581b7b94ea91c905f53a496e3a",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 529216,
+          "sha256": "ee52a42580cf1de4284d8f3d053830522f3b81229e0047e21c7b921ece077c0d",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 534160,
+          "sha256": "7e2e120a2f6120ebdba983aaf444a76c2b2cd621c5aba307b22db187224b7d59",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 407313,
+          "sha256": "c9096c24160a8cb4be6d6b0e9b51ec27cf8ef62b0e047dab4851db40fcb9d167",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 551990,
+          "sha256": "46bc9d20348d950b9c3caa5d6080d56874d3160de20639de21f9b0eefa696e4f",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 555764,
+          "sha256": "bbe813613d5a927ce7428db9aa781c77d33bbda61bb2aa7d2b04a21fdc4a6005",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_07.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 570877,
+          "sha256": "773205afd3d75f8a17f35ae6d267e4c4db8607d4609354fe71898f3506ed4da0",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        }
+      ],
+      "package": "赛道二_遂见_待填写报名表后提交.zip",
+      "package_sha256": "ef09e85f2f9554ccc892fba8850189a29d85d6ea9dde77b822f29da9828deb9a"
+    },
+    {
+      "project": "步步生典",
+      "status": "conditionally_ready",
+      "board_count": 8,
+      "boards": [
+        {
+          "file": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 505796,
+          "sha256": "edab7471a6e5a06003e54b43f0d8e585e5b0c6f70e3ab912f1cee9c16b4715a2",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 476107,
+          "sha256": "9e47e48912e8fc875735ce8029579a5b039f7da484a1021701b7bdd42aa4d330",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 530270,
+          "sha256": "29ad35e37f885082ec49cb65212cdd75d3d8211891bb4159b79859c37edd8ca7",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 493586,
+          "sha256": "4da99b194367f6d30c5fad2676d1501c843ef8d49f210680d9830fcd6b06403a",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 550186,
+          "sha256": "f86dc724b208c33647e57503840fb7b684475b611a23757f48f4a8c645572bb9",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 683693,
+          "sha256": "2ee94fccc3742056de63d3a0065ffe9320c74bea08840f4345a098aeab65e148",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_07.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 536559,
+          "sha256": "a1a26d34575f17041c709c51a22e828255fba21d431f1fedd5d6f7d7804f6d7d",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_08.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 576807,
+          "sha256": "fbdc1ec429da6c5e89b06215bba2b4af12bee6ce00c236949295b2c220451760",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        }
+      ],
+      "package": "赛道二_步步生典_待填写报名表后提交.zip",
+      "package_sha256": "f109bbc993c908e4036ac7cb8fe262b235456eb1d234d13d5bd09e593af9ef93"
+    },
+    {
+      "project": "解围",
+      "status": "conditionally_ready",
+      "board_count": 6,
+      "boards": [
+        {
+          "file": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 646894,
+          "sha256": "553994811af0d843f7ade67ec586b8616b6382bb0373d8a9f7f3b3d264ee1d8b",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 449094,
+          "sha256": "467ad4dfa75173c7f599f061d3a4abf9875ebb66dd2bc4449d13812ea2b7f16a",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 588154,
+          "sha256": "e590eebc560e218a95fd1dd26aa90a16e4a9679b776751ce7c3513d8651e1772",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 541556,
+          "sha256": "a6b551625aff77e95ed7015f7009fdcf3d4d89a523576f0c42740320a556e4a4",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 569230,
+          "sha256": "727cdb509dc5bd1c2d300166c29dd2a8449f5b2b5626c2889bf4a78c95464222",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        },
+        {
+          "file": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": [
+            300,
+            300
+          ],
+          "bytes": 564418,
+          "sha256": "b6dd53d2ebd8f1cc37976ccf970b6c820fd5912e1ba73178e911371f46231142",
+          "checks": {
+            "size": true,
+            "mode": true,
+            "dpi": true,
+            "format": true,
+            "units": true,
+            "max_bytes": true
+          },
+          "passed": true
+        }
+      ],
+      "package": "赛道一_解围_待填写报名表后提交.zip",
+      "package_sha256": "7046ed12cc4f39543bfa933e8801d32cc5b53d9c287dbedd85c72bce99e4da59"
+    }
+  ],
+  "overall_status": "conditionally_ready_three_projects_pending_identity_and_signature"
+}

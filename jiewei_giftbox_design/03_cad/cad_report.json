@@ -1,0 +1,428 @@
+{
+  "document": "JieweiGiftBox",
+  "units": "mm",
+  "closed_bbox_mm": [
+    290.0,
+    230.0,
+    75.0
+  ],
+  "state_bbox_mm": {
+    "closed": [
+      290.0,
+      230.0,
+      75.0
+    ],
+    "unlocked": [
+      330.0,
+      230.0,
+      75.0
+    ],
+    "open": [
+      330.0,
+      360.0,
+      75.0
+    ]
+  },
+  "release_margin_mm": 1.2,
+  "lock_logic": {
+    "closed": "two lock keys occupy tray slots",
+    "unlocked": "42 mm side motion clears both slots",
+    "open": "side remains released while central tray advances 145 mm"
+  },
+  "parts": {
+    "outer_sleeve": {
+      "bbox_mm": [
+        290.0,
+        230.0,
+        75.0
+      ],
+      "volume_mm3": 422389.503,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "877cb962bfe222b9dc69584a84779e646405aad729015dd80fecf5e505dfebd6"
+    },
+    "wei_drawer": {
+      "bbox_mm": [
+        53.0,
+        180.0,
+        55.0
+      ],
+      "volume_mm3": 507766.816,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "430f0ae99fd7ffd6fdbed740a87f148c4181bf8b97607857fd5617fd998b3b97"
+    },
+    "lock_key_left": {
+      "bbox_mm": [
+        35.8,
+        20.0,
+        8.0
+      ],
+      "volume_mm3": 5536.0,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "8dd1a9003bf04bd0f1bff0d88b6ba6a3933d272fec88b87b8b4008e0d6849062"
+    },
+    "lock_key_right": {
+      "bbox_mm": [
+        35.8,
+        20.0,
+        8.0
+      ],
+      "volume_mm3": 5536.0,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "1c711c0f9f812be70706a93534dc5877b26aae7e082ae258fe22eb6875de164c"
+    },
+    "zhao_tray": {
+      "bbox_mm": [
+        230.0,
+        200.0,
+        18.0
+      ],
+      "volume_mm3": 273912.0,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "977dd6332409a6b8deba8c27cbb452521fd92a030c59fdb3921682f5fa40a5d5"
+    },
+    "inner_liner": {
+      "bbox_mm": [
+        210.0,
+        130.0,
+        8.0
+      ],
+      "volume_mm3": 86560.0,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "6ca25d553ec09a2da04c932e39d44d840f8845703bf066bfca62014241037ae0"
+    },
+    "moon_disc": {
+      "bbox_mm": [
+        108.0,
+        107.966,
+        2.0
+      ],
+      "volume_mm3": 4442.212,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "d46aac61cf919f6e1e8037974aaa66ab7d8fe3fc46c279881edd652a2b8ecd4d"
+    },
+    "concept_module_A": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "80176b643b2cc9421da0c92a7553ea28a38a08b1aa06c7ad1433b3837b5ed426"
+    },
+    "concept_module_B": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "ef2f74561b31c39618396dd16eccf0ec4170a4de5d92240e012787f7a924ed14"
+    },
+    "concept_module_C": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "a09840b935ebed95a61e6d5ede9d72f53f2f671bf62128715e4b8b63fc3d80c3"
+    },
+    "concept_module_D": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "c75aefa7be423879cd47acc3381061fe7cc47e6a6e3bfcf2860502f6f64d021c"
+    },
+    "concept_module_E": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "902a78da3280c1a0a3d1e277c10a69f4f769a3c3af14529a4faf1f56057c2ff1"
+    },
+    "concept_module_F": {
+      "bbox_mm": [
+        68.0,
+        62.0,
+        44.8
+      ],
+      "volume_mm3": 185561.6,
+      "solid_count": 1,
+      "valid": true,
+      "sha256": "c1e0036e241278dd20e9a6ae2148d6cd603657371c7c3a8d99b836b42e2f963c"
+    }
+  },
+  "states": {
+    "closed": {
+      "path": "jiewei_giftbox_closed.step",
+      "sha256": "2d54f4f00c098061ab9cfccc6daa9a8eecdda687d9d2721d93e6c07fd5ba75fd",
+      "positions_mm": {
+        "outer_sleeve": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "wei_drawer": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_left": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_right": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "zhao_tray": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inner_liner": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "moon_disc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_B": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_C": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_D": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_E": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_F": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "unlocked": {
+      "path": "jiewei_giftbox_unlocked.step",
+      "sha256": "7769823ba5eb8c399a77ef35f3ad96dbfd4ad4bdee41e4f0926dfbf4974997eb",
+      "positions_mm": {
+        "outer_sleeve": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "wei_drawer": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_left": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_right": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "zhao_tray": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "inner_liner": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "moon_disc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_A": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_B": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_C": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_D": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_E": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_F": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "open": {
+      "path": "jiewei_giftbox_open.step",
+      "sha256": "c97f1d74ede64fde362c250ca0b224a2101491605b2d785aeef603b1dac723c2",
+      "positions_mm": {
+        "outer_sleeve": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "wei_drawer": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_left": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "lock_key_right": [
+          42.0,
+          0.0,
+          0.0
+        ],
+        "zhao_tray": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "inner_liner": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "moon_disc": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "concept_module_A": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "concept_module_B": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "concept_module_C": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "concept_module_D": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "concept_module_E": [
+          0.0,
+          -145.0,
+          0.0
+        ],
+        "concept_module_F": [
+          0.0,
+          -145.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "fcstd_sha256": "d0480d6bfb2c61f3fbb514e061462b24aca6b74d74a8dfcc301df79ea314cafa",
+  "product_asset_status": "original_concept_secondary_packaging",
+  "concept_disclosure": "概念包装建议规格，投产前复核",
+  "product_modules": [
+    {
+      "code": "A",
+      "category": "鸡泽辣椒",
+      "display_name": "椒起鸡泽"
+    },
+    {
+      "code": "B",
+      "category": "魏县鸭梨",
+      "display_name": "梨润魏州"
+    },
+    {
+      "code": "C",
+      "category": "涉县核桃",
+      "display_name": "核藏太行"
+    },
+    {
+      "code": "D",
+      "category": "武安小米",
+      "display_name": "粟映武安"
+    },
+    {
+      "code": "E",
+      "category": "永年大蒜",
+      "display_name": "蒜生永年"
+    },
+    {
+      "code": "F",
+      "category": "大名小磨香油",
+      "display_name": "油香大名"
+    }
+  ],
+  "boundary": "Paperboard fit model only; load, friction, tear, drop and transport behavior remain unverified."
+}

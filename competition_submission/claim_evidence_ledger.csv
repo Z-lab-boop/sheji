@@ -1,0 +1,20 @@
+claim_id,project,claim,evidence,status,allowed_wording,prohibited_wording,owner,next_action
+COMP-01,competition,征集截止时间为2026-11-05,competition_brief.md与2026赛事公告镜像,verified_2026-10-02,截至2026-10-02公告显示截止为2026-11-05,保证截止时间不会调整,entrant,发送前查看主办方公众号更新
+COMP-02,competition,赛道一最多6张且赛道二最多8张A4竖版300dpi RGB JPG且单张小于5MB,competition_brief.md与图像审计报告,verified_2026-10-02,现有14张展板符合已公布格式参数,组委会已经审核通过,designer,发送前再次运行打包审计
+COMP-03,competition,官方报名表需Word版和已签字PDF版,forms/2026和氏璧杯_官方报名表_空白.doc,verified_2026-10-02,须由参赛者填写并签署,报名表已经完成,entrant,填写真实信息并导出PDF
+SUI-01,遂见,闭合尺寸98×65×14毫米,suijian_design/03_cad/cad_report.json,verified_digital_cad,数字CAD闭合包络为98×65×14毫米,实体样机实测尺寸已通过,designer,实体样机完成后追加实测记录
+SUI-02,遂见,内托伸出28毫米并抬升7毫米,suijian_design/03_cad/cad_report.json与04_renders,verified_digital_cad,数字机构按28毫米行程和7毫米抬升展示,循环寿命与阻尼已通过,designer,制作样机并完成循环测试
+SUI-03,遂见,建议零售价99至199元,suijian_design/06_submission/materials_and_pricing.md,design_estimate,基础版99至129元且金属升级版149至199元均为定位估算,真实售价或已售价格,designer,取得正式供应商报价
+SUI-04,遂见,实体可靠性,无实体测试报告,not_verified,数字几何与展示逻辑已验证而实体性能待打样,跌落循环温湿度与耐磨已通过,designer,完成样机与最低测试
+BUB-01,步步生典,闭合尺寸165×120×30毫米,bubushengdian_design/03_cad/cad_report.json,verified_digital_cad,数字CAD闭合包络为165×120×30毫米,实体样机实测尺寸已通过,designer,实体样机完成后追加实测记录
+BUB-02,步步生典,包含六枚模块章与抽拉收纳结构,bubushengdian_design/03_cad与04_renders,verified_digital_cad,数字模型含六枚模块章并展示抽拉收纳,量产机构寿命已验证,designer,制作1比1样机并测试
+BUB-03,步步生典,地图用于城市文化路线表达,competition_submission/route_verification_2026-10-02.md与折叠地图,verified_names_and_scope_2026-10-02,文化节点名称与关联已核对且路线仅为文化示意,精确导航路线或实时开放信息,entrant,发送前做最终视觉确认且新增动态信息时重新核对
+BUB-04,步步生典,建议零售价159至199元,bubushengdian_design/06_submission/materials_and_pricing.md,design_estimate,建议零售定位159至199元且非供应商报价,真实售价或已售价格,designer,取得正式打样报价
+BUB-05,步步生典,实体可靠性,无实体测试报告,not_verified,数字CAD已验证而实体性能待打样,跌落耐磨儿童安全已通过,designer,完成样机与最低测试
+JIE-01,解围,闭合尺寸290×230×75毫米,jiewei_giftbox_design/03_cad/cad_report.json,verified_digital_cad,数字CAD闭合包络为290×230×75毫米,实体白样已完成尺寸与装载验收,designer,入围或决赛前制作1比1白样并记录实测
+JIE-02,解围,先侧移42毫米再前拉145毫米,jiewei_giftbox_design/03_cad与04_renders,verified_digital_cad,数字机构按42毫米侧移后145毫米前拉展示,纸板实物手感与寿命已通过,designer,制作满载白样并测试
+JIE-03,解围,六个内装为68×62×44毫米原创概念二次包装模块,jiewei_giftbox_design/03_cad/cad_report.json与02_identity/concept_product_labels.svg,verified_digital_cad,原创概念二次包装模块,真实在售SKU外廓或已上市包装,designer,决赛前制作概念模块白样
+JIE-04,解围,六类邯郸地域产品与概念模块对应,jiewei_giftbox_design/06_submission/concept_product_evidence.csv,verified_category_only,鸡泽辣椒、魏县鸭梨、涉县核桃、武安小米、永年大蒜和大名小磨香油为地域品类,任何具体企业、现售商品或商标已授权,designer,保留品类级表述且不引入具体品牌资产
+JIE-05,解围,邯宝坊命题指向与原创视觉资产,competition_brief.md与jiewei_giftbox_design/02_identity,competition_named_target_original_assets,面向邯宝坊命题的原创概念提案,已获邯宝坊官方联名授权或已使用官方Logo,designer,报名和邮件保留概念提案边界
+JIE-06,解围,实体包装性能,无满载样机和测试报告,not_verified,数字CAD与刀模已验证而实体性能待打样,满载摩擦跌落运输均已通过,designer,完成白样与实测
+JIE-07,解围,包装材料与价格区间,jiewei_giftbox_design/06_submission/materials_and_pricing.md,design_estimate,灰板裱纸、白卡锁片和纸基内衬为设计建议且价格为设计估算,供应商已报价、成本已锁定或已批量生产,designer,决赛或量产前取得正式打样报价

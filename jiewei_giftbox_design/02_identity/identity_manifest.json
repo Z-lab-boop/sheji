@@ -1,0 +1,67 @@
+{
+  "project": "解围",
+  "palette": {
+    "wall_ink": "#202F32",
+    "moon_gold": "#C19A55",
+    "route_red": "#A83B32",
+    "mountain_green": "#586F66",
+    "paper_white": "#EEE4D0",
+    "soft_gray": "#858B86"
+  },
+  "fonts": [
+    "NotoSansSC[wght].ttf",
+    "NotoSerifSC[wght].ttf",
+    "InterVariable.ttf"
+  ],
+  "brand_asset_status": "official_brief_named_target_no_logo_asset",
+  "product_asset_status": "original_concept_secondary_packaging",
+  "concept_disclosure": "概念包装建议规格，投产前复核",
+  "product_modules": [
+    {
+      "code": "A",
+      "category": "鸡泽辣椒",
+      "display_name": "椒起鸡泽",
+      "color": "#A83B32"
+    },
+    {
+      "code": "B",
+      "category": "魏县鸭梨",
+      "display_name": "梨润魏州",
+      "color": "#819B79"
+    },
+    {
+      "code": "C",
+      "category": "涉县核桃",
+      "display_name": "核藏太行",
+      "color": "#80644B"
+    },
+    {
+      "code": "D",
+      "category": "武安小米",
+      "display_name": "粟映武安",
+      "color": "#C19A55"
+    },
+    {
+      "code": "E",
+      "category": "永年大蒜",
+      "display_name": "蒜生永年",
+      "color": "#EEE4D0"
+    },
+    {
+      "code": "F",
+      "category": "大名小磨香油",
+      "display_name": "油香大名",
+      "color": "#B97832"
+    }
+  ],
+  "reserved_zones": [
+    "brief-target",
+    "production-review"
+  ],
+  "assets": [
+    "wordmark.svg",
+    "mid_autumn_sleeve.svg",
+    "national_day_sleeve.svg",
+    "concept_product_labels.svg"
+  ]
+}

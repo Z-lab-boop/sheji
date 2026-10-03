@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="190.0mm" height="120.0mm" viewBox="0 0 190.0 120.0">
+<style>
+.cut{stroke:#FF0000;stroke-width:.25;fill:none;vector-effect:non-scaling-stroke} .crease{stroke:#0000FF;stroke-width:.2;stroke-dasharray:3 2;fill:none;vector-effect:non-scaling-stroke} .glue{stroke:#808080;stroke-width:.18;fill:#808080;fill-opacity:.16;vector-effect:non-scaling-stroke} .label{font:3.8px sans-serif;fill:#202F32}
+</style>
+<rect width="190.0" height="120.0" fill="#FFFDF8"/>
+<g id="glue-zones"><polygon points="27,47 45,47 45,59 27,59" class="glue"/><polygon points="102,47 120,47 120,59 102,59" class="glue"/></g><g id="cut-lines"><line x1="20" y1="40" x2="75" y2="40" class="cut"/><line x1="75" y1="40" x2="75" y2="66" class="cut"/><line x1="75" y1="66" x2="20" y2="66" class="cut"/><line x1="20" y1="66" x2="20" y2="40" class="cut"/><line x1="95" y1="40" x2="150" y2="40" class="cut"/><line x1="150" y1="40" x2="150" y2="66" class="cut"/><line x1="150" y1="66" x2="95" y2="66" class="cut"/><line x1="95" y1="66" x2="95" y2="40" class="cut"/><line x1="52" y1="40" x2="52" y2="66" class="crease"/><line x1="127" y1="40" x2="127" y2="66" class="crease"/></g>
+<g id="calibration-square"><line x1="162.0" y1="8" x2="172.0" y2="8" class="cut"/><line x1="172.0" y1="8" x2="172.0" y2="18" class="cut"/><line x1="172.0" y1="18" x2="162.0" y2="18" class="cut"/><line x1="162.0" y1="18" x2="162.0" y2="8" class="cut"/><text x="162.0" y="23" class="label">10 mm</text></g>
+<g id="grain-direction"><path d="M20 18 H70" stroke="#202F32" stroke-width=".5"/><path d="M70 18 l-6 -3 v6 z" fill="#202F32"/><text x="20" y="14" class="label">纹向 GRAIN</text></g>
+<text x="20" y="30" class="label">lock_keys · 单位 mm · 灰板 2.0 / 包纸代理 0.18</text>
+<text x="20" y="102.0" class="label">灰色为禁止上胶区；两枚锁钥片共同限位中央托盘。</text>
+</svg>

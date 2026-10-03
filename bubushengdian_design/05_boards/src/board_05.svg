@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NotoSansLocal; src: url('../../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NotoSerifLocal; src: url('../../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: InterLocal; src: url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NotoSansLocal, sans-serif; }
+    .serif { font-family: NotoSerifLocal, serif; }
+    .latin { font-family: InterLocal, sans-serif; }
+  ]]></style>
+  <linearGradient id="softGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8D29B"/><stop offset="1" stop-color="#C29A55"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#071B20" flood-opacity=".22"/></filter>
+</defs>
+<rect width="2480" height="3508" fill="#F0E7D4"/>
+<path d="M-160 3020 C540 2600 760 3420 1450 3140 S2260 2700 2700 3020" fill="none" stroke="#C29A55" stroke-width="3" opacity=".18"/>
+
+<g id="header">
+  <text x="160" y="178" class="latin" font-size="22" font-weight="750" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">05 / 08</text>
+  <text x="160" y="308" class="serif" font-size="90" font-weight="780" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="2">六枚章，一座城</text>
+  <text x="162" y="372" class="latin" font-size="25" font-weight="480" text-anchor="start" fill="#787C78" opacity="0.72" letter-spacing="2">STAMP SYSTEM · 基础文化章与双节限定章</text>
+  <path d="M160 438 H2320" stroke="#C29A55" stroke-width="4" opacity=".68"/>
+</g>
+
+
+<g id="stamp-system">
+  <rect x="120" y="530" width="1360" height="1450" rx="52" fill="#173B46"/>
+  <image href="../../04_renders/stamp_grid.png" x="130" y="600" width="1340" height="1050" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+  <text x="200" y="1770" class="serif" font-size="36" font-weight="700" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">六枚归位，拼成一幅城市路径</text>
+  <text x="200" y="1840" class="latin" font-size="22" font-weight="520" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="0.0">单枚 32 × 32 × 23 mm · 有效章面 26 × 26 mm</text>
+  <rect x="1540" y="530" width="810" height="1450" rx="52" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <image href="../../02_identity/stamp_faces.svg" x="1580" y="610" width="730" height="800" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+  <text x="1610" y="1510" class="serif" font-size="34" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">章面制造约束</text>
+  <text x="1610" y="1590" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">单色矢量路径</text><text x="1610" y="1638" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">最细线宽 ≥ 0.6 mm</text><text x="1610" y="1686" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">最小反白间距 ≥ 0.8 mm</text><text x="1610" y="1734" class="sans" font-size="22" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">章面可替换，章柄持续使用</text>
+  
+<g transform="translate(150 2140)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#B23A32"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">01</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">学步桥</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">基础文化章</text>
+</g>
+<g transform="translate(910 2140)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#173B46"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">02</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">回车巷</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">基础文化章</text>
+</g>
+<g transform="translate(1670 2140)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#173B46"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">03</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">武灵丛台</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">基础文化章</text>
+</g>
+<g transform="translate(150 2460)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#173B46"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">04</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">邯郸市博物馆</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">基础文化章</text>
+</g>
+<g transform="translate(910 2460)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#B23A32"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">05</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">月满邯郸</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">双节限定章</text>
+</g>
+<g transform="translate(1670 2460)">
+  <rect width="680" height="250" rx="34" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <circle cx="86" cy="125" r="48" fill="#173B46"/>
+  <text x="86" y="136" class="latin" font-size="22" font-weight="760" text-anchor="middle" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">06</text>
+  <text x="165" y="105" class="serif" font-size="30" font-weight="700" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">山河同游</text>
+  <text x="165" y="160" class="sans" font-size="19" font-weight="480" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">双节限定章</text>
+</g>
+  <text x="150" y="2890" class="sans" font-size="21" font-weight="420" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">限定章用于节日场景，不虚构新的历史典故。基础四章的节点名称在投稿前再次人工核对。</text>
+</g>
+
+
+<g id="footer" opacity=".55">
+  <path d="M160 3350 H2320" stroke="#173B46" stroke-width="2"/>
+  <text x="160" y="3408" class="latin" font-size="16" font-weight="540" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="4">BUBUSHENGDIAN · HANDAN CULTURAL WALK</text>
+  <text x="2320" y="3408" class="latin" font-size="16" font-weight="700" text-anchor="end" fill="#C29A55" opacity="1.0" letter-spacing="2">05</text>
+</g>
+
+</svg>

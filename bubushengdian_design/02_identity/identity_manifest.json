@@ -1,0 +1,38 @@
+{
+  "project": "步步生典",
+  "palette": {
+    "city_blue": "#173B46",
+    "stone_gray": "#787C78",
+    "moon_paper": "#F0E7D4",
+    "seal_red": "#B23A32",
+    "route_gold": "#C29A55",
+    "ink_black": "#172022"
+  },
+  "fonts": [
+    "Noto Serif SC",
+    "Noto Sans SC",
+    "Inter"
+  ],
+  "stamp_ids": [
+    "stamp-01",
+    "stamp-02",
+    "stamp-03",
+    "stamp-04",
+    "stamp-05",
+    "stamp-06"
+  ],
+  "stamp_names": [
+    "学步桥",
+    "回车巷",
+    "武灵丛台",
+    "邯郸市博物馆",
+    "月满邯郸",
+    "山河同游"
+  ],
+  "stamp_face_mm": [
+    26,
+    26
+  ],
+  "route_disclaimer": "文化路线示意",
+  "source_rule": "Project-authored vectors; no external images embedded."
+}

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NotoSansLocal; src: url('../../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NotoSerifLocal; src: url('../../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: InterLocal; src: url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NotoSansLocal, sans-serif; }
+    .serif { font-family: NotoSerifLocal, serif; }
+    .latin { font-family: InterLocal, sans-serif; }
+  ]]></style>
+  <linearGradient id="softGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8D29B"/><stop offset="1" stop-color="#C29A55"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#071B20" flood-opacity=".22"/></filter>
+</defs>
+<rect width="2480" height="3508" fill="#F0E7D4"/>
+<path d="M-160 3020 C540 2600 760 3420 1450 3140 S2260 2700 2700 3020" fill="none" stroke="#C29A55" stroke-width="3" opacity=".18"/>
+
+<g id="header">
+  <text x="160" y="178" class="latin" font-size="22" font-weight="750" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">04 / 08</text>
+  <text x="160" y="308" class="serif" font-size="90" font-weight="780" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="2">结构不是效果图</text>
+  <text x="162" y="372" class="latin" font-size="25" font-weight="480" text-anchor="start" fill="#787C78" opacity="0.72" letter-spacing="2">ENGINEERING · 参数化装配与明确验证边界</text>
+  <path d="M160 438 H2320" stroke="#C29A55" stroke-width="4" opacity=".68"/>
+</g>
+
+
+<g id="engineering">
+  <rect x="120" y="530" width="1420" height="1730" rx="52" fill="#173B46"/>
+  <image href="../../04_renders/exploded.png" x="120" y="590" width="1420" height="1470" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+  <text x="200" y="2140" class="latin" font-size="24" font-weight="620" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">10 个实体 · FCStd / STEP / STL</text>
+  <g transform="translate(1600 530)">
+    <rect x="0" y="0" width="750" height="820" rx="38" fill="#FAF6EC" stroke="#D7C7A8" stroke-width="3"/>
+    <text x="50" y="80" class="latin" font-size="17" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="3">TOP</text>
+    <image href="../../04_renders/ortho_top.png" x="28" y="120" width="694" height="480" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+    <text x="375" y="690" class="latin" font-size="26" font-weight="700" text-anchor="middle" fill="#173B46" opacity="1.0" letter-spacing="0.0">165 × 120 mm</text>
+    <text x="50" y="760" class="sans" font-size="21" font-weight="420" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">圆角 R10 · 闭合包络</text>
+  </g>
+  <g transform="translate(1600 1440)">
+    <rect x="0" y="0" width="750" height="820" rx="38" fill="#FAF6EC" stroke="#D7C7A8" stroke-width="3"/>
+    <text x="50" y="80" class="latin" font-size="17" font-weight="720" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="3">FRONT</text>
+    <image href="../../04_renders/ortho_front.png" x="28" y="120" width="694" height="480" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+    <text x="375" y="690" class="sans" font-size="26" font-weight="700" text-anchor="middle" fill="#173B46" opacity="1.0" letter-spacing="0.0">总高 30 mm</text>
+    <text x="50" y="760" class="sans" font-size="21" font-weight="420" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">壁厚 1.8 mm · 基准间隙 0.35 mm</text>
+  </g>
+  <rect x="120" y="2360" width="2230" height="590" rx="48" fill="#FAF6EC" stroke="#D4C29C" stroke-width="3"/>
+  <text x="190" y="2470" class="serif" font-size="38" font-weight="720" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">结构分工</text>
+  <text x="190" y="2570" class="sans" font-size="22" font-weight="700" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="0.0">外匣</text><text x="190" y="2620" class="sans" font-size="24" font-weight="420" text-anchor="start" fill="#172022" opacity="1.0" letter-spacing="0.0">保护与单向导向</text>
+  <text x="680" y="2570" class="sans" font-size="22" font-weight="700" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="0.0">章盘</text><text x="680" y="2620" class="sans" font-size="24" font-weight="420" text-anchor="start" fill="#172022" opacity="1.0" letter-spacing="0.0">六章与印台定位</text>
+  <text x="1170" y="2570" class="sans" font-size="22" font-weight="700" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="0.0">章柄</text><text x="1170" y="2620" class="sans" font-size="24" font-weight="420" text-anchor="start" fill="#172022" opacity="1.0" letter-spacing="0.0">可替换 26 mm 章面</text>
+  <text x="1730" y="2570" class="sans" font-size="22" font-weight="700" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="0.0">地图代理</text><text x="1730" y="2620" class="sans" font-size="24" font-weight="420" text-anchor="start" fill="#172022" opacity="1.0" letter-spacing="0.0">折叠态尺寸校核</text>
+  <text x="190" y="2760" class="sans" font-size="23" font-weight="400" text-anchor="start" fill="#787C78" opacity="1.0" letter-spacing="0.0">数字模型已验证实体、包络与导出可读性；摩擦、耐折、污染和儿童安全仍需样机测试。</text>
+</g>
+
+
+<g id="footer" opacity=".55">
+  <path d="M160 3350 H2320" stroke="#173B46" stroke-width="2"/>
+  <text x="160" y="3408" class="latin" font-size="16" font-weight="540" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="4">BUBUSHENGDIAN · HANDAN CULTURAL WALK</text>
+  <text x="2320" y="3408" class="latin" font-size="16" font-weight="700" text-anchor="end" fill="#C29A55" opacity="1.0" letter-spacing="2">04</text>
+</g>
+
+</svg>

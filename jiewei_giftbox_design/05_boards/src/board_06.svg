@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs><style><![CDATA[
+@font-face{font-family:NSans;src:url('../../01_research/fonts/NotoSansSC[wght].ttf')}
+@font-face{font-family:NSerif;src:url('../../01_research/fonts/NotoSerifSC[wght].ttf')}
+@font-face{font-family:Inter;src:url('../../01_research/fonts/InterVariable.ttf')}
+.sans{font-family:NSans,sans-serif} .serif{font-family:NSerif,serif} .latin{font-family:Inter,sans-serif}
+]]></style><filter id="shadow"><feDropShadow dx="0" dy="16" stdDeviation="20" flood-color="#081113" flood-opacity=".25"/></filter></defs>
+<rect width="2480" height="3508" fill="#202F32"/>
+<path d="M-100 3040 C520 2700 900 3400 1480 3080 S2240 2780 2620 3000" fill="none" stroke="#C19A55" stroke-width="3" opacity=".16"/>
+
+<g id="header">
+ <text x="160" y="178" class="latin" font-size="22" font-weight="760" text-anchor="start" fill="#C19A55" opacity="1.0" letter-spacing="4">06 / 06</text>
+ <text x="160" y="308" class="serif" font-size="82" font-weight="780" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="2">双节应用与市场场景</text>
+ <text x="162" y="374" class="latin" font-size="23" font-weight="480" text-anchor="start" fill="#EEE4D0" opacity="0.68" letter-spacing="2">SEASONAL CMF · ONE STRUCTURE, TWO FESTIVAL EXPRESSIONS</text>
+ <path d="M160 438 H2320" stroke="#C19A55" stroke-width="4" opacity=".72"/>
+</g><g id="market-scene">
+<rect x="120" y="520" width="2240" height="1160" rx="54" fill="#8F8373"/><image href="../../04_renders/retail_scene.png" x="100" y="500" width="2280" height="1200" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+<g transform="translate(120 1780)"><rect x="0" y="0" width="1080" height="820" rx="38" fill="#202F32" stroke="#C19A55" stroke-width="3"/><image href="../../04_renders/mid_autumn_variant.png" x="20" y="35" width="1040" height="500" opacity="1.0" preserveAspectRatio="xMidYMid meet"/><text x="65" y="625" class="serif" font-size="44" font-weight="740" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">月满中秋</text><text x="65" y="690" class="sans" font-size="22" font-weight="520" text-anchor="start" fill="#C19A55" opacity="1.0" letter-spacing="0">月宣白 × 赵月金</text><text x="65" y="750" class="sans" font-size="21" font-weight="420" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">共享结构，只切换外套与局部印刷层</text></g>
+<g transform="translate(1280 1780)"><rect x="0" y="0" width="1080" height="820" rx="38" fill="#FAF6EC" stroke="#D6C7A8" stroke-width="3"/><image href="../../04_renders/national_day_variant.png" x="20" y="35" width="1040" height="500" opacity="1.0" preserveAspectRatio="xMidYMid meet"/><text x="65" y="625" class="serif" font-size="44" font-weight="740" text-anchor="start" fill="#202F32" opacity="1.0" letter-spacing="0">山河同庆</text><text x="65" y="690" class="sans" font-size="22" font-weight="620" text-anchor="start" fill="#A83B32" opacity="1.0" letter-spacing="0">河山青 × 迂回朱</text><text x="65" y="750" class="sans" font-size="21" font-weight="420" text-anchor="start" fill="#858B86" opacity="1.0" letter-spacing="0">文旅门店、节庆礼赠与城市伴手礼场景</text></g>
+<rect x="120" y="2700" width="2240" height="300" rx="42" fill="#172529"/>
+<text x="190" y="2810" class="latin" font-size="17" font-weight="720" text-anchor="start" fill="#C19A55" opacity="1.0" letter-spacing="3">MARKET CONVERSION</text>
+<text x="190" y="2890" class="sans" font-size="24" font-weight="460" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="0">模块化内装便于按渠道与节令调整；成本与价格均为设计估算，须由生产主体复核。</text>
+<text x="190" y="2960" class="sans" font-size="22" font-weight="700" text-anchor="start" fill="#A83B32" opacity="1.0" letter-spacing="0">概念包装建议规格，投产前复核</text></g>
+<g id="footer" opacity=".58"><path d="M160 3350 H2320" stroke="#EEE4D0" stroke-width="2"/>
+<text x="160" y="3408" class="latin" font-size="16" font-weight="520" text-anchor="start" fill="#EEE4D0" opacity="1.0" letter-spacing="2">JIEWEI · HANBAOFANG SIX FLAVOURS OF HANDAN · CONCEPT PROPOSAL</text>
+<text x="2320" y="3408" class="latin" font-size="16" font-weight="720" text-anchor="end" fill="#C19A55" opacity="1.0" letter-spacing="2">06</text></g></svg>

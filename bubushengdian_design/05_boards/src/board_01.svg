@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2480" height="3508" viewBox="0 0 2480 3508">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NotoSansLocal; src: url('../../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NotoSerifLocal; src: url('../../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: InterLocal; src: url('../../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NotoSansLocal, sans-serif; }
+    .serif { font-family: NotoSerifLocal, serif; }
+    .latin { font-family: InterLocal, sans-serif; }
+  ]]></style>
+  <linearGradient id="softGold" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#E8D29B"/><stop offset="1" stop-color="#C29A55"/></linearGradient>
+  <filter id="shadow"><feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#071B20" flood-opacity=".22"/></filter>
+</defs>
+<rect width="2480" height="3508" fill="#F0E7D4"/>
+<path d="M-160 3020 C540 2600 760 3420 1450 3140 S2260 2700 2700 3020" fill="none" stroke="#C29A55" stroke-width="3" opacity=".18"/>
+
+<g id="header">
+  <text x="160" y="178" class="latin" font-size="22" font-weight="750" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="4">01 / 08</text>
+  <text x="160" y="308" class="serif" font-size="90" font-weight="780" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="2">步步生典</text>
+  <text x="162" y="372" class="latin" font-size="25" font-weight="480" text-anchor="start" fill="#787C78" opacity="0.72" letter-spacing="2">HANDAN CULTURAL WALK · 邯郸双节漫游章匣</text>
+  <path d="M160 438 H2320" stroke="#C29A55" stroke-width="4" opacity=".68"/>
+</g>
+
+
+<g id="hero">
+  <circle cx="1960" cy="810" r="380" fill="none" stroke="#C29A55" stroke-width="3" opacity=".25"/>
+  <circle cx="1960" cy="810" r="260" fill="#C29A55" opacity=".07"/>
+  <image href="../../04_renders/hero_open.png" x="180" y="520" width="2150" height="1520" opacity="1.0" preserveAspectRatio="xMidYMid meet"/>
+  <rect x="160" y="2090" width="2160" height="690" rx="52" fill="#102F38" stroke="#C29A55" stroke-width="3"/>
+  <text x="240" y="2230" class="serif" font-size="118" font-weight="820" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="6">步步生典</text>
+  <text x="246" y="2314" class="latin" font-size="22" font-weight="650" text-anchor="start" fill="#C29A55" opacity="1.0" letter-spacing="7">STEP INTO HANDAN</text>
+  <text x="240" y="2460" class="sans" font-size="48" font-weight="620" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">每一步，都走进一则成语</text>
+  <text x="240" y="2572" class="sans" font-size="28" font-weight="360" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">一只可收纳六枚模块章的城市漫游工具，</text><text x="240" y="2624" class="sans" font-size="28" font-weight="360" text-anchor="start" fill="#F0E7D4" opacity="1.0" letter-spacing="0.0">展开为路线图，归位成一幅完整的邯郸路径。</text>
+  <g transform="translate(1660 2235)">
+    <path d="M0 260 H180 V150 H350 V55 H510" fill="none" stroke="url(#softGold)" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="0" cy="260" r="24" fill="#B23A32"/>
+    <circle cx="180" cy="150" r="15" fill="#F0E7D4"/>
+    <circle cx="350" cy="55" r="15" fill="#F0E7D4"/>
+  </g>
+  <g transform="translate(160 2870)">
+    <text x="0" y="0" class="latin" font-size="30" font-weight="720" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">165 × 120 × 30 mm</text>
+    <text x="650" y="0" class="sans" font-size="30" font-weight="620" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">6 枚可替换印章</text>
+    <text x="1260" y="0" class="sans" font-size="30" font-weight="620" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="0.0">480 × 330 mm 折叠地图</text>
+  </g>
+</g>
+
+
+<g id="footer" opacity=".55">
+  <path d="M160 3350 H2320" stroke="#173B46" stroke-width="2"/>
+  <text x="160" y="3408" class="latin" font-size="16" font-weight="540" text-anchor="start" fill="#173B46" opacity="1.0" letter-spacing="4">BUBUSHENGDIAN · HANDAN CULTURAL WALK</text>
+  <text x="2320" y="3408" class="latin" font-size="16" font-weight="700" text-anchor="end" fill="#C29A55" opacity="1.0" letter-spacing="2">01</text>
+</g>
+
+</svg>

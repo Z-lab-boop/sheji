@@ -1,0 +1,331 @@
+{
+  "project": "解围——邯宝坊“六味邯郸”机关礼盒概念提案",
+  "generated_at_utc": "2026-10-03T10:12:14.042020+00:00",
+  "technical_status": "pass",
+  "submission_status": "conditionally_ready_pending_identity_signature",
+  "missing_inputs": [
+    "entrant_identity",
+    "signed_registration_pdf"
+  ],
+  "checks": [
+    {
+      "name": "submission_jpgs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 646894,
+          "sha256": "553994811af0d843f7ade67ec586b8616b6382bb0373d8a9f7f3b3d264ee1d8b"
+        },
+        {
+          "path": "board_02.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 449094,
+          "sha256": "467ad4dfa75173c7f599f061d3a4abf9875ebb66dd2bc4449d13812ea2b7f16a"
+        },
+        {
+          "path": "board_03.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 588154,
+          "sha256": "e590eebc560e218a95fd1dd26aa90a16e4a9679b776751ce7c3513d8651e1772"
+        },
+        {
+          "path": "board_04.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 541556,
+          "sha256": "a6b551625aff77e95ed7015f7009fdcf3d4d89a523576f0c42740320a556e4a4"
+        },
+        {
+          "path": "board_05.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 569230,
+          "sha256": "727cdb509dc5bd1c2d300166c29dd2a8449f5b2b5626c2889bf4a78c95464222"
+        },
+        {
+          "path": "board_06.jpg",
+          "size": [
+            2480,
+            3508
+          ],
+          "mode": "RGB",
+          "dpi": 300,
+          "bytes": 564418,
+          "sha256": "b6dd53d2ebd8f1cc37976ccf970b6c820fd5912e1ba73178e911371f46231142"
+        }
+      ]
+    },
+    {
+      "name": "a4_pdfs",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 648616
+        },
+        {
+          "path": "board_02.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 450816
+        },
+        {
+          "path": "board_03.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 589876
+        },
+        {
+          "path": "board_04.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 543278
+        },
+        {
+          "path": "board_05.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 570952
+        },
+        {
+          "path": "board_06.pdf",
+          "pages": 1,
+          "page_size": "594.96 x 841.92 pts (A4)",
+          "bytes": 566140
+        }
+      ]
+    },
+    {
+      "name": "editable_board_sources",
+      "passed": true,
+      "detail": [
+        {
+          "path": "board_01.svg",
+          "elements": 32,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_02.svg",
+          "elements": 66,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_03.svg",
+          "elements": 39,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_04.svg",
+          "elements": 59,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_05.svg",
+          "elements": 46,
+          "has_text": true,
+          "has_visual_content": true
+        },
+        {
+          "path": "board_06.svg",
+          "elements": 35,
+          "has_text": true,
+          "has_visual_content": true
+        }
+      ]
+    },
+    {
+      "name": "concept_renders",
+      "passed": true,
+      "detail": [
+        "dieline_preview.png",
+        "exploded.png",
+        "hand_opening.png",
+        "hero_closed.png",
+        "hero_open.png",
+        "hero_unlocked.png",
+        "mid_autumn_variant.png",
+        "national_day_variant.png",
+        "ortho_top.png",
+        "product_family.png",
+        "retail_scene.png",
+        "sequence_01.png",
+        "sequence_02.png",
+        "sequence_03.png",
+        "sequence_04.png"
+      ]
+    },
+    {
+      "name": "cad_exchange_files",
+      "passed": true,
+      "detail": {
+        "step": [
+          "jiewei_giftbox_closed.step",
+          "jiewei_giftbox_open.step",
+          "jiewei_giftbox_unlocked.step"
+        ],
+        "stl_count": 13
+      }
+    },
+    {
+      "name": "cad_geometry",
+      "passed": true,
+      "detail": {
+        "bbox": [
+          290.0,
+          230.0,
+          75.0
+        ],
+        "parts": 13,
+        "release_margin_mm": 1.2
+      }
+    },
+    {
+      "name": "dielines",
+      "passed": true,
+      "detail": [
+        "outer_sleeve.svg",
+        "outer_sleeve.dxf",
+        "wei_drawer.svg",
+        "wei_drawer.dxf",
+        "zhao_tray.svg",
+        "zhao_tray.dxf",
+        "lock_keys.svg",
+        "lock_keys.dxf"
+      ]
+    },
+    {
+      "name": "concept_and_brand_disclosure",
+      "passed": true,
+      "detail": {
+        "board_missing": [],
+        "product_names_missing": []
+      }
+    },
+    {
+      "name": "regional_category_evidence",
+      "passed": true,
+      "detail": [
+        {
+          "concept_id": "A",
+          "category": "鸡泽辣椒",
+          "public_basis_url": "https://ipr.mofcom.gov.cn/article/gnxw/dlbz/202102/1959588.html",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "鸡泽辣椒是邯郸地域产品类别",
+          "prohibited_claim": "不得声称具体企业或包装已授权"
+        },
+        {
+          "concept_id": "B",
+          "category": "魏县鸭梨",
+          "public_basis_url": "https://std.samr.gov.cn/db/search/stdDBDetailed?id=2F905795AB653FA8E06397BE0A0A91D7",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "魏县鸭梨具有现行地方标准资料",
+          "prohibited_claim": "不得擅用地理标志图形或现售包装"
+        },
+        {
+          "concept_id": "C",
+          "category": "涉县核桃",
+          "public_basis_url": "https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "涉县核桃属于公开列出的邯郸地域产品",
+          "prohibited_claim": "不得声称对应具体在售商品"
+        },
+        {
+          "concept_id": "D",
+          "category": "武安小米",
+          "public_basis_url": "https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "武安小米属于公开列出的邯郸地域产品",
+          "prohibited_claim": "不得虚构净含量或生产商"
+        },
+        {
+          "concept_id": "E",
+          "category": "永年大蒜",
+          "public_basis_url": "https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "永年大蒜属于公开列出的邯郸地域产品",
+          "prohibited_claim": "不得声称衍生食品已上市"
+        },
+        {
+          "concept_id": "F",
+          "category": "大名小磨香油",
+          "public_basis_url": "https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450",
+          "evidence_state": "verified_category_only",
+          "allowed_claim": "大名小磨香油属于公开列出的邯郸地域产品",
+          "prohibited_claim": "不得使用具体企业商标或标签"
+        }
+      ]
+    },
+    {
+      "name": "font_licences",
+      "passed": true,
+      "detail": [
+        "OFL-Inter.txt",
+        "OFL-NotoSansSC.txt",
+        "OFL-NotoSerifSC.txt"
+      ]
+    },
+    {
+      "name": "prohibited_claims_and_placeholders",
+      "passed": true,
+      "detail": "no prohibited public claim or identity placeholder"
+    },
+    {
+      "name": "source_manifest",
+      "passed": true,
+      "detail": {
+        "rows": 88,
+        "types": [
+          "board_jpg",
+          "board_pdf",
+          "board_source",
+          "cad",
+          "dieline_source",
+          "external_reference",
+          "font",
+          "identity",
+          "render",
+          "submission_data",
+          "submission_text"
+        ]
+      }
+    }
+  ],
+  "boundaries": [
+    "All six visible products are original concept secondary packages based on verified regional categories.",
+    "No existing Hanbaofang logo, third-party product photography, barcode, licence number, nutrition data or geographic-indication symbol is used.",
+    "Module dimensions, cost and price are concept design values, not claims about existing products.",
+    "Physical paperboard durability, transport performance and food compliance remain untested and are not claimed.",
+    "Entrant identity and a personally signed registration PDF remain required before email submission."
+  ]
+}
