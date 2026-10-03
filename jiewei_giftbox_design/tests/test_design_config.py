@@ -5,7 +5,15 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 
-from design_config import BOARD, BOX, SKU, state_offsets, validate_spec
+from design_config import (
+    BOARD,
+    BOX,
+    CONCEPT_DISCLOSURE,
+    PRODUCT_MODULE,
+    PRODUCTS,
+    state_offsets,
+    validate_spec,
+)
 
 
 class DesignConfigTests(unittest.TestCase):
@@ -14,10 +22,18 @@ class DesignConfigTests(unittest.TestCase):
         self.assertEqual((BOX.wei_travel, BOX.zhao_travel, BOX.moon_window_diameter), (42.0, 145.0, 108.0))
         self.assertEqual((BOX.board_thickness, BOX.wrap_thickness, BOX.clearance), (2.0, 0.18, 0.6))
 
-    def test_proxy_contract_is_explicit(self):
-        self.assertEqual((SKU.width, SKU.depth, SKU.height, SKU.count), (60.0, 60.0, 35.0, 6))
-        self.assertTrue(SKU.is_proxy)
-        self.assertEqual(SKU.label, "规格代理件，非实际商品包装")
+    def test_concept_product_contract(self):
+        self.assertEqual(
+            (PRODUCT_MODULE.width, PRODUCT_MODULE.depth, PRODUCT_MODULE.height, PRODUCT_MODULE.count),
+            (68.0, 62.0, 44.0, 6),
+        )
+        self.assertTrue(PRODUCT_MODULE.is_concept)
+        self.assertEqual(len(PRODUCTS), 6)
+        self.assertEqual(
+            [item.category for item in PRODUCTS],
+            ["鸡泽辣椒", "魏县鸭梨", "涉县核桃", "武安小米", "永年大蒜", "大名小磨香油"],
+        )
+        self.assertEqual(CONCEPT_DISCLOSURE, "概念包装建议规格，投产前复核")
 
     def test_state_contract(self):
         self.assertEqual(state_offsets("closed")["wei_drawer"], (0.0, 0.0, 0.0))
