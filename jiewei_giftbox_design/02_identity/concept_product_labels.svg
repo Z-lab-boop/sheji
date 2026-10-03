@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="232mm" height="158mm" viewBox="0 0 232 158">
+<defs>
+  <style><![CDATA[
+    @font-face { font-family: NSans; src: url('../01_research/fonts/NotoSansSC[wght].ttf'); }
+    @font-face { font-family: NSerif; src: url('../01_research/fonts/NotoSerifSC[wght].ttf'); }
+    @font-face { font-family: Inter; src: url('../01_research/fonts/InterVariable.ttf'); }
+    .sans { font-family: NSans, sans-serif; } .serif { font-family: NSerif, serif; } .latin { font-family: Inter, sans-serif; }
+  ]]></style>
+</defs>
+<rect width="232" height="158" fill="#F7F2E8"/>
+<g id="concept-A" transform="translate(8 8)">
+  <rect width="68" height="62" rx="4" fill="#A83B32" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#EEE4D0">椒起鸡泽</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#EEE4D0">鸡泽辣椒</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#EEE4D0">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · A</text>
+</g>
+<g id="concept-B" transform="translate(82 8)">
+  <rect width="68" height="62" rx="4" fill="#819B79" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#202F32">梨润魏州</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#858B86">魏县鸭梨</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#858B86">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · B</text>
+</g>
+<g id="concept-C" transform="translate(156 8)">
+  <rect width="68" height="62" rx="4" fill="#80644B" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#202F32">核藏太行</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#858B86">涉县核桃</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#858B86">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · C</text>
+</g>
+<g id="concept-D" transform="translate(8 78)">
+  <rect width="68" height="62" rx="4" fill="#C19A55" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#202F32">粟映武安</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#858B86">武安小米</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#858B86">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · D</text>
+</g>
+<g id="concept-E" transform="translate(82 78)">
+  <rect width="68" height="62" rx="4" fill="#EEE4D0" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#202F32">蒜生永年</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#858B86">永年大蒜</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#858B86">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · E</text>
+</g>
+<g id="concept-F" transform="translate(156 78)">
+  <rect width="68" height="62" rx="4" fill="#B97832" stroke="#202F32" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="#C19A55" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="#202F32">油香大名</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="#858B86">大名小磨香油</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="#858B86">68 × 62 × 44 mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="#202F32" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="#EEE4D0">信息示意 · F</text>
+</g><text x="116" y="151" class="sans" text-anchor="middle" font-size="3.8" fill="#858B86">概念包装建议规格，投产前复核</text>
+</svg>

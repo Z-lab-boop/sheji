@@ -11,7 +11,7 @@ ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "02_identity"
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from design_config import COLORS, COPY, SKU  # noqa: E402
+from design_config import COLORS, CONCEPT_DISCLOSURE, COPY, PRODUCT_MODULE, PRODUCTS  # noqa: E402
 
 
 def svg_shell(width: float, height: float, body: str) -> str:
@@ -67,29 +67,32 @@ def common_sleeve(season: str) -> str:
 <text x="25" y="79" class="latin" font-size="5.2" font-weight="650" fill="{COLORS['moon_gold']}" letter-spacing="1.8">RELIEVE THE SIEGE</text>
 <text x="24" y="111" class="serif" font-size="14" font-weight="650" fill="{COLORS['paper_white']}">{season_cn}</text>
 <text x="24" y="123" class="latin" font-size="4.7" fill="{COLORS['paper_white']}" opacity=".72" letter-spacing="1">{season_en}</text>
-<g id="brand-zone"><rect x="24" y="198" width="76" height="18" rx="2" fill="none" stroke="{COLORS['paper_white']}" stroke-width=".6" stroke-dasharray="2 2" opacity=".55"/><text x="62" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="{COLORS['paper_white']}" opacity=".72">品牌区｜待授权资产</text></g>
-<g id="legal-copy-zone"><rect x="174" y="198" width="92" height="18" rx="2" fill="none" stroke="{COLORS['paper_white']}" stroke-width=".6" stroke-dasharray="2 2" opacity=".55"/><text x="220" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="{COLORS['paper_white']}" opacity=".72">法定信息区｜待真实文案</text></g>
-<text x="266" y="222" class="sans" text-anchor="end" font-size="3.6" fill="{COLORS['paper_white']}" opacity=".52">结构概念稿 · 不代表实际商品包装</text>
+<g id="brief-target"><rect x="24" y="198" width="96" height="18" rx="2" fill="none" stroke="{COLORS['paper_white']}" stroke-width=".6" opacity=".62"/><text x="72" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="{COLORS['paper_white']}" opacity=".82">邯宝坊赛题概念提案</text></g>
+<g id="production-review"><rect x="164" y="198" width="102" height="18" rx="2" fill="none" stroke="{COLORS['paper_white']}" stroke-width=".6" opacity=".62"/><text x="215" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="{COLORS['paper_white']}" opacity=".82">生产信息投产前复核</text></g>
+<text x="266" y="222" class="sans" text-anchor="end" font-size="3.6" fill="{COLORS['paper_white']}" opacity=".58">六味邯郸 · ORIGINAL CONCEPT SERIES</text>
 '''
     return svg_shell(290, 230, body)
 
 
-def proxy_labels() -> str:
+def concept_product_labels() -> str:
     cards = []
-    colors = [COLORS["paper_white"], "#E6DDCA", "#D9CFBA", COLORS["paper_white"], "#E6DDCA", "#D9CFBA"]
-    for index in range(6):
-        x = 8 + (index % 3) * 66
-        y = 8 + (index // 3) * 66
+    for index, product in enumerate(PRODUCTS):
+        x = 8 + (index % 3) * 74
+        y = 8 + (index // 3) * 70
+        dark_text = COLORS["wall_ink"] if product.code != "A" else COLORS["paper_white"]
+        secondary = COLORS["paper_white"] if product.code == "A" else COLORS["soft_gray"]
         cards.append(f'''
-<g id="proxy-{index + 1:02d}" transform="translate({x} {y})">
-  <rect width="60" height="60" rx="4" fill="{colors[index]}" stroke="{COLORS['wall_ink']}" stroke-width=".7"/>
-  <path d="M8 17 H28 V11 H44 V19 H52" fill="none" stroke="{COLORS['route_red']}" stroke-width="1.4"/>
-  <text x="8" y="31" class="serif" font-size="8" font-weight="720" fill="{COLORS['wall_ink']}">中性样品 {index + 1:02d}</text>
-  <text x="8" y="42" class="latin" font-size="4" fill="{COLORS['soft_gray']}">60 × 60 × 35 mm</text>
-  <rect x="6" y="47" width="48" height="8" rx="1.5" fill="{COLORS['wall_ink']}"/>
-  <text x="30" y="52.5" class="sans" text-anchor="middle" font-size="3.4" fill="{COLORS['paper_white']}">{SKU.label}</text>
+<g id="concept-{product.code}" transform="translate({x} {y})">
+  <rect width="68" height="62" rx="4" fill="{product.color}" stroke="{COLORS['wall_ink']}" stroke-width=".7"/>
+  <path d="M8 15 H28 V9 H46 V17 H60" fill="none" stroke="{COLORS['moon_gold']}" stroke-width="1.5"/>
+  <text x="8" y="29" class="serif" font-size="7.8" font-weight="720" fill="{dark_text}">{product.display_name}</text>
+  <text x="8" y="39" class="sans" font-size="4.3" fill="{secondary}">{product.category}</text>
+  <text x="8" y="48" class="latin" font-size="3.6" fill="{secondary}">{PRODUCT_MODULE.width:.0f} × {PRODUCT_MODULE.depth:.0f} × {PRODUCT_MODULE.height:.0f} mm</text>
+  <rect x="6" y="52" width="56" height="7" rx="1.5" fill="{COLORS['wall_ink']}" opacity=".92"/>
+  <text x="34" y="57" class="sans" text-anchor="middle" font-size="2.8" fill="{COLORS['paper_white']}">信息示意 · {product.code}</text>
 </g>''')
-    return svg_shell(206, 140, f'<rect width="206" height="140" fill="#F7F2E8"/>{"".join(cards)}')
+    disclosure = f'<text x="116" y="151" class="sans" text-anchor="middle" font-size="3.8" fill="{COLORS["soft_gray"]}">{CONCEPT_DISCLOSURE}</text>'
+    return svg_shell(232, 158, f'<rect width="232" height="158" fill="#F7F2E8"/>{"".join(cards)}{disclosure}')
 
 
 def main() -> None:
@@ -98,7 +101,7 @@ def main() -> None:
         "wordmark.svg": wordmark(),
         "mid_autumn_sleeve.svg": common_sleeve("mid_autumn"),
         "national_day_sleeve.svg": common_sleeve("national_day"),
-        "proxy_product_labels.svg": proxy_labels(),
+        "concept_product_labels.svg": concept_product_labels(),
     }
     for name, content in assets.items():
         (OUT / name).write_text(content, encoding="utf-8")
@@ -106,10 +109,14 @@ def main() -> None:
         "project": COPY["name"],
         "palette": COLORS,
         "fonts": ["NotoSansSC[wght].ttf", "NotoSerifSC[wght].ttf", "InterVariable.ttf"],
-        "brand_asset_status": "not_provided",
-        "product_asset_status": "neutral_size_proxy",
-        "proxy_label": SKU.label,
-        "reserved_zones": ["brand-zone", "legal-copy-zone"],
+        "brand_asset_status": "official_brief_named_target_no_logo_asset",
+        "product_asset_status": "original_concept_secondary_packaging",
+        "concept_disclosure": CONCEPT_DISCLOSURE,
+        "product_modules": [
+            {"code": item.code, "category": item.category, "display_name": item.display_name, "color": item.color}
+            for item in PRODUCTS
+        ],
+        "reserved_zones": ["brief-target", "production-review"],
         "assets": list(assets),
     }
     (OUT / "identity_manifest.json").write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

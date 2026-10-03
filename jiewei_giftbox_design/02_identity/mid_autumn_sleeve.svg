@@ -17,8 +17,8 @@
 <text x="25" y="79" class="latin" font-size="5.2" font-weight="650" fill="#C19A55" letter-spacing="1.8">RELIEVE THE SIEGE</text>
 <text x="24" y="111" class="serif" font-size="14" font-weight="650" fill="#EEE4D0">月满中秋</text>
 <text x="24" y="123" class="latin" font-size="4.7" fill="#EEE4D0" opacity=".72" letter-spacing="1">MID-AUTUMN EDITION</text>
-<g id="brand-zone"><rect x="24" y="198" width="76" height="18" rx="2" fill="none" stroke="#EEE4D0" stroke-width=".6" stroke-dasharray="2 2" opacity=".55"/><text x="62" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="#EEE4D0" opacity=".72">品牌区｜待授权资产</text></g>
-<g id="legal-copy-zone"><rect x="174" y="198" width="92" height="18" rx="2" fill="none" stroke="#EEE4D0" stroke-width=".6" stroke-dasharray="2 2" opacity=".55"/><text x="220" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="#EEE4D0" opacity=".72">法定信息区｜待真实文案</text></g>
-<text x="266" y="222" class="sans" text-anchor="end" font-size="3.6" fill="#EEE4D0" opacity=".52">结构概念稿 · 不代表实际商品包装</text>
+<g id="brief-target"><rect x="24" y="198" width="96" height="18" rx="2" fill="none" stroke="#EEE4D0" stroke-width=".6" opacity=".62"/><text x="72" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="#EEE4D0" opacity=".82">邯宝坊赛题概念提案</text></g>
+<g id="production-review"><rect x="164" y="198" width="102" height="18" rx="2" fill="none" stroke="#EEE4D0" stroke-width=".6" opacity=".62"/><text x="215" y="209" class="sans" text-anchor="middle" font-size="4.2" fill="#EEE4D0" opacity=".82">生产信息投产前复核</text></g>
+<text x="266" y="222" class="sans" text-anchor="end" font-size="3.6" fill="#EEE4D0" opacity=".58">六味邯郸 · ORIGINAL CONCEPT SERIES</text>
 
 </svg>
