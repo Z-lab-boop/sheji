@@ -181,7 +181,7 @@
         }
       ],
       "package": "赛道二_遂见_待填写报名表后提交.zip",
-      "package_sha256": "3d9bfa399af75900cefebbddab4395038d87df29e2e71c446547ac2d85be4843"
+      "package_sha256": "ef09e85f2f9554ccc892fba8850189a29d85d6ea9dde77b822f29da9828deb9a"
     },
     {
       "project": "步步生典",
@@ -374,11 +374,11 @@
         }
       ],
       "package": "赛道二_步步生典_待填写报名表后提交.zip",
-      "package_sha256": "51656482bb5693bd6094b07283f0f259dbde743284a359eda45f9af6a0f0af51"
+      "package_sha256": "f109bbc993c908e4036ac7cb8fe262b235456eb1d234d13d5bd09e593af9ef93"
     },
     {
       "project": "解围",
-      "status": "blocked",
+      "status": "conditionally_ready",
       "board_count": 6,
       "boards": [
         {
@@ -392,8 +392,8 @@
             300,
             300
           ],
-          "bytes": 611674,
-          "sha256": "e283f0d1547e15affab190a7307b8ca61bceca0f19828dff2bab065eed8c234b",
+          "bytes": 646894,
+          "sha256": "553994811af0d843f7ade67ec586b8616b6382bb0373d8a9f7f3b3d264ee1d8b",
           "checks": {
             "size": true,
             "mode": true,
@@ -415,8 +415,8 @@
             300,
             300
           ],
-          "bytes": 459446,
-          "sha256": "346b01cb0b71543fb883ab49030488f0719310431f889188a3c871b90d0ddad6",
+          "bytes": 449094,
+          "sha256": "467ad4dfa75173c7f599f061d3a4abf9875ebb66dd2bc4449d13812ea2b7f16a",
           "checks": {
             "size": true,
             "mode": true,
@@ -438,8 +438,8 @@
             300,
             300
           ],
-          "bytes": 552065,
-          "sha256": "d817e43740a810bd02d9cce1b7eeaf094ba237a8392894a803b7393d3972ce73",
+          "bytes": 588154,
+          "sha256": "e590eebc560e218a95fd1dd26aa90a16e4a9679b776751ce7c3513d8651e1772",
           "checks": {
             "size": true,
             "mode": true,
@@ -461,8 +461,8 @@
             300,
             300
           ],
-          "bytes": 572807,
-          "sha256": "bc2def20bd0431a4ac74097f523781e84cee2a28dc3ad16be92497cea273146e",
+          "bytes": 541556,
+          "sha256": "a6b551625aff77e95ed7015f7009fdcf3d4d89a523576f0c42740320a556e4a4",
           "checks": {
             "size": true,
             "mode": true,
@@ -484,8 +484,8 @@
             300,
             300
           ],
-          "bytes": 566318,
-          "sha256": "1c4020612103d5b4867d56903b7e8adfcbe5655d617ca06b97f1b5eb140d7e0d",
+          "bytes": 569230,
+          "sha256": "727cdb509dc5bd1c2d300166c29dd2a8449f5b2b5626c2889bf4a78c95464222",
           "checks": {
             "size": true,
             "mode": true,
@@ -507,8 +507,8 @@
             300,
             300
           ],
-          "bytes": 544487,
-          "sha256": "a7b89a88173eeeaa1b0257b153a902173523ecbfe904841853495680df61ca85",
+          "bytes": 564418,
+          "sha256": "b6dd53d2ebd8f1cc37976ccf970b6c820fd5912e1ba73178e911371f46231142",
           "checks": {
             "size": true,
             "mode": true,
@@ -520,9 +520,9 @@
           "passed": true
         }
       ],
-      "package": "赛道一_解围_禁止直接投稿_缺真实SKU与授权.zip",
-      "package_sha256": "a6c7abe44e51de73f153fa81f9b0b4ba008dc39e442ef03ce1279cf7c8b27bde"
+      "package": "赛道一_解围_待填写报名表后提交.zip",
+      "package_sha256": "7046ed12cc4f39543bfa933e8801d32cc5b53d9c287dbedd85c72bce99e4da59"
     }
   ],
-  "overall_status": "conditionally_ready_two_projects_and_one_blocked_project"
+  "overall_status": "conditionally_ready_three_projects_pending_identity_and_signature"
 }

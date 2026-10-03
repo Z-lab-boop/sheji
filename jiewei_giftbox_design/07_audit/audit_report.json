@@ -1,6 +1,6 @@
 {
   "project": "解围——邯宝坊“六味邯郸”机关礼盒概念提案",
-  "generated_at_utc": "2026-10-03T09:44:38.269027+00:00",
+  "generated_at_utc": "2026-10-03T10:12:14.042020+00:00",
   "technical_status": "pass",
   "submission_status": "conditionally_ready_pending_identity_signature",
   "missing_inputs": [
@@ -304,7 +304,7 @@
       "name": "source_manifest",
       "passed": true,
       "detail": {
-        "rows": 89,
+        "rows": 88,
         "types": [
           "board_jpg",
           "board_pdf",

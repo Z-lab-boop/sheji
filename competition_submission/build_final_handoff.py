@@ -81,7 +81,17 @@ def build_handoff() -> tuple[Path, Path]:
         build_cad_package(
             "jiewei_giftbox_design",
             "02_jiewei_giftbox_cad_model.zip",
-            ("hero_closed.png", "hero_unlocked.png", "hero_open.png", "exploded.png", "ortho_top.png", "dieline_preview.png"),
+            (
+                "hero_closed.png",
+                "hero_unlocked.png",
+                "hero_open.png",
+                "exploded.png",
+                "ortho_top.png",
+                "dieline_preview.png",
+                "product_family.png",
+                "hand_opening.png",
+                "retail_scene.png",
+            ),
         ),
     ]
     update_cad_hashes(cad_paths)
@@ -100,8 +110,8 @@ def build_handoff() -> tuple[Path, Path]:
             HANDOFF_DIR / "02_赛道二_步步生典_待实名签字.zip",
         ),
         (
-            SUBMISSION_PACKAGES / "赛道一_解围_禁止直接投稿_缺真实SKU与授权.zip",
-            HANDOFF_DIR / "03_赛道一_解围_禁止投稿_待真实SKU与品牌授权.zip",
+            SUBMISSION_PACKAGES / "赛道一_解围_待填写报名表后提交.zip",
+            HANDOFF_DIR / "03_赛道一_解围_待实名签字.zip",
         ),
     ]
     for source, target in submission_sources:
@@ -116,10 +126,11 @@ def build_handoff() -> tuple[Path, Path]:
 
     status = """2026“和氏璧杯”三作品投稿交接说明
 
-一、可进入实名签字环节
+一、三件作品均可进入实名签字环节
 1. 《遂见》：7张A4 JPG已通过像素、RGB、300dpi和单张小于5MB检查。
 2. 《步步生典》：8张A4 JPG已通过同项检查，文化节点公开来源已复核。
-3. 两件作品分别投稿至赛道二邮箱 1513538702@qq.com，不要把两个作品混在同一封邮件中。
+3. 《解围》：6张A4 JPG已通过同项检查，定位为面向邯宝坊命题的原创“六味邯郸”概念二次包装系统。
+4. 《遂见》和《步步生典》分别投稿至赛道二邮箱 1513538702@qq.com；《解围》投稿至赛道一邮箱 198233612@qq.com。每件作品单独发送一封邮件。
 
 发送前必须由参赛者完成：
 - 在各自压缩包内的官方报名表填写真实姓名、身份证号、手机、邮箱、学校/单位、作者顺序和指导教师（如有）。
@@ -128,13 +139,13 @@ def build_handoff() -> tuple[Path, Path]:
 - 解压对应投稿包；邮件仅附报名表Word、签字PDF和该作品的JPG，不附CAD备查包。
 - 邮件主题使用“真实姓名+学校（单位）+手机”。
 
-二、当前禁止直接投稿
-《解围》仍缺邯宝坊确认的真实SKU外廓、毛重、六面图片、法定食品文案和有权代表签章授权。包内申请书是待签文件，不等于已获授权。上述资料到位并重建CAD、刀模、展板及完成满载白样复核前，不得发送赛道一邮箱。
+二、《解围》的概念边界
+《解围》不宣称使用任何真实在售SKU，也未使用邯宝坊Logo、现售商品图、条码、许可证或法定食品文案。六个68×62×44毫米模块是基于邯郸公开地域品类设计的原创概念二次包装，不代表已获品牌联名授权或已实现量产。报名表中应保留这一口径。
 
 三、CAD与模型
 “CAD与模型备查”仅用于保留可编辑源文件及入围后的模型/打样准备，初审邮件不要求附带。FCStd用于FreeCAD编辑，STEP用于跨软件交换，STL用于3D打印，DXF/SVG用于《解围》包装刀模。
 
-当前状态：两件作品有条件可提交，一件作品阻塞。任何空白报名表、自动审计通过或压缩包生成均不等于已经正式投稿。
+当前状态：三件作品均为“有条件可提交”，共同缺参赛者真实身份、签名和已填写的官方报名表。任何空白报名表、自动审计通过或压缩包生成均不等于已经正式投稿。
 """
     (HANDOFF_DIR / "提交前总说明_请先阅读.txt").write_text(status, encoding="utf-8")
 
@@ -144,9 +155,7 @@ def build_handoff() -> tuple[Path, Path]:
         writer.writerow(["relative_path", "sha256", "bytes", "submission_status"])
         for path in files:
             relative = path.relative_to(HANDOFF_DIR).as_posix()
-            if path.suffix == ".zip" and "解围" in path.name:
-                status_label = "blocked"
-            elif path.suffix == ".zip" and "赛道二" in path.name:
+            if path.parent == HANDOFF_DIR and path.suffix == ".zip":
                 status_label = "conditionally_ready"
             else:
                 status_label = "reference"

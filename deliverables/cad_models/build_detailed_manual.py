@@ -1,4 +1,4 @@
-"""Build the illustrated CAD and model manual for the two Handan designs."""
+"""Build the illustrated CAD and model manual for the Handan designs."""
 
 from __future__ import annotations
 
@@ -18,7 +18,7 @@ ROOT = HERE.parents[1]
 OUTPUT = HERE / "和氏璧杯_CAD与模型详细说明书.docx"
 
 FONT_SANS = "Noto Sans SC"
-FONT_SERIF = "Noto Serif SC"
+FONT_SERIF = "Noto Sans SC"
 DARK = "20343A"
 ACCENT = "A64232"
 GOLD = "B39055"
@@ -227,6 +227,9 @@ def configure_styles(doc):
     title.font.bold = True
     title.font.color.rgb = RGBColor(0, 0, 0)
     title._element.rPr.rFonts.set(qn("w:eastAsia"), FONT_SANS)
+    title_ppr = title._element.get_or_add_pPr()
+    for border in list(title_ppr.findall(qn("w:pBdr"))):
+        title_ppr.remove(border)
     for level in (1, 2, 3):
         style = doc.styles[f"Heading {level}"]
         style.font.name = FONT_SANS
@@ -269,7 +272,7 @@ def build():
     set_run_font(r, size=26, bold=True)
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r = p.add_run("步步生典城市漫游章匣与解围双节机关礼盒")
+    r = p.add_run("步步生典城市漫游章匣与解围六味邯郸机关礼盒")
     set_run_font(r, size=14, color=DARK)
     p.paragraph_format.space_after = Pt(18)
 
@@ -279,7 +282,7 @@ def build():
     p.add_run("   ").add_picture(str(ROOT / "jiewei_giftbox_design/04_renders/hero_open.png"), width=Inches(3.05))
     p.paragraph_format.space_after = Pt(18)
 
-    add_table(doc, ["版本", "建模单位", "交付状态", "更新日期"], [["1.0", "mm", "数字几何已验证", "2026-10-01"]], [0.8, 1.0, 2.7, 1.2])
+    add_table(doc, ["版本", "建模单位", "交付状态", "更新日期"], [["1.1", "mm", "数字几何已验证", "2026-10-03"]], [0.8, 1.0, 2.7, 1.2])
     add_body(doc, "本说明书面向评审、打样厂、三维建模人员和后续迭代者，用于解释两套设计的结构逻辑、尺寸参数、CAD 文件关系、打开方法、制造建议与验证边界。两套模型均已完成 FreeCAD 原生文件、STEP 交换文件和 STL 分件输出。")
 
     add_page_break(doc)
@@ -289,7 +292,7 @@ def build():
     add_numbered(doc, [
         "交付结论与文件类型",
         "步步生典城市漫游章匣",
-        "解围双节机关礼盒",
+        "解围六味邯郸机关礼盒概念提案",
         "CAD 文件使用与参数修改",
         "打印打样和装配建议",
         "验证证据与未验证边界",
@@ -340,15 +343,15 @@ def build():
     ])
     add_figure(doc, "bubushengdian_design/04_renders/ortho_top.png", "图 3  章盒顶视尺寸与布局参考", 6.1)
 
-    add_heading(doc, "3 解围双节机关礼盒", 1)
-    add_heading(doc, "3.1 设计定位与尺寸假设", 2)
+    add_heading(doc, "3 解围六味邯郸机关礼盒", 1)
+    add_heading(doc, "3.1 设计定位与概念边界", 2)
     add_body(doc, "该方案以“围魏救赵”的行动次序为机关原型：使用者必须先侧向移动“魏”抽屉，使两枚锁钥片离开“赵”托盘槽位，才能抽出中央托盘。文化故事因此转化为可操作的开盒逻辑，而非表面图案。")
-    add_body(doc, "由于用户授权直接完成模型且未提供真实商品，本版本固定为六件中性节礼内装，单件尺寸 60 × 60 × 35 mm。这一假设适合作为月饼、糕点、茶点等小型方盒的空间代理，不代表任何具体品牌商品。")
+    add_body(doc, "六个内装均为 68 × 62 × 44 mm 原创概念二次包装模块，分别对应鸡泽辣椒、魏县鸭梨、涉县核桃、武安小米、永年大蒜和大名小磨香油六类邯郸地域产品。模块不对应任何真实在售 SKU，未使用现售商品图、商标、条码、许可证或法定食品文案。")
     add_figure(doc, "jiewei_giftbox_design/04_renders/hero_closed.png", "图 4  解围机关礼盒闭合状态", 6.2)
 
     add_heading(doc, "3.2 总体参数", 2)
     add_table(doc, ["参数", "数值", "设计意图"], [
-        ["闭合外形", "290 × 230 × 75 mm", "容纳 6 件 60 mm 级节礼内装和两级抽拉机构"],
+        ["闭合外形", "290 × 230 × 75 mm", "容纳 6 件概念二次包装模块和两级抽拉机构"],
         ["灰板基线", "2.0 mm", "小批量精装礼盒的概念材料厚度"],
         ["包纸代理", "0.18 mm", "用于预估裱纸累积尺寸"],
         ["数字单侧间隙", "0.6 mm", "为纸板滑动预留，实物需按打样复标"],
@@ -365,7 +368,7 @@ def build():
         ["4", "赵中央托盘", "1", "承载内装与主展示动作", "灰板托盘"],
         ["5", "内衬分格", "1", "定位六件内装并控制碰撞", "EVA 植绒或折叠纸托"],
         ["6", "月璧饰环", "1", "强化中秋视觉中心", "烫金纸卡或薄片"],
-        ["7", "中性内装", "6", "体积占位与布局验证", "60 × 60 × 35 mm 代理盒"],
+        ["7", "六味概念模块", "6", "地域品类二次包装与布局验证", "68 × 62 × 44 mm 原创纸盒"],
     ], [0.5, 1.25, 0.55, 2.15, 1.6])
 
     add_heading(doc, "3.4 三状态机关原理", 2)
@@ -403,7 +406,7 @@ def build():
         ["章匣外形", "width depth height wall", "章盘行程、地图折叠尺寸、内部布局"],
         ["印章规格", "stamp width depth height", "手指握持、分隔尺寸、章面制造"],
         ["礼盒外形", "BOX width depth height", "外套筒、两级抽屉、刀模纸张尺寸"],
-        ["真实内装", "SKU width depth height count", "内衬分格、托盘强度、整盒重量与操作力"],
+        ["概念模块", "PRODUCT_MODULE width depth height", "内衬分格、托盘强度、整盒重量与操作力"],
         ["滑动间隙", "clearance release margin", "材料吸湿、裱纸、包边和粘合剂累积误差"],
     ], [1.4, 2.0, 3.2])
 
@@ -430,7 +433,7 @@ def build():
         "先以 1:1 比例在普通卡纸上输出刀模，检查纸张尺寸和折叠顺序。",
         "再使用 2 mm 灰板制作白样，暂不做全裱纸，测量侧向抽屉和中央托盘的摩擦。",
         "验证锁钥片的插入、释放和回位，至少完成 30 次连续开合。",
-        "放入六件代理重量的配重块，检查托盘下挠、单手操作力和抽出后的稳定性。",
+        "放入六件概念模块或等质量配重块，检查托盘下挠、单手操作力和抽出后的稳定性。",
         "确定间隙后再加入裱纸、包边和表面工艺，最后重做一次全过程尺寸验证。",
     ])
     add_heading(doc, "5.3 共同验收项目", 2)
@@ -449,7 +452,7 @@ def build():
         "《解围》FCStd 回读获得 13 个有效 Shape 对象；闭合、解锁、展开 STEP 均回读为 13 个实体。",
         "《解围》三状态包络分别为 290 × 230 × 75 mm、330 × 230 × 75 mm 和 330 × 360 × 75 mm。",
         "四组刀模的 DXF 单位已设置为 mm，并含有 10 × 10 mm 校准图形。",
-        "三个设计目录的自动测试合计 47 项，包括 CAD 报告、刀模、渲染、展板和审计契约。",
+        "三个设计目录的自动测试合计 49 项，包括 CAD 报告、刀模、渲染、展板和审计契约。",
     ])
     add_heading(doc, "6.2 不能由数字模型代替的验证", 2)
     add_body(doc, "数字模型可以证明尺寸、实体有效性、数字布局和文件可读性，不能证明真实材料下的摩擦、强度、耐久、运输和安全性。所以在没有实体样机和记录前，作品文案不应使用“已通过跌落”、“已批量生产”、“寿命已验证”或类似表述。")
@@ -465,7 +468,7 @@ def build():
     add_bullets(doc, [
         "展板上可表述为“参数化 CAD 模型”、“三状态结构演示”、“已完成 STEP STL DXF 回读检查”。",
         "实体样机完成前，建议使用“概念打样建议”、“数字配合基线”，不使用“量产定型”。",
-        "《解围》的中性内装应明确标注为规格假设，不将其包装为已获授权的真实品牌商品。",
+        "《解围》的六味内装应明确标注为原创概念二次包装，不将其表述为现售商品、已获授权联名或量产包装。",
         "如有实体白样，应在展板中单独附上实拍照片、尺寸记录和测试次数。",
     ])
 
@@ -484,16 +487,16 @@ def build():
         ["jiewei_giftbox_closed.step", "机关闭合状态"],
         ["jiewei_giftbox_unlocked.step", "侧向抽屉移出 42 mm 的解锁状态"],
         ["jiewei_giftbox_open.step", "中央托盘再移出 145 mm 的展示状态"],
-        ["meshes/*.stl", "外套筒、抽屉、锁钥片、托盘、内衬、月璧和六件内装"],
+        ["meshes/*.stl", "外套筒、抽屉、锁钥片、托盘、内衬、月璧和六件概念二次包装模块"],
         ["dielines/*.dxf *.svg", "外套筒、侧抽屉、中央托盘和锁钥片刀模"],
         ["build_giftbox.py build_dielines.py", "模型和刀模的参数化生成脚本"],
     ], [2.7, 3.9])
     add_heading(doc, "7.3 交付包", 2)
-    add_table(doc, ["交付包", "内容", "SHA-256"], [
-        ["01_bubushengdian_stamp_kit_cad_model.zip", "FCStd STEP STL 渲染图 脚本 说明", "345a7c04...ad5f4af8"],
-        ["02_jiewei_giftbox_cad_model.zip", "FCStd 三状态 STEP STL DXF SVG 渲染图 脚本 说明", "c4ce45b5...c563af3f"],
+    add_table(doc, ["交付包", "内容", "校验位置"], [
+        ["01_bubushengdian_stamp_kit_cad_model.zip", "FCStd STEP STL 渲染图 脚本 说明", "SHA256SUMS.txt"],
+        ["02_jiewei_giftbox_cad_model.zip", "FCStd 三状态 STEP STL DXF SVG 渲染图 脚本 说明", "SHA256SUMS.txt"],
     ], [2.4, 2.8, 1.4])
-    add_body(doc, "本说明书采用的 CAD 交付基线提交为 db4ac6d，分支为 codex/handan-double-festival-build。交付包更新后应重新生成 SHA256SUMS.txt，不应继续使用旧校验值。")
+    add_body(doc, "本说明书与 codex/handan-double-festival-build 分支中的 CAD 交付保持同步。交付包更新后应重新生成 SHA256SUMS.txt，不应继续使用旧校验值。")
 
     add_heading(doc, "7.4 最终验收清单", 2)
     add_bullets(doc, [
@@ -502,13 +505,13 @@ def build():
         "能逐个导入 STL 分件，没有空文件和零尺寸网格。",
         "DXF 的 10 mm 校准框实测为 10 mm，切线和压痕线可区分。",
         "解压两个 ZIP 时无 CRC 错误，SHA-256 与 SHA256SUMS.txt 一致。",
-        "所有关于实体样机、品牌授权和量产性能的表述与真实证据一致。",
+        "所有关于实体样机、概念产品、品牌授权和量产性能的表述与真实证据一致。",
     ])
 
     add_body(doc, "结论：两套方案已达到数字 CAD 交付和概念打样的要求。《步步生典》可直接进入外壳与章盘快速打印；《解围》可直接进入 1:1 纸板白样。经实体样机完成间隙、承重、耐久和运输验证后，才能升级为生产定型文件。", bold_lead="结论：")
 
     doc.core_properties.title = "和氏璧杯设计作品 CAD 与模型详细说明书"
-    doc.core_properties.subject = "步步生典与解围两套方案的工程说明"
+    doc.core_properties.subject = "步步生典与解围六味邯郸方案的工程说明"
     doc.core_properties.author = "项目设计组"
     doc.core_properties.keywords = "CAD, FreeCAD, STEP, STL, DXF, 包装设计, 邯郸"
     doc.save(OUTPUT)

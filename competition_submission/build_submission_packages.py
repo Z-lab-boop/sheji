@@ -58,16 +58,16 @@ PROJECTS = (
         ),
     ),
     Project(
-        slug="赛道一_解围_禁止直接投稿_缺真实SKU与授权",
+        slug="赛道一_解围_待填写报名表后提交",
         title="解围",
-        status="blocked",
+        status="conditionally_ready",
         board_dir=ROOT / "jiewei_giftbox_design" / "05_boards" / "jpg",
         board_count=6,
         description=ROOT / "jiewei_giftbox_design" / "06_submission" / "work_description.md",
         notice=(
-            "禁止直接投稿：当前六件内装均为中性尺寸代理。须先取得邯宝坊真实SKU、"
-            "品牌书面许可、法定食品文案，重建结构与版式并完成复核。包内已附公开证据档案、"
-            "商品证据表和待回填签章的申请书；空白申请书不等于已授权。\n"
+            "这是投稿候选附件包，不是已提交证明。方案为面向邯宝坊命题的原创概念二次包装系统，"
+            "未使用现售商品图、商标、条码或法定食品信息，不代表已获官方联名授权。"
+            "发送前须由参赛者填写并签署官方报名表，同时保存Word版与PDF版，并完成终稿、原创及授权条款确认。\n"
         ),
     ),
 )
@@ -162,16 +162,12 @@ def build_project(project: Project) -> tuple[dict, Path]:
     if project.title == "解围":
         coordination_dir = ROOT / "jiewei_giftbox_design" / "06_submission"
         shutil.copy2(
-            coordination_dir / "hanbaofang_public_product_dossier.md",
-            target_dir / "邯宝坊商品公开证据档案.md",
+            coordination_dir / "concept_product_evidence.csv",
+            target_dir / "六味邯郸_品类证据表.csv",
         )
         shutil.copy2(
-            coordination_dir / "hanbaofang_product_evidence.csv",
-            target_dir / "邯宝坊商品证据表.csv",
-        )
-        shutil.copy2(
-            coordination_dir / "邯宝坊产品资料与参赛授权申请书.docx",
-            target_dir / "邯宝坊产品资料与参赛授权申请书_待回填签章.docx",
+            coordination_dir / "materials_and_pricing.md",
+            target_dir / "解围_材料工艺与设计估价.md",
         )
     shutil.copy2(FORM, target_dir / "官方报名表_空白_须填写签字并另存PDF.doc")
     (target_dir / "提交状态_请先阅读.txt").write_text(project.notice, encoding="utf-8")
@@ -214,7 +210,7 @@ def main() -> int:
             "max_bytes_per_image": MAX_BYTES,
         },
         "projects": reports,
-        "overall_status": "conditionally_ready_two_projects_and_one_blocked_project",
+        "overall_status": "conditionally_ready_three_projects_pending_identity_and_signature",
     }
     (OUT / "audit_report.json").write_text(
         json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

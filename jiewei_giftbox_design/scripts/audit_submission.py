@@ -30,6 +30,11 @@ EXTERNAL_REFERENCES = [
     ("ref_jize_gi", "https://ipr.mofcom.gov.cn/article/gnxw/dlbz/202102/1959588.html", "Jize chili geographic product fact"),
     ("ref_weixian_standard", "https://std.samr.gov.cn/db/search/stdDBDetailed?id=2F905795AB653FA8E06397BE0A0A91D7", "Weixian pear standard fact"),
 ]
+LEGACY_COORDINATION_FILES = {
+    "06_submission/hanbaofang_public_product_dossier.md",
+    "06_submission/real_sku_input_checklist.md",
+    "06_submission/hanbaofang_product_evidence.csv",
+}
 
 
 def sha256(path: Path) -> str:
@@ -59,14 +64,20 @@ def local_rows() -> list[dict[str, str]]:
     for asset_type, globs in patterns.items():
         for pattern in globs:
             for path in sorted(ROOT.glob(pattern)):
-                if not path.is_file() or path in seen:
+                if not path.is_file() or path in seen or path == MANIFEST_PATH:
                     continue
                 seen.add(path)
+                relative_path = path.relative_to(ROOT).as_posix()
+                used_in = (
+                    "archived brand-collaboration reference; excluded from current submission package"
+                    if relative_path in LEGACY_COORDINATION_FILES
+                    else "submission concept package"
+                )
                 rows.append({
-                    "asset_id": f"asset_{counter:03d}", "path": path.relative_to(ROOT).as_posix(), "asset_type": asset_type,
+                    "asset_id": f"asset_{counter:03d}", "path": relative_path, "asset_type": asset_type,
                     "creator_or_source": "Google Fonts" if asset_type == "font" else "Jiewei project",
                     "license_or_basis": "SIL OFL 1.1" if asset_type == "font" else "project original",
-                    "sha256": sha256(path), "used_in": "submission concept package",
+                    "sha256": sha256(path), "used_in": used_in,
                 })
                 counter += 1
     for asset_id, url, purpose in EXTERNAL_REFERENCES:
