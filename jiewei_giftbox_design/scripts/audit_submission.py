@@ -1,4 +1,4 @@
-"""Audit the Jiewei technical package while preserving its real-SKU submission gate."""
+"""Audit the submission-safe Jiewei six-flavour concept package."""
 
 from __future__ import annotations
 
@@ -14,25 +14,21 @@ import xml.etree.ElementTree as ET
 
 from PIL import Image
 
-from design_config import BOARD, BOX, SKU
+from design_config import BOARD, BOX, CONCEPT_DISCLOSURE, PRODUCT_MODULE, PRODUCTS
 
 
 ROOT = Path(__file__).resolve().parents[1]
 MANIFEST_PATH = ROOT / "06_submission/source_manifest.csv"
 REPORT_PATH = ROOT / "07_audit/audit_report.json"
-MISSING_INPUTS = ["actual_sku_dimensions", "brand_assets_and_permission", "legal_food_copy", "entrant_identity"]
+MISSING_INPUTS = ["entrant_identity", "signed_registration_pdf"]
 EXTERNAL_REFERENCES = [
     ("ref_competition", "https://www.zjideas.com/zjds/gycp/wcsj/32680.html", "competition requirements"),
     ("ref_idiom_hebei", "https://whly.hebei.gov.cn/c/2012-12-21/558082.html", "Handan idiom context"),
     ("ref_idiom_dictionary", "https://dict.idioms.moe.edu.tw/idiomView.jsp?ID=17170&la=0&webMd=2", "idiom meaning"),
-    ("ref_hanbaofang_context", "https://whly.hebei.gov.cn/c/2025-07-31/581835.html", "local-products retail context"),
-    ("ref_hanbaofang_flagship", "https://www.hdcyjt.com/xinwenzhongxin/105.html", "Hanbaofang flagship and public brand context"),
-    ("ref_hanbaofang_products", "https://hdsswj.hd.gov.cn/gongzuodongtai/?a=view&p=84&r=5047", "Hanbaofang product categories"),
     ("ref_hanbaofang_channels", "https://hdsswj.hd.gov.cn/gongzuodongtai/n4885.html", "Hanbaofang online sales channels"),
-    ("ref_xuebukiao_240ml", "https://m.cqn.com.cn/ms/content/2025-06/12/content_9109642.htm", "Xuebukiao sesame oil public sampling specification"),
-    ("ref_huangliangmeng_gi", "https://www.moa.gov.cn/nybgb/2014/shier/201712/P020180104778141801165.pdf", "Huangliangmeng millet geographical indication"),
-    ("ref_jize_store", "https://www.sohu.com/a/851866799_102258", "Hanbaofang Jize store chili sauce categories"),
-    ("ref_pear_beverage", "https://www.sohu.com/a/900938373_120333600", "Wei County NFC pear beverage Hanbaofang relation"),
+    ("ref_handan_categories", "https://hdsswj.hd.gov.cn/?a=view&p=5&r=3450", "six Handan regional product categories"),
+    ("ref_jize_gi", "https://ipr.mofcom.gov.cn/article/gnxw/dlbz/202102/1959588.html", "Jize chili geographic product fact"),
+    ("ref_weixian_standard", "https://std.samr.gov.cn/db/search/stdDBDetailed?id=2F905795AB653FA8E06397BE0A0A91D7", "Weixian pear standard fact"),
 ]
 
 
@@ -56,7 +52,6 @@ def local_rows() -> list[dict[str, str]]:
         "board_pdf": ["05_boards/pdf/*.pdf"],
         "submission_text": ["06_submission/*.md"],
         "submission_data": ["06_submission/*.csv"],
-        "editable_request_form": ["06_submission/*.docx"],
     }
     rows = []
     seen = set()
@@ -71,7 +66,7 @@ def local_rows() -> list[dict[str, str]]:
                     "asset_id": f"asset_{counter:03d}", "path": path.relative_to(ROOT).as_posix(), "asset_type": asset_type,
                     "creator_or_source": "Google Fonts" if asset_type == "font" else "Jiewei project",
                     "license_or_basis": "SIL OFL 1.1" if asset_type == "font" else "project original",
-                    "sha256": sha256(path), "used_in": "technical candidate package",
+                    "sha256": sha256(path), "used_in": "submission concept package",
                 })
                 counter += 1
     for asset_id, url, purpose in EXTERNAL_REFERENCES:
@@ -120,6 +115,19 @@ def audit() -> dict[str, object]:
         svg_details.append({"path": path.name, "elements": len(tags), "has_text": "text" in tags, "has_visual_content": "image" in tags or "path" in tags})
     add("editable_board_sources", len(svg_details) == 6 and all(v["elements"] > 20 and v["has_text"] and v["has_visual_content"] for v in svg_details), svg_details)
 
+    render_manifest = json.loads((ROOT / "04_renders/render_manifest.json").read_text(encoding="utf-8"))
+    required_renders = {
+        "hero_closed.png", "hero_unlocked.png", "hero_open.png", "exploded.png", "product_family.png",
+        "hand_opening.png", "retail_scene.png", "mid_autumn_variant.png", "national_day_variant.png",
+    }
+    add(
+        "concept_renders",
+        required_renders <= set(render_manifest["views"])
+        and render_manifest["product_asset_status"] == "original_concept_secondary_packaging"
+        and render_manifest["scene_status"] == "visualisation_not_product_photography",
+        sorted(render_manifest["views"]),
+    )
+
     step_files = sorted((ROOT / "03_cad").glob("jiewei_giftbox_*.step"))
     stls = sorted((ROOT / "03_cad/meshes").glob("*.stl"))
     exchange_ok = len(step_files) == 3 and len(stls) == 13 and all(b"ISO-10303-21" in p.read_bytes()[:256] for p in step_files)
@@ -135,15 +143,40 @@ def audit() -> dict[str, object]:
     add("dielines", all(p.is_file() and p.stat().st_size > 0 for p in dielines) and dieline_manifest["units"] == "mm" and all(v["calibration_square_mm"] == [10, 10] for v in dieline_manifest["files"].values()), [p.name for p in dielines])
 
     identity_manifest = json.loads((ROOT / "02_identity/identity_manifest.json").read_text(encoding="utf-8"))
-    proxy_identity = (ROOT / "02_identity/proxy_product_labels.svg").read_text(encoding="utf-8")
-    board_missing = [p.name for p in svgs[2:] if "规格代理件" not in p.read_text(encoding="utf-8")]
-    add("proxy_and_brand_disclosure", SKU.label in proxy_identity and identity_manifest["brand_asset_status"] == "not_provided" and not board_missing, board_missing or "proxy label on identity and boards 3-6; brand assets not provided")
+    identity_text = (ROOT / "02_identity/concept_product_labels.svg").read_text(encoding="utf-8")
+    board_missing = [p.name for p in svgs[3:] if CONCEPT_DISCLOSURE not in p.read_text(encoding="utf-8")]
+    names_missing = [item.display_name for item in PRODUCTS if item.display_name not in identity_text]
+    add(
+        "concept_and_brand_disclosure",
+        identity_manifest["brand_asset_status"] == "official_brief_named_target_no_logo_asset"
+        and identity_manifest["product_asset_status"] == "original_concept_secondary_packaging"
+        and CONCEPT_DISCLOSURE in identity_text
+        and not board_missing
+        and not names_missing,
+        {"board_missing": board_missing, "product_names_missing": names_missing},
+    )
+
+    evidence_path = ROOT / "06_submission/concept_product_evidence.csv"
+    with evidence_path.open(encoding="utf-8", newline="") as stream:
+        evidence_rows = list(csv.DictReader(stream))
+    add(
+        "regional_category_evidence",
+        len(evidence_rows) == 6
+        and {row["category"] for row in evidence_rows} == {item.category for item in PRODUCTS}
+        and all(row["evidence_state"] == "verified_category_only" and row["public_basis_url"].startswith("https://") for row in evidence_rows),
+        evidence_rows,
+    )
 
     licences = sorted((ROOT / "01_research/fonts").glob("OFL-*.txt"))
     add("font_licences", len(licences) == 3 and all(p.stat().st_size > 1000 for p in licences), [p.name for p in licences])
 
-    public_files = [*svgs, *sorted((ROOT / "02_identity").glob("*.svg")), *sorted((ROOT / "06_submission").glob("*.md"))]
-    prohibited = ["TBD", "TODO", "真实姓名待填", "热销", "已量产", "供应商报价已确认", "测试通过"]
+    public_files = [
+        *svgs,
+        *sorted((ROOT / "02_identity").glob("*.svg")),
+        ROOT / "06_submission/work_description.md",
+        ROOT / "06_submission/materials_and_pricing.md",
+    ]
+    prohibited = ["TBD", "TODO", "真实姓名待填", "热销", "已量产", "官方联名", "获得授权", "供应商报价已确认", "完成实体测试"]
     hits = []
     for path in public_files:
         content = path.read_text(encoding="utf-8", errors="ignore")
@@ -153,18 +186,24 @@ def audit() -> dict[str, object]:
 
     rows = local_rows(); write_manifest(rows)
     types = {row["asset_type"] for row in rows}
-    needed = {"cad", "dieline_source", "render", "board_source", "board_jpg", "board_pdf", "submission_data", "editable_request_form", "external_reference"}
+    needed = {"cad", "dieline_source", "render", "board_source", "board_jpg", "board_pdf", "submission_data", "external_reference"}
     add("source_manifest", needed <= types and len(rows) >= 70, {"rows": len(rows), "types": sorted(types)})
 
     technical_status = "pass" if all(check["passed"] for check in checks) else "fail"
     report = {
-        "project": "解围——邯宝坊双节机关礼盒",
+        "project": "解围——邯宝坊“六味邯郸”机关礼盒概念提案",
         "generated_at_utc": datetime.now(timezone.utc).isoformat(),
         "technical_status": technical_status,
-        "submission_status": "blocked_pending_real_sku_and_brand_assets",
+        "submission_status": "conditionally_ready_pending_identity_signature",
         "missing_inputs": MISSING_INPUTS,
         "checks": checks,
-        "boundaries": ["All six visible products are neutral size proxies.", "A public product shortlist and unsigned request packet exist, but no brand-confirmed SKU dimensions or signed permission is present.", "No brand-approved legal food copy is present.", "Physical paperboard performance remains untested."],
+        "boundaries": [
+            "All six visible products are original concept secondary packages based on verified regional categories.",
+            "No existing Hanbaofang logo, third-party product photography, barcode, licence number, nutrition data or geographic-indication symbol is used.",
+            "Module dimensions, cost and price are concept design values, not claims about existing products.",
+            "Physical paperboard durability, transport performance and food compliance remain untested and are not claimed.",
+            "Entrant identity and a personally signed registration PDF remain required before email submission.",
+        ],
     }
     REPORT_PATH.parent.mkdir(parents=True, exist_ok=True)
     REPORT_PATH.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
