@@ -34,6 +34,18 @@ class Project:
 
 PROJECTS = (
     Project(
+        slug="赛道二_遂见_待填写报名表后提交",
+        title="遂见",
+        status="conditionally_ready",
+        board_dir=ROOT / "suijian_design" / "05_boards" / "jpg",
+        board_count=7,
+        description=ROOT / "suijian_design" / "06_submission" / "work_description.md",
+        notice=(
+            "这是投稿候选附件包，不是已提交证明。发送前须填写并签署官方报名表，"
+            "同时保存Word版与PDF版，并由参赛者完成终稿、原创及授权条款确认。\n"
+        ),
+    ),
+    Project(
         slug="赛道二_步步生典_待填写报名表后提交",
         title="步步生典",
         status="conditionally_ready",
@@ -202,7 +214,7 @@ def main() -> int:
             "max_bytes_per_image": MAX_BYTES,
         },
         "projects": reports,
-        "overall_status": "conditionally_ready_one_project_and_one_blocked_project",
+        "overall_status": "conditionally_ready_two_projects_and_one_blocked_project",
     }
     (OUT / "audit_report.json").write_text(
         json.dumps(audit, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"

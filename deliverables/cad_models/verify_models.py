@@ -48,6 +48,12 @@ def verify_step(relative: str, minimum_solids: int) -> dict[str, object]:
 
 def main() -> None:
     results = {
+        "suijian_fcstd": verify_fcstd(
+            "suijian_design/03_cad/suijian_card_case.FCStd", 5
+        ),
+        "suijian_step": verify_step(
+            "suijian_design/03_cad/suijian_card_case.step", 5
+        ),
         "bubushengdian_fcstd": verify_fcstd(
             "bubushengdian_design/03_cad/bubushengdian_stamp_kit.FCStd", 10
         ),
